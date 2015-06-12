@@ -1,0 +1,27 @@
+<h1>Josep Egea's place </h1>
+
+<% if (news = get_last_news(5)) && news.size > 0 %>
+
+<h2>Latest news</h2>
+
+	<ul>
+		
+	<% news.each do |art| %>
+		<li>
+			<%= l_link_to(art[:title], art[:canonical_identifier])%>
+		</li>
+	<% end %>
+	
+	</ul>
+
+<% end %>
+
+<h2>About Josep</h2>
+
+Thanks for visiting my site!
+
+Here you'll find my writings, pictures and news about my projects.
+
+If you want to learn more about me, check my <%= l_link_to("About page", '/about') %>
+
+
