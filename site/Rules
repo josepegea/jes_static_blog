@@ -15,6 +15,7 @@
 
 compile '*' do
   if item[:extension] == 'md'
+    filter :erb
     filter :kramdown
     layout 'default'
   elsif item[:extension] == 'css'
