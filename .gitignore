@@ -1,0 +1,4 @@
+/site/tmp/
+/site/output/
+/site/.sass-cache/
+*.log
