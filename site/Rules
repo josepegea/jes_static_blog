@@ -17,14 +17,14 @@ compile '*' do
   if item[:extension] == 'md'
     filter :erb
     filter :kramdown
-    layout 'default'
+    layout layout_for_item(item)
   elsif item[:extension] == 'css'
     # don’t filter stylesheets
   elsif item.binary?
     # don’t filter binary items
   else
     filter :erb
-    layout 'default'
+    layout layout_for_item(item)
   end
 end
 

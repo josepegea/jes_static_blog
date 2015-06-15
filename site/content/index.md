@@ -1,13 +1,9 @@
 ---
-title: Home
+title: JosepEgea.com
+layout: bare
 ---
-# Josep's site
+# Josep Egea
 
-Welcome to Josep's site, at page <%= @item[:title] %>
-
-*	Blog
-*	Technical articles
-*	Photography
-
-Enjoy it!
+*	<%= l_link_to("English site", "/", "en")%>
+*	<%= l_link_to("Web en Español", "/", "es")%>
 

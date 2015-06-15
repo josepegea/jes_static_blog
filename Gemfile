@@ -17,3 +17,4 @@ gem 'rb-readline'
 # Markdown support
 gem 'kramdown'
 
+gem "activesupport"

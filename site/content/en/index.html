@@ -6,7 +6,13 @@ language: en
 ---
 <h1>Josep Egea's place </h1>
 
-<% if (news = get_last_news(5)) && news.size > 0 %>
+<p>Thanks for visiting my site!</p>
+
+<p>Here you'll find my writings, pictures and news about my projects.</p>
+
+<p>If you want to learn more about me, check my <%= l_link_to("About page", '/about/') %></p>
+
+<% if (news = get_last_news) && news.size > 0 %>
 
 <h2>Latest news</h2>
 
@@ -22,12 +28,5 @@ language: en
 
 <% end %>
 
-<h2>About Josep</h2>
-
-<p>Thanks for visiting my site!</p>
-
-<p>Here you'll find my writings, pictures and news about my projects.</p>
-
-<p>If you want to learn more about me, check my <%= l_link_to("About page", '/about/') %></p>
 
 

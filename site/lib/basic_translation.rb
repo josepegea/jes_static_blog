@@ -41,3 +41,9 @@ def language_name_of(item)
   language_name_for_code(
     language_code_of(item))
 end
+
+def layout_for_item(item)
+  layout_name = item[:layout] || 'default'
+  item_lang = language_code_of(item) || 'en'
+  return File.join(item_lang, layout_name)
+end
