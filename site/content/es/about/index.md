@@ -9,11 +9,11 @@ language: es
 
 > Empresario, padre, informático, marido, fotógrafo ... Me gusta tocar muchos palos y siempre ando interesado en nuevos retos.
 
-Nacido en Barcelona, viviendo en Madrid y tratando de mirar más allá del lugar.
+Nacido en Barcelona, viviendo en Madrid y tratando de mirar más allá de las circunstancias geográficas.
 
-En la actualidad soy <%= l_link_to("programador web freelance", "/about/tech_bio")%>, con experiencia en Ruby on Rails. También me encuentro en proceso de poner en marcha mi nuevo proyecto empresarial (Una pista: está relacionado la tecnología aplicada a la educación)
+En la actualidad soy <%= l_link_to("programador web freelance", "/about/tech_bio")%>, con experiencia en Ruby on Rails. También me encuentro en proceso de poner en marcha mi nuevo proyecto empresarial (Una pista: está relacionado la tecnología aplicada a la educación).
 
-Hasta junio de 2015 estuve dedicando mis esfuerzos a lanzar y dirigir [Evadium](http://www.evadium.com), una agencia de viajes online que co-fundamos en 2015 David Cano y yo.
+Hasta junio de 2015 estuve dedicando mis esfuerzos a lanzar y dirigir [Evadium](http://www.evadium.com), una agencia de viajes online que fundé, junto con mi socio, David Cano, en 2005.
 
 ## ¿Puedo ayudarte?
 

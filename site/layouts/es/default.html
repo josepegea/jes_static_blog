@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title><%= @item[:title] %></title>
@@ -14,8 +14,9 @@
       <h2>JosepEgea.com</h2>
       <ul>
         <li>
-        	<%= l_link_to("English site", "/", "en")%>
+        	<%= l_link_to("English Home Page", "/", "en")%>
         </li>
+	 	<%= links_to_translated_pages(@item) %>
       </ul>
 	  <hr>
       <ul>

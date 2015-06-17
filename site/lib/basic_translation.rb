@@ -42,8 +42,34 @@ def language_name_of(item)
     language_code_of(item))
 end
 
+LANGUAGE_CODE_TO_PAGE_LABEL_MAPPING = {
+  'en' => 'Read this page in English',
+  'es' => 'Leer esta página en Español'
+}
+
+def this_page_in(language)
+  return LANGUAGE_CODE_TO_PAGE_LABEL_MAPPING[language]
+end
+
 def layout_for_item(item)
   layout_name = item[:layout] || 'default'
   item_lang = language_code_of(item) || 'en'
   return File.join(item_lang, layout_name)
+end
+
+def links_to_translated_pages(item, options = {})
+  str = ""
+  if (versions = translations_of(item)).size > 1
+    versions.each do |v|
+  	  if v[:language] != item[:language]
+        str << "<li>\n"
+  			str << l_link_to(this_page_in(v[:language]),
+  										item[:canonical_identifier], 
+  										v[:language],
+                      options)
+        str << "\n<li>\n"
+      end
+    end
+  end
+  return str
 end

@@ -14,17 +14,14 @@ La mejor manera de contactar conmigo es a través del email. Escríbeme a la dir
 
 ## Redes Sociales
 
-Truth is that I'm not very active in social networks. If you really want to reach me, use the email above.
 La verdad es que no uso mucho las redes sociales. Si quieres contactar conmigo, lo mejor es el email, como te digo arriba.
 
-Aun así, estoy en algunas redes sociales:
+Aun así, estoy en algunas de ellas:
 
 *	**Twitter** [@josep_egea](http://www.twitter.com/josep_egea)
-
 *	**Google+** [Josep Egea](https://www.google.com/+JosepEgea)
-
 *	**GitHub** [josep-egea](https://github.com/josep-egea)
 
 ## En carne y hueso
 
-Normalmente voy a los encuentros mensuales de [Madrid.rb](http://www.madridrb.com/). Es un sitio perfecto para charlar. 
+Normalmente voy a los encuentros mensuales de [Madrid.rb](http://www.madridrb.com/). Organizan charlas estupendas sobre Ruby y su entorno, a cargo de ponentes de lo más brillante, y son un sitio perfecto para charlar. 
