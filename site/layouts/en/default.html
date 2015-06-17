@@ -11,7 +11,11 @@
       <%= yield %>
     </div>
     <div id="sidebar">
+	  <%= l_link_to("<img src=\"/images/jes_logo-200.jpg\">", "/")%>
       <h2>JosepEgea.com</h2>
+	  <small>
+		  Writings and ideas by Josep Egea
+	  </small>
       <ul>
         <li>
         	<%= l_link_to("Web en Español", "/", "es")%>
@@ -30,6 +34,7 @@
 	  <hr/>
       <ul>
         <li>Built with <a href="http://nanoc.ws/">Nanoc</a></li>
+		<li><small>Logo by Eva Egea</small></li>
       </ul>
     </div>
   </body>

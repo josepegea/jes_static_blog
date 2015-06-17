@@ -57,17 +57,20 @@ def layout_for_item(item)
   return File.join(item_lang, layout_name)
 end
 
-def links_to_translated_pages(item, options = {})
+def links_to_translated_pages(item, options = {}, link_options = {})
   str = ""
-  if (versions = translations_of(item)).size > 1
-    versions.each do |v|
-  	  if v[:language] != item[:language]
-        str << "<li>\n"
-  			str << l_link_to(this_page_in(v[:language]),
-  										item[:canonical_identifier], 
-  										v[:language],
-                      options)
-        str << "\n<li>\n"
+  force_home = options[:force_home] || false
+  if force_home || item[:canonical_identifier] != '/'
+    if (versions = translations_of(item)).size > 1
+      versions.each do |v|
+    	  if v[:language] != item[:language]
+          str << "<li>\n"
+    			str << l_link_to(this_page_in(v[:language]),
+    										item[:canonical_identifier], 
+    										v[:language],
+                        link_options)
+          str << "\n<li>\n"
+        end
       end
     end
   end
