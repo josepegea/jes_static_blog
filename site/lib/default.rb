@@ -6,6 +6,7 @@
 require 'active_support'
 require 'active_support/dependencies'
 
+include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::Text

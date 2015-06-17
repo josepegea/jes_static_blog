@@ -14,13 +14,13 @@ language: en
 
 <% if (news = get_last_news) && news.size > 0 %>
 
-<h2>Latest news</h2>
+<h2>Latest Articles</h2>
 
 	<ul>
 		
 	<% news.each do |art| %>
 		<li>
-			<%= l_link_to(art[:title], art[:canonical_identifier])%>
+			<%= render 'partials/article_item', :article => art %>
 		</li>
 	<% end %>
 	

@@ -76,3 +76,34 @@ def links_to_translated_pages(item, options = {}, link_options = {})
   end
   return str
 end
+
+def print_date(date)
+  if !(date.is_a?(Date) || date.is_a?(Time))
+    date = attribute_to_time(date)
+  end
+  return date if !(date.is_a?(Date) || date.is_a?(Time))
+  case @item[:language]
+  when 'es'
+    return date.strftime('%d/%m/%Y')
+  else
+    return date.strftime("%b #{ordinalize(date.day)}, %Y")
+  end
+end
+
+def ord_for(number)
+  if (number % 10) == 1 && (number % 100) != 11
+    return 'st'
+  elsif (number % 10) == 2 && (number % 100) != 12
+    return 'nd'
+  else
+    return 'th'
+  end
+end
+
+def f_ord_for(number)
+  return "<small>#{ord_for(number)}</small>"
+end
+
+def ordinalize(number)
+  return "#{number}#{f_ord_for(number)}"
+end

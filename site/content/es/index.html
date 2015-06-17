@@ -20,7 +20,7 @@ language: es
 		
 	<% news.each do |art| %>
 		<li>
-			<%= l_link_to(art[:title], art[:canonical_identifier])%>
+			<%= render 'partials/article_item', :article => art %>
 		</li>
 	<% end %>
 	
