@@ -51,10 +51,23 @@ def this_page_in(language)
   return LANGUAGE_CODE_TO_PAGE_LABEL_MAPPING[language]
 end
 
+def localized_layout(ident, lang)
+  # First, we look for the localized layout
+  name = File.join('/', lang, ident, '/')
+  puts @site.layouts.to_s
+  if @site.layouts.find {|l| l.identifier == name}
+    return name
+  else
+    # No point in checking if the non-localized exists.
+    # If it doesn't, compilation will let us know
+    return ident
+  end
+end
+
 def layout_for_item(item)
   layout_name = item[:layout] || 'default'
   item_lang = language_code_of(item) || 'en'
-  return File.join(item_lang, layout_name)
+  return localized_layout(layout_name, item_lang)
 end
 
 def links_to_translated_pages(item, options = {}, link_options = {})
