@@ -13,6 +13,9 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+# Everything we put in passthrough rules gets copied straighforward to output
+passthrough '/scripts/*/'
+
 compile '*' do
   if item[:extension] == 'md'
     filter :erb

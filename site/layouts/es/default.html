@@ -1,41 +1,65 @@
 <!DOCTYPE HTML>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title><%= @item[:title] %></title>
-    <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
-    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
-  </head>
-  <body>
-    <div id="main">
-      <%= yield %>
-    </div>
-    <div id="sidebar">
-	  <%= l_link_to("<img src=\"/images/jes_logo-200.jpg\">", "/")%>
-      <h2>JosepEgea.com</h2>
-	  <small>
-		  Textos e Ideas de Josep Egea
-	  </small>
-      <ul>
-        <li>
-        	<%= l_link_to("English Home Page", "/", "en")%>
-        </li>
-	 	<%= links_to_translated_pages(@item) %>
-      </ul>
-	  <hr>
-      <ul>
-        <li>
-        	<%= l_link_to("Acerca de Josep", "/about/")%>
-        </li>
-        <li>
-        	<%= l_link_to("Contactar", "/about/contact")%>
-        </li>
-      </ul>
-	  <hr>
-      <ul>
-        <li>Creado con <a href="http://nanoc.ws/">Nanoc</a></li>
-		<li><small>Logo por Eva Egea</small></li>
-      </ul>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title><%= @item[:title] %></title>
+		<link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
+		<meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+	</head>
+	<body>
+	<div id="container">
+		<div id="main">
+			
+			<%= yield %>
+			
+			<ul id="credits-main">
+				<li>Creado con <a href="http://nanoc.ws/">Nanoc</a></li>
+				<li><small>Logo por Eva Egea</small></li>
+			</ul>
+		</div>
+			<div id="sidebar">
+			<nav>
+				<div id="logo-container">
+					<div id="logo-box">
+						<a href="<%= l_url_for('/') %>">
+							<span id="logo">
+								JosepEgea.com
+							</span>
+						</a>
+						<span id="motto">
+							Escritos e Ideas de Josep Egea
+						</span>
+					</div>
+				</div>
+				<ul id="translate">
+					<li>
+						<%= l_link_to("English Site", "/", "en")%>
+					</li>
+					<%= links_to_translated_pages(@item) %>
+				</ul>
+				<hr/>
+				<ul id="main-options">
+					<li>
+						<%= l_link_to("Inicio", "/")%>
+					</li>
+					<li>
+						<%= l_link_to("Artículos", "/articles/")%>
+					</li>
+					<li>
+						<%= l_link_to("Acerca", "/about/")%>
+					</li>
+					<li>
+						<%= l_link_to("Contactar", "/about/contact")%>
+					</li>
+				</ul>
+				<hr/>
+				<ul id="credits-sidebar">
+					<li>Creado con <a href="http://nanoc.ws/">Nanoc</a></li>
+					<li><small>Logo por Eva Egea</small></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</body>
 </html>

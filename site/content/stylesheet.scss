@@ -1,4 +1,20 @@
 $link_color 	:#487fff;
+$body_color 	:#fff;
+$page_color 	:#fff;
+
+$blockquote_border_color 		:#ddd;
+$blockquote_background_color 	:#fff;
+$blockquote_text_color 			:#777;
+$blockquote_first_text_color 	:#ccc;
+
+$abstract_background_color 		:#F5F9FD;
+$abstract_text_color 			:#777;
+
+$separators_color 				:#ccc;
+ 
+$mobile_width 	:640px;
+
+$max_page_width	:990px;
 
 * {
 	margin: 0px;
@@ -8,7 +24,20 @@ $link_color 	:#487fff;
 }
 
 body {
-	background: #fff;
+	background: $body_color;
+}
+
+#container {
+	background: $page_color;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	left: 0px;
+	max-width: $max_page_width;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 a {
@@ -21,103 +50,248 @@ a:visited {
 }
 
 a:hover {
-	/* color: #f90; */
 	text-decoration:underline;
 }
 
 #main {
-	position: absolute;
-
-	top: 40px;
-	left: 280px;
-
-	width: 500px;
-}
-
-#main h1 {
-	font-size: 40px;
-	font-weight: normal;
-
-	line-height: 40px;
-
-	letter-spacing: -1px;
-}
-
-#main p {
-	margin: 20px 0;
-
-	font-size: 15px;
-
-	line-height: 20px;
-}
-
-#main ul, #main ol {
-	margin: 20px;
-}
-
-#main li {
-	font-size: 15px;
-
-	line-height: 20px;
-}
-
-#main ul li {
-	list-style-type: square;
+	padding-top: 40px;
+	padding-left: 280px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	
+	h1 {
+		font-size: 40px;
+		font-weight: normal;
+		line-height: 40px;
+		letter-spacing: -1px;
+	}
+	
+	p {
+		margin: 20px 0;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	
+	ul, ol {
+		margin: 20px;
+	}
+	
+	li {
+		font-size: 15px;
+		line-height: 20px;
+	}
+	
+	ul li {
+		list-style-type: square;
+	}
+	
+	blockquote {
+		/* box-sizing: border-box; */
+		border-left: 16px solid $blockquote_border_color;
+		padding-left: 10px;
+		font-style: italic;
+		font-size: 24px;
+		line-height: auto;
+		background-color:$blockquote_background_color;
+		color:$blockquote_text_color;
+	
+		p {
+			font-size: 24px ;
+			line-height: 1em;
+		}
+		
+		p:first-letter {
+			font-size:32px;
+			color:$blockquote_first_text_color;
+		}
+	}
+	
+	.abstract {
+		font-style: italic;
+		font-size: 18px;
+		line-height: auto;
+		color:$abstract_text_color;
+		line-height: 1.2em;
+		background:$abstract_background_color;
+		p {
+			font-size: 18px ;
+			line-height: 1.2em;
+			padding:10px 4px 12px 12px;
+			margin: 4px 0 20px;
+		}
+	}
+	
 }
 
 #sidebar {
 	position: absolute;
-
 	top: 20px;
 	left: 20px;
 	width: 200px;
-
 	padding: 20px 20px 0 0;
-
-	border-right: 1px solid #ccc;
-
+	border-right: 1px solid $separators_color;
 	text-align: right;
+	
+	h2 {
+		font-size: 20px;
+		font-family:Courier, monospace;
+		color: #333;
+		line-height: 20px;
+	}
+	
+	ul, #credits-main ul {
+		list-style-type: none;
+		margin: 20px 0;
+		font-size: 14px;
+	}
+	
+	li, #credits-main li {
+		line-height: 20px;
+	}
+	
+	hr {
+		border: none;
+		border-top: 1px solid $separators_color;
+		color: $separators_color;
+		background-color: $separators_color;
+	}
 }
 
-#sidebar h2 {
-	/* text-transform: uppercase; */
+#credits-sidebar {
+}
 
-	font-size: 20px;
-	/* font-family: Helvetica, sans-serif; */
+#credits-main {
+	display:none;	
+}
+
+#logo-box {
+	a {
+		color:#444;
+	}
+	a:hover {
+		text-decoration:none;
+	}	
+}
+
+#logo {
+	display:block;
+	width:200px;
+	top:0px;
+	left:0px;
+	background-image:url(/images/jes_logo-200.jpg);
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding-top:106px;
+	font-size: 24px;
 	font-family:Courier, monospace;
-
-	color: #333;
-
-	letter-spacing: 1px;
-
-	line-height: 20px;
-	margin-top: 10px;
+	
+	a:hover {
+		text-decoration:none;
+	}
 }
 
-#sidebar ul {
-	list-style-type: none;
-
-	margin: 20px 0;
+#motto {
+	font-size:12px;
 }
 
-#sidebar li {
-	font-size: 14px;
-	line-height: 20px;
-}
 
-#sidebar hr {
-	border: none;
-	border-top: 1px solid #ccc;
-	color: #ccc;
-	background-color: #ccc;
-}
+@media (max-width: $mobile_width)
+{
+	@mixin horiz-list {
+		ul {
+			text-align:center;
+			margin: 10px 0;
+		}
+		li {
+			display:inline-block;
+			text-align:center;
+			padding:0 12px 0 8px;
+			border-right: solid 2px $separators_color;
+		}
+		li:last-child {
+			border:none;
+		}
+		hr {
+			display:none;
+		}
+	}
+	
+	#sidebar {
+		position: absolute;
+		top: 0px;
+		left:0px;
+		width: 100%;
+		height: 60px;
+		padding: 0;
+		border:none;
+		text-align: center;
+		@include horiz-list;
+	}
+	
+	#main {
+		width: auto;
+		padding-top: 160px;
+		padding-left: 16px;
+		padding-right: 4px;
+		padding-bottom: 20px;
+	}
 
-blockquote {
-	border-left: 8px solid #ccc;
-	padding-left: 10px;
-	font-style: italic;
-	font-size: 18px;
-}
-blockquote p {
-	font-size: 18px;
-}
+	#logo-container {
+		text-align:center;
+	}
+	
+	#logo-box {
+		width:auto;
+		display:inline-block;
+		position:relative;
+	}
+	
+	#logo {
+		height:40px;
+		width:200px;
+		top:0px;
+		left:0px;
+		background-image:url(/images/jes_logo-200.jpg);
+		background-position:top left;
+		background-repeat:no-repeat;
+		background-size:contain;
+		padding-top:10px;
+		padding-left:100px;
+		font-size: 18px;
+		font-family:Courier, monospace;
+		text-align:left;
+	}
+	
+	#motto {
+		position:absolute;
+		top:32px;
+		left:100px;
+		height:32px;
+		padding:0;
+		font-size:12px;
+	}
+	
+	#main-options {
+		display:inline-block;
+		border-top: solid 1px $separators_color;
+		border-bottom: solid 1px $separators_color;
+		padding:8px 10px;
+		
+		li {
+			font-size:18px;
+		}
+	}
+	
+	#credits-sidebar {
+		display:none;
+	}
+	
+	#credits-main {
+		display:block;
+		text-align:center;
+		border-top: solid 1px $separators_color;
+		padding-top:10px;
+		@include horiz-list;
+	}
+	
+} 

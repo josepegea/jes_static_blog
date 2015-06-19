@@ -69,7 +69,7 @@ def links_to_translated_pages(item, options = {}, link_options = {})
     										item[:canonical_identifier], 
     										v[:language],
                         link_options)
-          str << "\n<li>\n"
+          str << "\n</li>\n"
         end
       end
     end

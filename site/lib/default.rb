@@ -31,6 +31,13 @@ end
 
 # Creates a localized link
 
+def l_url_for(identifier, language = nil)
+  curr_lang = language_code_of(@item)
+  lang = language || curr_lang
+  dest_item = translated_identifier(identifier, lang)
+  return dest_item.path
+end
+
 def l_link_to(label, identifier, language = nil, attributes = {})
   curr_lang = language_code_of(@item)
   lang = language || curr_lang
@@ -38,7 +45,12 @@ def l_link_to(label, identifier, language = nil, attributes = {})
   if dest_item[:language] != lang
     label += " (#{language_name_for_code(dest_item[:language])})"
   end
-  return link_to(label, dest_item, attributes)
+  if  dest_item[:canonical_identifier] != @item[:canonical_identifier] || 
+      curr_lang != dest_item[:language]
+    return link_to(label, dest_item, attributes)
+  else
+    return label
+  end
 end
 
 
