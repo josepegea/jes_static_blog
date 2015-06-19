@@ -54,7 +54,6 @@ end
 def localized_layout(ident, lang)
   # First, we look for the localized layout
   name = File.join('/', lang, ident, '/')
-  puts @site.layouts.to_s
   if @site.layouts.find {|l| l.identifier == name}
     return name
   else

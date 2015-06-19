@@ -1,14 +1,32 @@
 <!DOCTYPE HTML>
 <html lang="<%= @item[:language] || 'en' %>">
-  <head>
-    <meta charset="utf-8">
-    <title><%= @item[:title] %></title>
-    <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
-    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
-  </head>
-  <body>
-    <div id="main">
-      <%= yield %>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title><%= @item[:title] %></title>
+		<link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
+		<meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+	</head>
+	<body>
+	<div id="narrow_container">
+		<div id="main">
+			
+			<%= yield %>
+			
+		</div>
+			<div id="sidebar">
+			<nav>
+				<div id="logo-container">
+					<div id="logo-box">
+						<a href="<%= l_url_for('/') %>">
+							<span id="logo">
+								JosepEgea.com
+							</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	</body>
 </html>

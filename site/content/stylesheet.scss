@@ -12,9 +12,10 @@ $abstract_text_color 			:#777;
 
 $separators_color 				:#ccc;
  
-$mobile_width 	:640px;
+$mobile_width 					:640px;
 
-$max_page_width	:990px;
+$max_page_width					:990px;
+$narrow_page_width				:500px;
 
 * {
 	margin: 0px;
@@ -27,7 +28,7 @@ body {
 	background: $body_color;
 }
 
-#container {
+@mixin basic_container {
 	background: $page_color;
 	position: relative;
 	margin: 0;
@@ -35,9 +36,18 @@ body {
 	margin: 0;
 	top: 0px;
 	left: 0px;
-	max-width: $max_page_width;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+#container {
+	@include basic_container;
+	max-width: $max_page_width;
+}
+
+#narrow_container {
+	@include basic_container;
+	max-width: $narrow_page_width;	
 }
 
 a {
@@ -51,6 +61,10 @@ a:visited {
 
 a:hover {
 	text-decoration:underline;
+}
+
+.lang_link {
+	font-size:24px;
 }
 
 #main {
@@ -234,6 +248,13 @@ a:hover {
 		padding-left: 16px;
 		padding-right: 4px;
 		padding-bottom: 20px;
+	}
+
+	#narrow_container {
+		#main {
+			padding-top: 60px;
+			text-align:center;
+		}
 	}
 
 	#logo-container {
