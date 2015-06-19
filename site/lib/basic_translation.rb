@@ -89,6 +89,21 @@ def links_to_translated_pages(item, options = {}, link_options = {})
   return str
 end
 
+def meta_for_translated_pages(item, options = {})
+  strs = []
+  ignore_current = options[:ignore_current]
+  if (versions = translations_of(item)).size > 1
+    versions.each do |v|
+      lang = v[:language]
+  	  if !ignore_current || lang != item[:language]
+        url = l_url_for(item[:canonical_identifier], lang)
+        strs << "<link rel=\"alternate\" href=\"#{url}\" hreflang=\"#{lang}\" type=\"text/html\">"
+      end
+    end
+  end
+  return strs.join("\n")
+end
+
 def print_date(date)
   if !(date.is_a?(Date) || date.is_a?(Time))
     date = attribute_to_time(date)

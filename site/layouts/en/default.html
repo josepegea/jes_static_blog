@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<link rel=”canonical” href=”<%= @item.path %>” />
+		<%= meta_for_translated_pages(@item) %>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><%= @item[:title] %></title>
 		<link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">

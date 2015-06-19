@@ -2,6 +2,8 @@
 <html lang="<%= @item[:language] || 'en' %>">
 	<head>
 		<meta charset="utf-8">
+		<link rel=”canonical” href=”<%= @item.path %>” />
+		<link rel="alternate" href="<%= @item.path %>" hreflang="x-default" type="text/html">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><%= @item[:title] %></title>
 		<link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
