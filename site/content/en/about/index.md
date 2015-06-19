@@ -7,7 +7,11 @@ language: en
 
 # Who is Josep Egea
 
-> Entrepreneur, parent, IT guy, husband, photographer... Wearing many hats and always looking for a new puzzle to solve.
+<%= md_begin_block('div', :class => 'abstract') %>
+
+Entrepreneur, parent, IT guy, husband, photographer... Wearing many hats and always looking for a new puzzle to solve.
+
+<%= md_end_block %>
 
 Born in Barcelona, living in Madrid, thinking beyond geography. 
 

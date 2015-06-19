@@ -53,4 +53,45 @@ def l_link_to(label, identifier, language = nil, attributes = {})
   end
 end
 
+def html_options(options)
+  res = options.reduce('') do |memo, (key, value)|
+    memo + key.to_s + '="' + h(value) + '" '
+  end
+  return res
+end
+
+def enclose_block(text, container_type = 'div', options = {})
+  res = ""
+  res << "<#{container_type} #{html_options(options)} >\n"
+  res << text
+  res << "\n"
+  res << "</#{container_type}>\n"
+  return res
+end
+  
+# Encloses text in HTML containers for Markdown docs
+
+def md_include_html(html)
+  res = "{::options parse_block_html=\"true\" /}\n"
+  res << html
+  res << "\n{::options parse_block_html=\"false\" /}\n"
+  return res
+end
+
+def md_begin_block(container_type = 'div', options = {})
+  return md_include_html("<#{container_type} #{html_options(options)} >\n")
+end
+
+def md_end_block(container_type = 'div')
+  return md_include_html("</#{container_type}>\n")
+end
+
+def md_enclose_block(text, container_type = 'div', options = {})
+  res = ""
+  res << md_begin_block(container_type, options)
+  res << text
+  res << "\n"
+  res << md_end_block(container_type)
+  return res
+end
 

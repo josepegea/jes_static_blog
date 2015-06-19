@@ -9,7 +9,7 @@ abstract: "La semana pasada se cerró un importante período de mi vida. Suficie
 ---
 # <%= @item[:title] %>
 
-> <%= @item[:abstract] %>
+<%= md_enclose_block(@item[:abstract], 'div', :class => 'abstract') %>
 
 ## Una puerta se cierra ...
 
@@ -51,7 +51,7 @@ En ella, cuenta como ha hecho crecer su empresa, y cómo la fundó cuando ya hab
 
 Hay una parte de lo que dice que me llegó al alma:
 
-> Los cuarenta son el momento en que empiezas a darte cuenta de las cosas. Es sólo el comienzo, Siempre he creído que consolidar tu forma de pensar lleva su tiempo. Tienes que experimentar. Tienes que enfrentarte con diferentes etapas de tu vida.
+> Los cuarenta son el momento en que empiezas a darte cuenta de las cosas. Es sólo el comienzo. Siempre he creído que consolidar tu forma de pensar lleva su tiempo. Tienes que experimentar. Tienes que enfrentarte con diferentes etapas de tu vida.
 
 Estando en esta misma edad, no pude evitar conectar con esta línea de pensamiento. Y, desde luego, no me importaría llegar a tener el mismo éxito que él (o al menos una parte).
 

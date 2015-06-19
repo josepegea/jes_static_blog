@@ -7,7 +7,11 @@ language: es
 
 # Quién es Josep Egea
 
-> Empresario, padre, informático, marido, fotógrafo ... Me gusta tocar muchos palos y siempre ando interesado en nuevos retos.
+<%= md_begin_block('div', :class => 'abstract') %>
+
+Empresario, padre, informático, marido, fotógrafo ... Me gusta tocar muchos palos y siempre ando interesado en nuevos retos.
+
+<%= md_end_block %>
 
 Nacido en Barcelona, viviendo en Madrid y tratando de mirar más allá de las circunstancias geográficas.
 

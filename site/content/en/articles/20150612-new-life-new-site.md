@@ -9,7 +9,7 @@ abstract: "Last week I closed an important period in my life. Important enough t
 
 # <%= @item[:title] %>
 
-> <%= @item[:abstract] %>
+<%= md_enclose_block(@item[:abstract], 'div', :class => 'abstract') %>
 
 ## A door closes ...
 
