@@ -1,0 +1,16 @@
+subscription:
+  header: "Sigue en contacto"
+  abstract: "<p>¿Quieres mantenerte al día sobre mis proyectos?</p><p>Deja tu email aquí y te avisaré cuando haya novedades.</p><small>Poquísimos envíos y tolerancia cero con el correo basura. Tu email será siempre privado.</small>"
+  email_label: "Email"
+  language_label: "Idioma"
+  submit_button: "¡Vale, me fío de ti!"
+  
+layout:
+  built_with: "Creado con"
+  logo_credits: "Logo por Eva Egea"
+  motto: " Escritos e Ideas de Josep Egea"
+  options:
+    home: "Inicio"
+    articles: "Artículos"
+    about: "Acerca"
+    contact: "Contactar"

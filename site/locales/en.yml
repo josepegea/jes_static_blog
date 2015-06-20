@@ -1,0 +1,16 @@
+subscription:
+  header: "Get into the Inner Circle"
+  abstract: "<p>Do you want to be the first to know about news in my projects?</p><p> Leave your email address here and I'll send you timely updates.</p><small>Very low traffic and zero tolerance for spam. Your address will always be private.</small>"
+  email_label: "Email Address"
+  language_label: "Language"
+  submit_button: "OK, I trust you!"
+  
+layout:
+  built_with: "Built with"
+  logo_credits: "Logo by Eva Egea"
+  motto: "Writings and Ideas by Josep Egea"
+  options:
+    home: "Home"
+    articles: "Articles"
+    about: "About"
+    contact: "Contact"

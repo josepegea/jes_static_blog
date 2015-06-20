@@ -89,6 +89,15 @@ def links_to_translated_pages(item, options = {}, link_options = {})
   return str
 end
 
+def links_to_alternate_homes
+  if @item[:language] == 'es'
+    str = l_link_to("English Site", "/", "en")
+  else
+    str = l_link_to("Web en Español", "/", "es")
+  end
+  return enclose_block(str, 'li')
+end
+
 def meta_for_translated_pages(item, options = {})
   strs = []
   ignore_current = options[:ignore_current]
@@ -134,3 +143,10 @@ end
 def ordinalize(number)
   return "#{number}#{f_ord_for(number)}"
 end
+
+def translate(key_path, lang = @item[:language])
+  return LocaleManager.translate(key_path, lang)
+end
+
+alias t translate
+

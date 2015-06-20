@@ -50,6 +50,10 @@ body {
 	max-width: $narrow_page_width;	
 }
 
+p {
+	margin: 0.5em 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -67,11 +71,25 @@ a:hover {
 	font-size:24px;
 }
 
+input, option, select {
+	font-size:16px;
+	font-family: Helvetica, sans-serif;	
+}
+
+label {
+	display:block;
+	font-weight: bold;
+	font-size:14px;
+	font-family: Helvetica, sans-serif;	
+}
+
 #main {
 	padding-top: 40px;
 	padding-left: 280px;
 	padding-right: 20px;
 	padding-bottom: 20px;
+	
+	min-height: 450px;
 	
 	h1 {
 		font-size: 40px;
@@ -208,6 +226,20 @@ a:hover {
 	font-size:12px;
 }
 
+#subcription-form {
+	padding-left: 280px;
+	padding-right:40px;
+	.subscription-abstract {
+		font-size:16px;
+		background:$abstract_background_color;
+		padding:4px 12px 10px 12px;
+		margin: 4px 0 20px;
+	}
+}
+
+.field-group, .mc-field-group {
+	display:inline-block;
+}
 
 @media (max-width: $mobile_width)
 {
@@ -248,6 +280,7 @@ a:hover {
 		padding-left: 16px;
 		padding-right: 4px;
 		padding-bottom: 20px;
+		min-height: 0px;
 	}
 
 	#narrow_container {
@@ -315,4 +348,7 @@ a:hover {
 		@include horiz-list;
 	}
 	
+	#subcription-form {
+		padding-left: 16px;
+	}
 } 
