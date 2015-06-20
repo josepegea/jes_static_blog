@@ -1,0 +1,19 @@
+<% if SiteConfig.deploy 'track_stats' %>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.josepegea.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', <%= SiteConfig.deploy 'piwik_site' %>]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.josepegea.com/piwik/piwik.php?idsite=<%= SiteConfig.deploy 'piwik_site' %>" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<% end %>
