@@ -17,11 +17,22 @@ $mobile_width 					:640px;
 $max_page_width					:990px;
 $narrow_page_width				:500px;
 
+$button_bg_color				:#3F8DD2;
+$button_txt_color				:#fff;
+$button_bg_color_hv				:#2E6DB5;
+
 * {
 	margin: 0px;
 	padding: 0px;
 
 	font-family: Georgia, Palatino, serif;
+}
+
+@mixin rounded-corners($radius) {
+     -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -khtml-border-radius: $radius;
+    border-radius: $radius;
 }
 
 body {
@@ -71,9 +82,41 @@ a:hover {
 	font-size:24px;
 }
 
-input, option, select {
+input, select, button, .button {
 	font-size:16px;
-	font-family: Helvetica, sans-serif;	
+	font-family: Helvetica, sans-serif;
+	/* padding:8px; */
+	height:42px;
+	@include rounded-corners(8px);
+	border:3px solid #888;
+}
+
+option {
+	font-family: Helvetica, sans-serif;
+}
+
+select { 
+	padding: 8px 30px 8px 8px;
+	height:48px;
+	/* -webkit-appearance: menulist-button; */
+	-webkit-appearance: menulist-button;
+	/* -moz-appearance: none; */
+	background-color:#fff;
+	@include rounded-corners(8px);
+	border:3px solid #888;
+}
+
+button, .button {
+	-webkit-appearance: none;
+	@include rounded-corners(8px);
+	padding:0px 8px;
+	background-color:$button_bg_color;
+	color:$button_txt_color;
+	border:1px solid $button_bg_color;
+}
+
+button:hover, .button:hover {
+	background-color:$button_bg_color_hv;
 }
 
 label {
@@ -239,6 +282,7 @@ label {
 
 .field-group, .mc-field-group {
 	display:inline-block;
+	padding-right: 8px;
 }
 
 @media (max-width: $mobile_width)

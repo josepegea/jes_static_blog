@@ -13,7 +13,6 @@
 <div class="mc-field-group">
 	<label for="mce-LANG"><%= t "subscription.language_label" %> </label>
 	<select name="LANG" class="required" id="mce-LANG">
-	<option value=""></option>
 	<option value="en" <%= @item[:language] == 'en' ? 'selected' : '' %> >English</option>
 	<option value="es" <%= @item[:language] == 'es' ? 'selected' : '' %> >Español</option>
 	</select>
