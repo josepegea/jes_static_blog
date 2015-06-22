@@ -12,7 +12,11 @@ $abstract_text_color 			:#777;
 
 $separators_color 				:#ccc;
  
-$mobile_width 					:640px;
+$small_phone_width 				:320px;
+$phone_width 					:360px;
+$max_phone_width 				:500px;
+$tablet_width					:800px;
+$desktop_width					:1280px;
 
 $max_page_width					:990px;
 $narrow_page_width				:500px;
@@ -138,12 +142,13 @@ label {
 		font-weight: normal;
 		line-height: 40px;
 		letter-spacing: -1px;
+		margin-bottom:0.5em;
 	}
 	
 	p {
 		margin: 20px 0;
-		font-size: 15px;
-		line-height: 20px;
+		font-size: 18px;
+		line-height: 1.2em;
 	}
 	
 	ul, ol {
@@ -298,7 +303,7 @@ label {
 	padding-bottom:10px;
 }
 
-@media (max-width: $mobile_width)
+@media (max-width: $max_phone_width)
 {
 	@mixin horiz-list {
 		ul {
@@ -318,7 +323,7 @@ label {
 			display:none;
 		}
 	}
-	
+		
 	#sidebar {
 		position: absolute;
 		top: 0px;
@@ -338,6 +343,11 @@ label {
 		padding-right: 4px;
 		padding-bottom: 20px;
 		min-height: 0px;
+		h1 {
+			font-size: 32px;
+			line-height: 32px;
+			letter-spacing: -1px;
+		}
 	}
 
 	#narrow_container {
@@ -389,7 +399,7 @@ label {
 		padding:8px 10px;
 		
 		li {
-			font-size:18px;
+			font-size:16px;
 		}
 	}
 	
@@ -410,3 +420,51 @@ label {
 		background-image: none;
 	}
 } 
+
+@media (max-width: $small_phone_width)
+// This includes the phone CSS. Only additional adjustments need to be applied here.
+{
+	#main-options {
+		li {
+			font-size:14px;
+		}
+	}
+}
+
+@media (max-width: $tablet_width) and (min-width: $max-phone_width + 1)
+{
+	#main {
+		padding-left: 180px;
+		padding-right: 10px;
+	
+		min-height: 450px;
+	
+		h1 {
+			font-size: 36px;
+		}	
+	}
+
+	#sidebar {
+		left: 10px;
+		width: 140px;
+	}
+
+	#logo {
+		display:block;
+		width: 140px;
+		background-size:140px;
+		padding-top:80px;
+		font-size: 18px;	
+	}
+
+	#motto {
+		font-size:12px;
+	}
+
+	#subcription-form {
+		padding-left: 180px;
+		padding-right: 10px;
+		background-position: 40px 0px;
+	}
+	
+}

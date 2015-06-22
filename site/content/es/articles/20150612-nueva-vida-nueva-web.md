@@ -1,5 +1,5 @@
 ---
-title: 'Nueva Vida, ¡Nueva Web!'
+title: 'Nueva Vida, Nueva Web'
 kind: article
 created_at: '2015-06-12'
 canonical_identifier: '/articles/20150612-new-site-new-life'
