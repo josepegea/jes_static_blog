@@ -14,7 +14,7 @@ $separators_color 				:#ccc;
  
 $small_phone_width 				:320px;
 $phone_width 					:360px;
-$max_phone_width 				:500px;
+$max_phone_width 				:550px;
 $tablet_width					:800px;
 $desktop_width					:1280px;
 
@@ -157,7 +157,6 @@ label {
 	
 	li {
 		font-size: 15px;
-		line-height: 20px;
 	}
 	
 	ul li {
@@ -170,7 +169,7 @@ label {
 		padding-left: 10px;
 		font-style: italic;
 		font-size: 24px;
-		line-height: auto;
+		line-height: 1em;
 		background-color:$blockquote_background_color;
 		color:$blockquote_text_color;
 	
@@ -188,7 +187,6 @@ label {
 	.abstract {
 		font-style: italic;
 		font-size: 18px;
-		line-height: auto;
 		color:$abstract_text_color;
 		line-height: 1.2em;
 		background:$abstract_background_color;
@@ -215,7 +213,7 @@ label {
 		font-size: 20px;
 		font-family:Courier, monospace;
 		color: #333;
-		line-height: 20px;
+		line-height: 1em;
 	}
 	
 	ul, #credits-main ul {
@@ -301,6 +299,20 @@ label {
 	display:inline-block;
 	padding-right: 8px;
 	padding-bottom:10px;
+}
+
+.article-item-header {
+	font-size:24px;
+}
+
+.article-item-date {
+	display:inline;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.article-item-abstract {
+	font-size:18px;
 }
 
 @media (max-width: $max_phone_width)

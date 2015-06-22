@@ -16,10 +16,10 @@ language: en
 
 <h2>Latest Articles</h2>
 
-	<ul>
+	<ul class="article-list">
 		
 	<% news.each do |art| %>
-		<li>
+		<li class="article-item">
 			<%= render 'partials/article_item', :article => art %>
 		</li>
 	<% end %>
