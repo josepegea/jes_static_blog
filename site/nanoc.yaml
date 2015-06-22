@@ -72,3 +72,6 @@ checks:
     # E.g.:
     #   exclude: ['^/server_status']
     exclude: []
+
+# Custom setup
+base_url: 'http://www.josepegea.com'

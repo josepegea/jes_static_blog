@@ -16,6 +16,10 @@
 # Everything we put in passthrough rules gets copied straighforward to output
 passthrough '/scripts/*/'
 
+compile 'sitemap' do
+  filter :erb
+end
+
 compile '*' do
   if item[:extension] == 'md'
     filter :erb
@@ -31,6 +35,10 @@ compile '*' do
     filter :erb
     layout layout_for_item(item)
   end
+end
+
+route 'sitemap' do
+  item.identifier.chop + '.xml'
 end
 
 route '*' do

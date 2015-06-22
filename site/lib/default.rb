@@ -10,6 +10,7 @@ include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::Text
+include Nanoc::Helpers::XMLSitemap
 
 # Returns the last 'count' articles
 

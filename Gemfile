@@ -17,4 +17,8 @@ gem 'rb-readline'
 # Markdown support
 gem 'kramdown'
 
+# Needed for SiteMaps
+gem "builder"
+
+# Basic Ruby Kung-Fu
 gem "activesupport"

@@ -1,0 +1,2 @@
+<%= xml_sitemap :items => @items.reject{ |i| i[:is_hidden] || i.binary? || ['css', 'scss', 'xml', 'js'].include?(i[:extension])} %>
+	
