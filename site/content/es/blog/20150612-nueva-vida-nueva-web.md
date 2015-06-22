@@ -2,9 +2,8 @@
 title: 'Nueva Vida, Nueva Web'
 kind: article
 created_at: '2015-06-12'
-canonical_identifier: '/articles/20150612-new-site-new-life'
+canonical_identifier: '/blog/20150612-new-site-new-life'
 language: es
-abstract: "Last week I closed an important period in my life. Important enough to convince me to, finally, get my act together, and launch the personal website I've been meaning to start since forever."
 abstract: "La semana pasada se cerró un importante período de mi vida. Suficientemente importante, de hecho, para convencerme, al fin, de poner en marcha mi web personal, algo que llevo años dejando para mañana."
 ---
 # <%= @item[:title] %>
