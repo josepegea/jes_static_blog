@@ -1,6 +1,7 @@
 subscription:
   header: "Get into the Inner Circle"
-  abstract: "<p>Do you want to be the first to know about news in my projects?</p><p> Leave your email address here and I'll send you timely updates.</p><small>Very low traffic and zero tolerance for spam. Your address will always be private.</small>"
+  abstract: "Leave your email address here and I'll send you news and timely updates about my projects."
+  assurance: "Very low traffic and zero tolerance for spam. Your address will always be private."
   email_label: "Email Address"
   language_label: "Language"
   submit_button: "OK, I trust you!"
