@@ -18,9 +18,10 @@ La verdad es que no uso mucho las redes sociales. Si quieres contactar conmigo, 
 
 Aun así, estoy en algunas de ellas:
 
-*	**Twitter** [@josep_egea](http://www.twitter.com/josep_egea)
-*	**Google+** [Josep Egea](https://www.google.com/+JosepEgea)
-*	**GitHub** [josep-egea](https://github.com/josep-egea)
+*	**Twitter** -- [@josep_egea](http://www.twitter.com/josep_egea)
+*	**Google+** -- [Josep Egea](https://www.google.com/+JosepEgea)
+*	**GitHub** -- [josep-egea](https://github.com/josep-egea)
+*	**LinkedIn** -- [Josep Egea](https://es.linkedin.com/in/jegea)
 
 ## En carne y hueso
 

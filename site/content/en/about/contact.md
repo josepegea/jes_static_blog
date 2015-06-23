@@ -18,11 +18,11 @@ Truth is that I'm not very active in social networks. If you really want to reac
 
 That said, I do have some social profiles.
 
-*	**Twitter** [@josep_egea](http://www.twitter.com/josep_egea)
+*	**Twitter** -- [@josep_egea](http://www.twitter.com/josep_egea)
+*	**Google+** -- [Josep Egea](https://www.google.com/+JosepEgea)
+*	**GitHub** -- [josep-egea](https://github.com/josep-egea)
+*	**LinkedIn** -- [Josep Egea](https://es.linkedin.com/in/jegea)
 
-*	**Google+** [Josep Egea](https://www.google.com/+JosepEgea)
-
-*	**GitHub** [josep-egea](https://github.com/josep-egea)
 
 ## Real life
 
