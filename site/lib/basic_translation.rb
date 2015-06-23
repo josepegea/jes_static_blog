@@ -1,3 +1,4 @@
+# encoding: utf-8
 # Basic helpers for managing translations
 # Adapted from http://nanoc.ws/docs/guides/creating-multilingual-sites/
 
