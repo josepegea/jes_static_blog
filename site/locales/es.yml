@@ -10,6 +10,7 @@ layout:
   built_with: "Creado con"
   logo_credits: "Logo por Eva Egea"
   motto: " Escritos e Ideas de Josep Egea"
+  rss_feed: "Feed RSS"
   options:
     home: "Inicio"
     articles: "Blog"

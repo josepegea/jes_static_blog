@@ -1,0 +1,13 @@
+---
+language: en
+canonical_identifier: feed.xml
+title: "Josep Egea's Blog (English Feed)"
+---
+<%= atom_feed( 	:limit => 10,
+				:articles => get_last_news(:count => 10),
+				:excerpt_proc => Proc.new { |a| a[:abstract]},
+				:title => @item[:title],
+				:author_name => "Josep Egea",
+				:author_uri => "http://www.josepegea.com"
+			)
+	 %>

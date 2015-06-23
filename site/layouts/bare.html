@@ -8,6 +8,8 @@
 		<title><%= @item[:title] %></title>
 		<link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
 		<meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+		<link rel="alternate" type="application/atom+xml" href="/en/feed.xml" title="<%= translated_identifier('feed.xml', 'en')[:title]%>" />
+		<link rel="alternate" type="application/atom+xml" href="/es/feed.xml" title="<%= translated_identifier('feed.xml', 'es')[:title]%>" />
 	</head>
 	<body>
 	<div id="narrow_container">

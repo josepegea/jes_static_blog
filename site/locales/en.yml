@@ -10,6 +10,7 @@ layout:
   built_with: "Built with"
   logo_credits: "Logo by Eva Egea"
   motto: "Writings and Ideas by Josep Egea"
+  rss_feed: "RSS Feed"
   options:
     home: "Home"
     articles: "Blog"
