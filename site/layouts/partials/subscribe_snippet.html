@@ -1,14 +1,17 @@
+<h2><%= t "subscription.header" %></h2>
+
+<div class="form-container">
+	
+	<div class="subscription-abstract">
+		<p>
+			<%= t "subscription.abstract" %>
+		</p>
+	</div>
+
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="//josepegea.us11.list-manage.com/subscribe/post?u=84a7ea2bb1d080d26011eb3dc&amp;id=0b7ecbd525" method="post" name="mc-embedded-subscribe-form" target="_blank" >
     <div id="mc_embed_signup_scroll">
-	<h2><%= t "subscription.header" %></h2>
-	<div class="subscription-abstract">
-		<%= t "subscription.abstract" %>
-	</div>
-	<div class="subscription-assurance">
-		<%= t "subscription.assurance" %>
-	</div>
 <div class="mc-field-group">
 	<label for="mce-EMAIL"><%= t "subscription.email_label" %> </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -33,3 +36,9 @@
 </div>
 
 <!--End mc_embed_signup-->
+
+</div>
+
+<div class="subscription-assurance">
+	<%= t "subscription.assurance" %>
+</div>

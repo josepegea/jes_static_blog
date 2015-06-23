@@ -16,3 +16,5 @@ layout:
     articles: "Blog"
     about: "Acerca"
     contact: "Contactar"
+  footer:
+    credits: "Desarrollado y Escrito por Josep Egea, 2015"

@@ -19,8 +19,8 @@ $separators_color 				:#ccc;
  
 $small_phone_width 				:320px;
 $phone_width 					:360px;
-$max_phone_width 				:550px;
-$tablet_width					:800px;
+$max_phone_width 				:720px;
+$tablet_width					:850px;
 $desktop_width					:1280px;
 
 $max_page_width					:990px;
@@ -303,14 +303,17 @@ label {
 	background-image: url(/images/mail_envel-120.png);
 	background-position: 140px 0px;
 	background-repeat:no-repeat;
-	.subscription-abstract {
+	.form-container {
 		font-family: Helvetica, sans-serif;
-		font-size:16px;
 		background:$abstract_background_color;
 		color:#4f65a5;
 		padding:10px 12px 10px 12px;
 		margin: 4px 0 0px;
 		border-left:solid 16px #6e7eab;
+	}
+	.subscription-abstract {
+		font-size:16px;
+		margin-bottom:1em;
 	}
 	.subscription-assurance {
 		font-family: Helvetica, sans-serif;
@@ -338,6 +341,13 @@ label {
 
 .article-item-abstract {
 	font-size:18px;
+}
+
+#footer-credits {
+	font-size: 12px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:40px;
 }
 
 @media (max-width: $max_phone_width)
@@ -449,6 +459,7 @@ label {
 		text-align:center;
 		border-top: solid 1px $separators_color;
 		padding-top:10px;
+		padding-bottom:10px;
 		@include horiz-list;
 	}
 	
