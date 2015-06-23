@@ -17,7 +17,7 @@ Last week I ended my involvement with [Evadium](http://www.evadium.com), the onl
 
 During all these years, David and I have worked very hard to grow the company from zero to its current state. 
 
-Nowadays, Evadium provides getaways and short trips for thousands of travelers every year, and has managed to build a very attractive catalogue of destinations and activities all around Spain. If you enjoy getting yourself lost in beautiful places, love the taste of great cuisine or would like to discover some of the greatest wineries around Spain, you definitely should [book your next short holidays with Evadium](http://www.evadium.com).
+Nowadays, Evadium provides getaways and short trips for thousands of travellers every year, and has managed to build a very attractive catalogue of destinations and activities all around Spain. If you enjoy getting yourself lost in beautiful places, love the taste of great cuisine or would like to discover some of the greatest wineries around Spain, you definitely should [book your next short holidays with Evadium](http://www.evadium.com).
 
 While there, I got to work in lots of different and challenging tasks and projects. From building and running the company's website and booking systems, to juggling my time between marketing, management, customer relationship, logistics and the myriad of other things that need to be done in a growing company.
 
