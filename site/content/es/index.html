@@ -6,9 +6,22 @@ language: es
 ---
 <h1>La Web de Josep Egea </h1>
 
-<p>¡Gracias por visitar mi web!</p>
+<div class="abstract">
+	<p>
+		Emprendedor, informático y fotógrafo, en el orden en que prefieras.
+	</p>
+</div>
 
 <p>Aquí encontrarás escritos, fotos y noticias sobre mis proyectos.</p>
+
+<div class="notice">
+	<h2>Proyectos en Ruby on Rails</h2>
+	<p>
+	En la actualidad soy programador web <strong>freelance</strong> con experiencia en <strong>Ruby on Rails</strong>. 
+	</p>
+	<p>Si necesitas ayuda en algún proyecto, <%= l_link_to "contacta conmigo", '/about/contact' %>. Puedes ver más detalles <%= l_link_to "aquí", "/about/tech_bio" %>.
+	</p>
+</div>
 
 <p>Si quieres más detalles sobre mí, consulta la página <%= l_link_to("Acerca de Josep", '/about/') %></p>
 
