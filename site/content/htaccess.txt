@@ -1,0 +1,6 @@
+---
+is_hidden: true
+---
+# Force access with the www prefix
+RewriteCond %{HTTP_HOST} !^www.
+RewriteRule ^/(.*)$ http://www.%{HTTP_HOST}/$1 [R=301]

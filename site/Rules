@@ -15,6 +15,7 @@
 
 # Everything we put in passthrough rules gets copied straighforward to output
 passthrough '/scripts/*/'
+passthrough '/.htaccess/'
 
 compile '*' do
   if item[:extension] == 'md'
@@ -27,7 +28,7 @@ compile '*' do
     # don’t filter plain stylesheets
   elsif item.binary?
     # don’t filter binary items
-  elsif ['xml'].include?(item[:extension])
+  elsif ['xml', 'txt'].include?(item[:extension])
     # No layout for feeds, sitemaps, etc
     filter :erb
   else
@@ -38,6 +39,10 @@ end
 
 route 'sitemap' do
   item.identifier.chop + '.xml'
+end
+
+route 'htaccess' do
+  '/.htacceess'
 end
 
 route '*' do
