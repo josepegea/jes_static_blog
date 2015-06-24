@@ -42,7 +42,7 @@ route 'sitemap' do
 end
 
 route 'htaccess' do
-  '/.htacceess'
+  '/.htaccess'
 end
 
 route '*' do
