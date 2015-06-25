@@ -1,6 +1,7 @@
 ---
 title: 'New Life, New Site!'
 kind: article
+has_comments: true
 created_at: '2015-06-12'
 canonical_identifier: '/blog/20150612-new-site-new-life'
 language: en

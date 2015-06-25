@@ -329,6 +329,12 @@ label {
 	padding-bottom:10px;
 }
 
+#comments-block {
+	padding-left: 280px;
+	padding-right:40px;
+	padding-bottom:20px;
+}
+
 .article-item-header {
 	font-size:24px;
 }
@@ -467,6 +473,11 @@ label {
 		padding-left: 16px;
 		background-image: none;
 	}
+	
+	#comments-block {
+		padding-left: 16px;
+	}
+	
 } 
 
 @media (max-width: $small_phone_width)
@@ -513,6 +524,10 @@ label {
 		padding-left: 180px;
 		padding-right: 10px;
 		background-position: 40px 0px;
+	}
+	#comments-block {
+		padding-left: 180px;
+		padding-right: 10px;
 	}
 	
 }

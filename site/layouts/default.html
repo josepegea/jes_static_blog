@@ -18,10 +18,18 @@
 			<%= yield %>
 			
 		</div>
-		<footer>
-			<div id="subcription-form">
-				<%= render 'partials/subscribe_snippet' %>
+		
+		<div id="subcription-form">
+			<%= render 'partials/subscribe_snippet' %>
+		</div>
+
+		<% if @item[:has_comments] %>			
+			<div id="comments-block">
+				<%= render 'partials/comments_snippet' %>
 			</div>
+		<% end %>
+		
+		<footer>
 			<ul id="credits-main">
 				<li>
 					<a href="/<%= @item[:language] %>/feed.xml" type="application/atom+xml">
