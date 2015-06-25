@@ -149,5 +149,14 @@ def translate(key_path, lang = @item[:language])
   return LocaleManager.translate(key_path, lang)
 end
 
+def language_for_disquss(lang = @item[:language])
+  case lang.to_s
+  when 'es'
+    return "es_ES"
+  else
+    return 'en'
+  end
+end
+
 alias t translate
 
