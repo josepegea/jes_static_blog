@@ -28,6 +28,8 @@ Having worked both as a developer and a consultant, the number of technologies I
 
 Anyway, I'm specially keen of the years I spent using [NeXT](https://en.wikipedia.org/wiki/NeXT) computers and NeXTstep developer tools, around the 90s, when Objective-C was seldom known and seemed like a dead-end career direction. Go and [see for yourself](http://markmail.org/message/cvov2pbnnirinp23). I still have my old [NeXTstation Color](https://en.wikipedia.org/wiki/NeXTstation) in its original packaging, although it hasn't been powered on for some years...
 
+You can see a <%= l_link_to("more detailed CV here", "/other/jes-cv-it")%>.
+
 ## With a pragmatic approach
 
 As much as I enjoy IT for its own sake, along these years I've acquired an increasingly pragmatic vision about the field, having lived through a number of the tidal waves that periodically shake this industry, just to re-invent the wheel in newer and fancier colors.

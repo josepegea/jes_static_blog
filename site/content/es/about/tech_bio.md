@@ -28,6 +28,8 @@ Durante mis años como programador y consultor, el número de tecnologías con l
 
 De todos modos, estoy especialmente orgulloso de los años en que estuve trabajando con [NeXT](https://en.wikipedia.org/wiki/NeXT) y el entorno de desarrollo NeXTstep, allá en los años 90, cuando casi nadie conocía Objective-C y parecía una vía muerta en cuanto a progresión profesional. ¡Tengo [las pruebas](http://markmail.org/message/cvov2pbnnirinp23)! Aún conservo mi antigua [NeXTstation Color](https://en.wikipedia.org/wiki/NeXTstation), con su embalaje original, aunque ya hace unos años que no la he puesto en marcha ...
 
+Puedes ver más detalles a <%= l_link_to("en mi CV", "/other/jes-cv-it")%>.
+
 ## Y una visión pragmática, ante todo
 
 Por mucho que me gusta la informática en sí misma, a lo largo de estos años me he ido volviendo cada vez más pragmático al usarla, tras haber vivido bastantes de los movimientos pendulares que periódicamente sacuden esta industria, en los que todo debe ser reinventado, y acaba pareciéndose sospechósamente a lo que ya teníamos. 

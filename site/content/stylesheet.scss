@@ -162,10 +162,11 @@ label {
 	
 	li {
 		font-size: 15px;
+    padding-bottom:8px;
 	}
 	
 	ul li {
-		list-style-type: square;
+		list-style-type: disc;
 	}
 	
 	blockquote {
@@ -356,6 +357,38 @@ label {
 	padding-bottom:40px;
 }
 
+.cv {
+  h2 {
+    padding-bottom:8px;    
+  }
+  h3 {
+    padding-top:8px;
+    border-bottom:solid 1px;
+    position:relative;
+    i, em {
+      position:absolute;
+      display:block;
+      left:-170px;
+      width:150px;
+      text-align:right;
+      font-weight:normal;
+      font-style:normal;
+      color:#888;
+    }
+    b, strong {
+      font-size:16px;
+      color:#888;
+      padding-left:1em;
+      display:block;
+    }
+  }
+  .abstract {
+    ul {
+      padding:8px;
+    }
+  }
+}
+
 @media (max-width: $max_phone_width)
 {
 	@mixin horiz-list {
@@ -477,8 +510,26 @@ label {
 	#comments-block {
 		padding-left: 16px;
 	}
-	
-} 
+  
+  .cv {
+    h3 {
+      i, em {
+        position:relative;
+        display:block;
+        left:0px;
+        width:auto;
+        text-align:left;
+      }
+      b, strong {
+        font-size:16px;
+        color:#888;
+        padding-left:1em;
+        display:inline;
+      }
+    }
+  }   
+}
+
 
 @media (max-width: $small_phone_width)
 // This includes the phone CSS. Only additional adjustments need to be applied here.
