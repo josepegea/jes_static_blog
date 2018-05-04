@@ -12,7 +12,7 @@ language: en
 
 <%= md_begin_block('div', :class => 'abstract') %>
 
-* Freelance **Full-Stack Web Developer**, experienced with **Ruby on Rails**.  
+* Freelance **Full-Stack Web Developer**, with deep experience in **Ruby on Rails** and other Web technologies.
 * Based in Madrid, Spain, available for **remote work worldwide**.   
 
 <%= md_end_block %>
@@ -23,32 +23,37 @@ language: en
 
 ## Main Areas of Expertise
 
+Full-stack web development, including standalone servers, **REST API** servers, Server Side Applications and **Single Page Applications** connected to one or many APIs.
+
 ### Web Applications Developer
 
-* **Ruby** (versions 1.8.x - 2.2.x) and **Ruby on Rails** (versions 1.x - 4.x).
-* **PostgreSQL** up to 9.4.
-* **HTML5**, **CSS3** - Styling using **SASS** and **Twitter Bootstrap 3**.
-* **Javascript** and **CoffeScript**. **JQuery**, **Prototype** and smaller frameworks, like **LeafletJS**, **OpenLayers** and others.
-* Ruby testing frameworks: **RSpec**.
-* Ruby Gems: **Devise**, **ActiveAdmin**, **HAML**, **RMagick**, **Globalize**, **PaperTrail**, **Nokogiri**, **Prawn** (PDF generation) and many others.
+* **Ruby** (versions 1.8.x - 2.5.x) and **Ruby on Rails** (versions 1.x - 5.x).
+* **SQL**: **PostgreSQL** and **MySQL** including **Percona**
+* **Redis**, **Sidekiq**
+* Interfacing with cloud services from **Amazon** ( **S3**, **EC2**, ...), **Google** (**Big Query**, **Storage**, ...) and others.
+* **RAML** for API documentation.
+* **HTML5**, **CSS3** - Styling using **SASS** and **Twitter Bootstrap**.
+* **Javascript**, **TypeScript** and **CoffeScript**. Usage of **Node**, **NPM**, **Webpack** and related tools.
+* **Angular 4**, **jQuery** and smaller libraries, like **LeafletJS**, **OpenLayers** and others.
+* Ruby testing frameworks: **RSpec**, **Capybara**
+* Ruby Gems: **Devise**, **Simple Form**, **Formtastic**, **ActiveModelSerializer**, **ActiveAdmin**, **HAML**, **RMagick**, **Globalize**, **PaperTrail**, **Nokogiri**, **Prawn** (PDF generation) and many, many others.
 * Standalone web sites using **Nanoc**.
 
 ### Development Tools and Processes
 
-* Source Control Management using **Git** and **Subversion**.
-* Basic knowledge of **Agile Methods** and **SCRUM**.
-* Basic knowledge of **Test Driven Development**.
-
+* Source Control Management with **Git** and **Subversion**, using **GitHub**, **BitBucket** and **GitLab**.
+* **Agile Methodologies**: **Scrum**, **Kanban** using **Jira**, **Trello**, **Asana** among other tools.
+* **Test Driven Development (TDD)**.
+* Used to work in geographically distributed teams, using **Slack**, **Skype**, **Hangouts**, **Zoom**, **Email** and other communication tools.
 
 ###  Deployment and Server Administration
 
-* **Apache**, **Phusion Passenger** and **Lighttpd**.
-* **Linux** (Ubuntu) and **OpenSolaris**.
+* **Apache**, **Phusion Passenger**, etc.
+* **Linux** (Ubuntu, Debian) and **OpenSolaris**.
 * UNIX server software like **Postfix** (SMTP), **Dovecot** (IMAP) and others.
-* Deployment to public cloud services: **Joyent**, **Digital Ocean** and to private virtual servers.
+* Deployment to public cloud services: **AWS**, **GCP**, **Joyent**, **Digital Ocean** and to private virtual servers.
 * Basic knowledge of virtualization and container methods: **Vagrant**, **Docker** and others.
-* Basic knowledge of deployment tools: **Capistrano**, **Chef**, **Puppet** and others.
-* Experience integrating apps with third party services: **Mandrill** emailing services, **CloudFlare**, different **payment processing gateways** and others.
+* Basic knowledge of infrastructure orchestration tools: **Ansible** and others.
 
 ### Other skills
 
@@ -56,10 +61,22 @@ language: en
 * Involved in **Object Oriented** Software **Design** and **Programming** since the early 90s.
 * Past experience with **Cocoa** frameworks and their ancestors (**OpenStep** and **NeXTstep**).
 * **UNIX** programming environment and tools, including **Lex**, **Yacc** and derivatives.
+* **EMACS** user.
 * Basic knowledge of the **Semantic Web** technologies and tools: RDF, OWL, SPARQL and others.
 
 
 ## Relevant Experience
+
+### ***2015 - Present day*** Freelance software developer
+
+#### [Platform161 - https://www.platform161.com](https://www.platform161.com)
+**Senior Full-Stack Software Developer**, evolving a big Ruby on Rails application that includes a multitenant server-side web app, 2 full-fledged APIs and a newly built Angular 4 SPA that connects to the APIs. Working with an international team of around 15 developers, and using tools like Percona MySQL, Google Big Query and others, the system deals with several TBs of information serving hundreds of companies around the world.
+
+#### [Human Benefits - http://www.humanbenefits.com](http://www.humanbenefits.com)
+**Senior Full-Stack Software Developer**. Joined the project after some months of work to evolve and grow a newly designed HR and employee benefits application. Using Ruby on Rails, PostgreSQL and external tools like HelloSign (for document signing), and together with a UI/UX designer, we built a proof of concept app required for the first funding stages of the startup.
+
+#### [Kolau - https://www.kolau.com](https://www.kolau.com)
+**Ruby on Rails consultant** and general application architecture adviser during the building of the first version of the app, including DB design, code organization and application building blocks.
 
 ### *Evadium.com **2005 - 2015*** Co-Founder and Technical Lead
 
@@ -90,9 +107,9 @@ As part of the viability study for a side project, I developed a prototype for a
 
 Unfortunately, further business case study showed that future viability was not as promising as once appeared, so I suspended the project to focus on other opportunities.
 
-For the prototype I developed a Ruby on Rails 3.2 web application that included modules for general photo management, including cataloguing, resizing, thumbnailing, as well as general content management for the site pages, photographers, etc.
+For the prototype I developed a Ruby on Rails 3.2 web application with several modules for general photo management, including cataloguing, resizing, thumbnailing, as well as general content management for the site pages, photographers, etc.
 
-**Relevant technologies**: Ruby 1.9.3, Rails 3.2, PostgreSQL 9.1, ImageMagic, RMagick, Devise, ActiveAdmin, Globalize, Bootstrap 3, SASS, Liquid (template processing), JQuery and JQuery Panzoom.
+**Relevant technologies**: Ruby 1.9.3, Rails 3.2, PostgreSQL 9.1, ImageMagic, RMagick, Devise, ActiveAdmin, Globalize, Bootstrap 3, SASS, Liquid (template processing), jQuery and jQuery Panzoom.
 
 
 ### *Penteo ICT Analyst **2000-2007*** IT Analyst, Consultant and Manager
@@ -121,7 +138,7 @@ We built accounting, sales and production management applications using DOS and 
 
 ### ***1990-2000*** Freelance writer and translator for IT magazines
 
-For several years, I worked with several technical magazines and publications translating content written in English by the American headquarters and adapting it for the Spanish market.
+For several years, I worked with various technical magazines and publications translating content written in English by the American headquarters and adapting it for the Spanish market.
 
 With the time, I also wrote original content for those publishers, centered around operating systems (and Linux in particular), software development, new tools, etc.
 

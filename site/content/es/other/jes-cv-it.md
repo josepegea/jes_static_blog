@@ -12,7 +12,7 @@ language: es
 
 <%= md_begin_block('div', :class => 'abstract') %>
 
-* **Programador Web Freelance** con experiencia en **Ruby on Rails**.
+* **Programador Web Full-Stack Freelance** con amplia experiencia en **Ruby on Rails** y otras tecnologías Web.
 * Con sede en Madrid, disponible para trabajo **en remoto** a nivel **mundial**.   
 
 <%= md_end_block %>
@@ -25,30 +25,33 @@ language: es
 
 ### Desarrollador de Aplicaciones Web
 
-* **Ruby** (versiones 1.8.x - 2.2.x) y **Ruby on Rails** (versiones 1.x - 4.x).
-* **PostgreSQL** hasta 9.4.
-* **HTML5**, **CSS3** - Uso de **SASS** y **Twitter Bootstrap 3**.
-* **Javascript** y **CoffeScript**. **JQuery**, **Prototype** y otros frameworks, como **LeafletJS**, **OpenLayers** y otros.
-* Testing en Ruby: **RSpec**.
-* Ruby Gems: **Devise**, **ActiveAdmin**, **HAML**, **RMagick**, **Globalize**, **PaperTrail**, **Nokogiri**, **Prawn** (generación de PDF) y muchas otras.
+* **Ruby** (versionds 1.8.x - 2.5.x) y **Ruby on Rails** (versionds 1.x - 5.x).
+* **SQL**: **PostgreSQL** y **MySQL** incluyendo **Percona**
+* **Redis**, **Sidekiq**
+* Conexión con servicios cloud de **Amazon** ( **S3**, **EC2**, ...), **Google** (**Big Query**, **Storage**, ...) y otros.
+* **RAML** para documentación de APIs.
+* **HTML5**, **CSS3**, **SASS** y **Twitter Bootstrap**.
+* **Javascript**, **TypeScript** y **CoffeScript**. Uso de **Node**, **NPM**, **Webpack** y herramientas relacionadas.
+* **Angular 4**, **jQuery** y otras librerías JS, como **LeafletJS**, **OpenLayers** entre otras.
+* Testing en Ruby: **RSpec**, **Capybara**
+* Ruby Gems: **Devise**, **Simple Form**, **Formtastic**, **ActiveModelSerializer**, **ActiveAdmin**, **HAML**, **RMagick**, **Globalize**, **PaperTrail**, **Nokogiri**, **Prawn** (Generación de PDF) y multitud de otras.
 * Sedes web estáticas utilizando **Nanoc**.
 
 ### Herramientas y Metodologías de Desarrollo
 
-* Gestión de Versiones con **Git** y **Subversion**.
-* Conocimientos básicos de **Metodologías Ágiles** y **SCRUM**.
-* Conocimientos básicos de **TDD**.
-
+* Gestión de Versiones con **Git** y **Subversion** usando **GitHub**, **BitBucket** y **GitLab**.
+* **Metodologías Ágiles**: **SCRUM**, **Kanban** usando **Jira**, **Trello**, **Asana** entre otras herramientas.
+* **TDD**.
+* Habituado a trabajar en equipos geográficamente dispersos, usando **Slack**, **Skype**, **Hangouts**, **Zoom**, **Email** y otras herramientas de comunicación similares.
 
 ###  Operación y Administración
 
-* **Apache**, **Phusion Passenger** y **Lighttpd**.
-* **Linux** (Ubuntu) y **OpenSolaris**.
+* **Apache**, **Phusion Passenger**, etc
+* **Linux** (Ubuntu), Debian y **OpenSolaris**.
 * Servidores en UNIX como **Postfix** (SMTP), **Dovecot** (IMAP) y otros.
-* Servicios Cloud: **Joyent**, **Digital Ocean** y servidores virtuales privados.
+* Servicios Cloud de **AWS**, **GCP**, **Joyent**, **Digital Ocean** y servidores virtuales privados.
 * Conocimientos básicos de virtualización y contenedores: **Vagrant**, **Docker** y otros.
-* Conocimientos básicos de herramientas de configuración remota: **Capistrano**, **Chef**, **Puppet** y otras.
-* Experiencia integrando aplicacioness con servicios de terceros: **Mandrill** (email), **CloudFlare**, diferentes **pasarelas de pago** y otros.
+* Conocimientos básicos de herramientas de orquestación: **Ansible** y otras.
 
 ### Otros conocimientos
 
@@ -56,10 +59,22 @@ language: es
 * Trabajando con metodologías **Orientadas a Objetos** desde los 90, tanto en diseño como en programación.
 * Larga experiencia con **Cocoa** y los frameworks que le precedieron (**OpenStep** y **NeXTstep**).
 * Entorno de programación y herramientas **UNIX** , incluyendo **Lex**, **Yacc** y derivados.
+* Usuario de **EMACS**.
 * Conocimientos básicos de las tecnologías y herramientas de la **Web Semántica**: RDF, OWL, SPARQL y otras.
 
 
 ## Experiencia principal
+
+### ***2015 - Actualidad*** Desarrollador de Software Freelance
+
+#### [Platform161 - https://www.platform161.com](https://www.platform161.com)
+**Senior Full-Stack Software Developer**, trabajando en el desarrollo y mantenimiento de una aplicación web multi-instancia, con 2 APIs completos y una nueva aplicación Angular 4 que se conecta a dichos API. Integrado en un equipo de alrededor de 15 desarrolladores de todo el mundo, y usando herramientas como Percona MySQL, Google Big Query entre otras, el sistema gestiona varios TBs de datos, dando servicio a cientos de compañías en todo el mundo.
+
+#### [Human Benefits - http://www.humanbenefits.com](http://www.humanbenefits.com)
+**Senior Full-Stack Software Developer**. Tras unirme al proyecto unos meses después de su puesta en marcha, trabajé en el desarrollo de una nueva aplicación web para la gestión de beneficios para empleados y RRHH, usando Ruby on Rails, PostgreSQL y herramientas externas como HelloSign (para la gestión de firmas). Junto a una diseñadora UI/UX, construimos una prueba de concepto para ser usada en la fase de captación de capital del proyecto.
+
+#### [Kolau - https://www.kolau.com](https://www.kolau.com)
+**Consultor Ruby on Rails** y asesor para la arquitectura de una nueva aplicación, incluyendo el diseño de BBDD, la organización de código y la estructura de la aplicación.
 
 ### *Evadium.com **2005 - 2015*** Co-Fundador y Responsable Técnico
 
@@ -91,7 +106,7 @@ Por desgracias, el análisis más detallado mostró que la viabilidad de negocio
 
 El prototipo consistía en una aplicación Ruby on Rails 3.2 que incluía módulos para la gestión de fotografías, su catalogación, redimensionado, generación de miniaturas, etc, así como para la gestión del contenido de la web, los perfiles de fotógrafos, etc.
 
-**Herramientas principales**: Ruby 1.9.3, Rails 3.2, PostgreSQL 9.1, ImageMagic, RMagick, Devise, ActiveAdmin, Globalize, Bootstrap 3, SASS, Liquid (plantillas), JQuery y JQuery Panzoom.
+**Herramientas principales**: Ruby 1.9.3, Rails 3.2, PostgreSQL 9.1, ImageMagic, RMagick, Devise, ActiveAdmin, Globalize, Bootstrap 3, SASS, Liquid (plantillas), jQuery y jQuery Panzoom.
 
 
 ### *Penteo ICT Analyst **2000-2007*** Analista, Consultor y Director

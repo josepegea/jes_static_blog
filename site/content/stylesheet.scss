@@ -149,12 +149,24 @@ label {
 		letter-spacing: -1px;
 		margin-bottom:0.5em;
 	}
+
+  h3 + h4 {
+    margin-top:20px;
+  }
+
+  h4 {
+    font-size:20px;
+  }
 	
 	p {
 		margin: 20px 0;
 		font-size: 18px;
 		line-height: 1.2em;
 	}
+
+  h4 + p {
+    margin-top: 10px;
+  }
 	
 	ul, ol {
 		margin: 20px;
