@@ -23,6 +23,8 @@ gem "builder"
 # Basic Ruby Kung-Fu
 gem "activesupport"
 
+gem 'rake'
+
 group :debug, optional: true do
   gem 'pry'
   gem 'pry-byebug'

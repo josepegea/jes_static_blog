@@ -87,6 +87,7 @@ rm 'site/locales/es.yml'
 rm 'site/nanoc.yaml'
 wall-e:output jes$ git commit -m "Create gh-pages branch" --allow-empty
 [gh-pages 2f0f2a9] Create gh-pages branch
+wall-e:output jes$ git remote rm origin
 wall-e:output jes$ git remote add origin https://github.com/josepegea/jes_static_blog.git
 ```
 
@@ -399,3 +400,88 @@ Update: 15 mins later: It's now using the new site.
 And I can also enable the "Enforce HTTPS" Option in GitHub Pages options
 
 Done!!
+
+## Re-Adding Piwik tracking for public website
+
+We had Piwik tracking for the site, but, in order to not track pages
+in development, we had a config option to just generate the tracking
+snippet for the public site.
+
+In order to make it work, we modified the `track_stats` config in
+`site/config/deploy.yml` to `true` on the remote server and ran `nanoc
+build` there, to generate all the pages with the tracking code.
+
+The problem is that now we're generating the site for publishing
+locally and it gets pushed to GitHub from the same `output` directory
+that we use for local previewing.
+
+So we had to modify how the config values are used, to allow getting
+them from an ENV variable, and so be able to override them from the
+command line when generating the site for deployment.
+
+The changes are in `site/lib/site_config.rb` and basically allow for a
+variable named `var_name` in the config file to be overriden by an ENV
+variable named `NANOC_CONF_var_name`.
+
+So, in order to generate the site for deployment, we need to run
+`NANOC_CONF_track_stats=true bundle exec nanoc`. This will make sure
+that the tracking snippet will be added to all the generated pages.
+
+However, if pages are already generated, they won't be
+overwritten. And, if we generate them for deploy and leave them there,
+we risk running the snippet locally.
+
+So we need to make sure that we delete the contents of the `output`
+dir before and deploying the site.
+
+To make it easier, we have created a `Rakefile` to deal with the usual
+tasks.
+
+- `rake` and `rake build` -> Build the site locally
+- `rake deploy` -> Build the site for deploy and push it to GitHub
+  pages
+- `rake view` -> Launch a local server to browse the site locally
+- `rake guard` -> Launch a `guard` process to monitor and rebuild the
+  site upon changes (failing right, maybe because the upgrade to Nanoc
+  v4)
+- `rake clean` -> Delete the contents of the `output` dir
+
+So the `rake deploy` task takes care of deleting the contents in
+`output` before and after the deploy.
+
+## WARNING: If you delete the "output" dir completely
+
+The `output` dir is a custom git repo, that's used to push the changes
+to GitHub. It seems it's quite a hack to deal with the way GitHub
+pages are created.
+
+- It's created initially as a clone of the parent repo were we delete
+  all content
+- It's normally checked out to the `gh-pages` branch, that's the one
+  that contains the site content rendered by GH Pages.
+
+So if you accidentally delete the whole `output` dir, you lose the
+repo inside and break the deployment process.
+
+This happened while testing the new `rake`. Instead of `rm -rf
+output/*` we had `rm -rf output/`. Too bad!!
+
+So, re-creating that folder needs:
+
+```
+wall-e:jes_static_blog jes$ git clone . site/output
+Cloning into 'site/output'...
+done.
+wall-e:jes_static_blog jes$ cd site/output/
+wall-e:output jes$ git remote rm origin
+wall-e:output jes$ git remote add origin https://github.com/josepegea/jes_static_blog.git
+wall-e:output jes$ git fetch
+From https://github.com/josepegea/jes_static_blog
+ * [new branch]      gh-pages   -> origin/gh-pages
+ * [new branch]      master     -> origin/master
+wall-e:output jes$ git checkout gh-pages
+Branch 'gh-pages' set up to track remote branch 'gh-pages' from 'origin'.
+Switched to a new branch 'gh-pages'
+```
+
+

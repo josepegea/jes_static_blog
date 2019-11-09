@@ -1,0 +1,32 @@
+task default: %w(build)
+
+# Builds the site
+task :build do
+  sh "bundle exec nanoc"
+end
+
+# Views the site
+task view: %w(build) do
+  sh "bundle exec nanoc view"
+end
+
+# Monitors and rebuilds the site
+task :guard do
+  sh "bundle exec guard"
+end
+
+# Deploys the site to GH pages
+task :deploy do
+  # Delete the output folder before and after to safely insert the Piwik tracking code
+  delete_task = Rake::Task[:clean]
+  delete_task.invoke
+  sh "NANOC_CONF_track_stats=true bundle exec nanoc"
+  sh "bundle exec nanoc deploy"
+  delete_task.reenable
+  delete_task.invoke
+end
+
+# Clears the "output" dir
+task :clean do
+  sh "rm -rf output/*"
+end
