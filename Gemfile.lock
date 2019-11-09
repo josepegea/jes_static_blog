@@ -52,7 +52,7 @@ GEM
       nanoc (~> 3.6)
     hitimes (1.2.2)
     i18n (0.7.0)
-    json (1.8.2)
+    json (1.8.6)
     kramdown (1.7.0)
     listen (2.10.0)
       celluloid (~> 0.16.0)
@@ -100,3 +100,6 @@ DEPENDENCIES
   kramdown
   nanoc
   rb-readline
+
+BUNDLED WITH
+   1.16.6
