@@ -90,7 +90,7 @@ wall-e:output jes$ git commit -m "Create gh-pages branch" --allow-empty
 wall-e:output jes$ git remote add origin https://github.com/josepegea/jes_static_blog.git
 ```
 
-## First time build after the move
+### First time build after the move
 
 Note that:
 
@@ -150,7 +150,7 @@ wall-e:site jes$ nanoc view
 127.0.0.1 - - [09/Nov/2019:12:17:58 CET] "GET / HTTP/1.1" 200 1075
 ```
 
-## Configure for deploy
+### Configure for deploy
 
 Edit `nanoc.yml` config to add
 
@@ -161,7 +161,7 @@ deploy:
     branch: gh-pages
 ```
 
-## Upgrading to Nanoc 4
+### Upgrading to Nanoc 4
 
 It seems that `deploy kind:git` is not available in Nanoc v3
 
@@ -305,7 +305,7 @@ site/nanoc.yml
 @@ -29,6 +29,9 @@ prune:
    # .git, .svn etc.
    exclude: [ '.git', '.hg', '.svn', 'CVS' ]
- 
+
 +# Migrating from nanoc v4 to v4
 +string_pattern_type: legacy
 +
@@ -317,7 +317,7 @@ site/nanoc.yml
      # `filesystem_unified`.
      type: filesystem_unified
 +    identifier_type: legacy
- 
+
      # The path where items should be mounted (comparable to mount points in
      # Unix-like systems). This is “/” by default, meaning that items will have
 ```
@@ -327,13 +327,13 @@ site/nanoc.yml
 ```diff
 site/lib/basic_translation.rb
 @@ -4,7 +4,7 @@
- 
+
  def language_code_of(item)
    # "/en/foo/" becomes "en"
 -  (item.identifier.match(/^\/([a-z]{2})\//) || [])[1]
 +  (item.identifier.to_s.match(/^\/([a-z]{2})\//) || [])[1]
  end
- 
+
  def translations_of(item)
 @@ -55,7 +55,7 @@ end
  def localized_layout(ident, lang)
@@ -356,3 +356,46 @@ To use it, you have to first run `bundle install --with-debug`
 
 And add `require 'pry'` to any file where you want to use `binding pry`
 
+### Deploying the site to GitHub
+
+Run `bundle exec nanoc deploy`
+
+```
+wall-e:site jes$ bundle exec nanoc deploy
+Loading site… done
+Deploying via Git to branch “gh-pages” on remote “origin”…
+```
+
+In GitHub
+
+- Go to repo settings in https://github.com/josepegea/jes_static_blog/settings
+
+- In the "GitHub pages" section, select the `gh-pages branch` option for "Source"
+
+After doing that, the site is published to this address
+
+https://josepegea.github.io/jes_static_blog/
+
+And it works fine, but for a small detail...
+
+... There are plenty of absolute path references (like `/images` and
+so) that have the site breaking when served from a subdir.
+
+So, we need one last step...
+
+### Point www.josepegea.com to GitHub pages
+
+- In my DNS config, change the record of `www.josepegea.com` to be a
+  `CNAME` for `josepegea.github.io`
+
+- In Repo Settings, GitHub Pages sections, set the Custom Domain to `www.josepegea.com`.
+
+And that's it.
+
+(Well, you still have to wait for the DNS changes to be propagated, as
+the old address for the site is still resolved when I'm writing this.
+
+Update: 15 mins later: It's now using the new site.
+And I can also enable the "Enforce HTTPS" Option in GitHub Pages options
+
+Done!!
