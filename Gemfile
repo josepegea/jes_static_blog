@@ -3,7 +3,7 @@
 
 source 'https://rubygems.org'
 
-gem 'nanoc'
+gem 'nanoc', '~> 4.0'
 gem 'adsf'
 
 # SASS & cool stuff
@@ -22,3 +22,8 @@ gem "builder"
 
 # Basic Ruby Kung-Fu
 gem "activesupport"
+
+group :debug, optional: true do
+  gem 'pry'
+  gem 'pry-byebug'
+end

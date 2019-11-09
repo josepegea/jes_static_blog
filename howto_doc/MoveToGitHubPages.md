@@ -161,3 +161,198 @@ deploy:
     branch: gh-pages
 ```
 
+## Upgrading to Nanoc 4
+
+It seems that `deploy kind:git` is not available in Nanoc v3
+
+So we need to upgrade to Nanoc 4
+
+Following instructions here: https://nanoc.ws/doc/nanoc-4-upgrade-guide/
+
+- Update nanoc version in Gemfile `gem 'nanoc', '~> 4.0'`
+- Delete Gemfile.lock
+
+Run `bundle install`
+
+```
+wall-e:jes_static_blog jes$ bundle install
+Fetching gem metadata from https://rubygems.org/.............
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies...
+Using concurrent-ruby 1.1.5
+Fetching i18n 1.7.0
+Installing i18n 1.7.0
+Fetching minitest 5.13.0
+Installing minitest 5.13.0
+Using thread_safe 0.3.6
+Using tzinfo 1.2.5
+Fetching zeitwerk 2.2.1
+Installing zeitwerk 2.2.1
+Fetching activesupport 6.0.1
+Installing activesupport 6.0.1
+Fetching public_suffix 4.0.1
+Installing public_suffix 4.0.1
+Fetching addressable 2.7.0
+Installing addressable 2.7.0
+Using rack 2.0.7
+Fetching adsf 1.4.2
+Installing adsf 1.4.2
+Using execjs 2.7.0
+Fetching autoprefixer-rails 9.7.1
+Installing autoprefixer-rails 9.7.1
+Fetching ffi 1.11.1
+Installing ffi 1.11.1 with native extensions
+Fetching sassc 2.2.1
+Installing sassc 2.2.1 with native extensions
+Fetching bootstrap-sass 3.4.1
+Installing bootstrap-sass 3.4.1
+Using builder 3.2.3
+Using bundler 1.16.6
+Fetching chunky_png 1.3.11
+Installing chunky_png 1.3.11
+Using coderay 1.1.2
+Using colored 1.2
+Fetching multi_json 1.14.1
+Installing multi_json 1.14.1
+Fetching sass 3.4.25
+Installing sass 3.4.25
+Using compass-core 1.0.3
+Using compass-import-once 1.0.5
+Using rb-fsevent 0.10.3
+Using rb-inotify 0.10.0
+Using compass 1.0.3
+Using cri 2.15.9
+Fetching ddmetrics 1.0.1
+Installing ddmetrics 1.0.1
+Fetching ref 2.0.0
+Installing ref 2.0.0
+Fetching ddmemoize 1.0.0
+Installing ddmemoize 1.0.0
+Fetching ddplugin 1.0.2
+Installing ddplugin 1.0.2
+Using diff-lcs 1.3
+Fetching equatable 0.6.1
+Installing equatable 0.6.1
+Using formatador 0.2.5
+Fetching listen 3.2.0
+Installing listen 3.2.0
+Fetching lumberjack 1.0.13
+Installing lumberjack 1.0.13
+Fetching nenv 0.3.0
+Installing nenv 0.3.0
+Using shellany 0.0.1
+Fetching notiffany 0.1.3
+Installing notiffany 0.1.3
+Using method_source 0.9.2
+Using pry 0.12.2
+Using thor 0.20.3
+Fetching guard 2.16.1
+Installing guard 2.16.1
+Fetching guard-compat 1.2.1
+Installing guard-compat 1.2.1
+Fetching hamster 3.0.0
+Installing hamster 3.0.0
+Fetching json_schema 0.20.8
+Installing json_schema 0.20.8
+Fetching slow_enumerator_tools 1.1.0
+Installing slow_enumerator_tools 1.1.0
+Fetching tomlrb 1.2.8
+Installing tomlrb 1.2.8
+Fetching tty-platform 0.2.1
+Installing tty-platform 0.2.1
+Fetching nanoc-core 4.11.13
+Installing nanoc-core 4.11.13
+Fetching nanoc-cli 4.11.13
+Installing nanoc-cli 4.11.13
+Fetching parallel 1.18.0
+Installing parallel 1.18.0
+Fetching tty-color 0.5.0
+Installing tty-color 0.5.0
+Fetching pastel 0.7.3
+Installing pastel 0.7.3
+Fetching tty-command 0.9.0
+Installing tty-command 0.9.0
+Fetching tty-which 0.4.1
+Installing tty-which 0.4.1
+Fetching nanoc 4.11.13
+Installing nanoc 4.11.13
+Fetching guard-nanoc 2.1.6
+Installing guard-nanoc 2.1.6
+Fetching kramdown 2.1.0
+Installing kramdown 2.1.0
+Fetching rb-readline 0.5.5
+Installing rb-readline 0.5.5
+Bundle complete! 9 Gemfile dependencies, 62 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Post-install message from i18n:
+
+HEADS UP! i18n 1.1 changed fallbacks to exclude default locale.
+But that may break your application.
+
+Please check your Rails app for 'config.i18n.fallbacks = true'.
+If you're using I18n (>= 1.1.0) and Rails (< 5.2.2), this should be
+'config.i18n.fallbacks = [I18n.default_locale]'.
+If not, fallbacks will be broken in your app by I18n 1.1.x.
+
+For more info see:
+https://github.com/svenfuchs/i18n/releases/tag/v1.1.0
+```
+
+- Fix configuration, according to instructions
+
+```diff
+site/nanoc.yml
+@@ -29,6 +29,9 @@ prune:
+   # .git, .svn etc.
+   exclude: [ '.git', '.hg', '.svn', 'CVS' ]
+ 
++# Migrating from nanoc v4 to v4
++string_pattern_type: legacy
++
+ # The data sources where nanoc loads its data from. This is an array of
+ # hashes; each array element represents a single data source. By default,
+ # there is only a single data source that reads data from the “content/” and
+@@ -38,6 +41,7 @@ data_sources:
+     # The type is the identifier of the data source. By default, this will be
+     # `filesystem_unified`.
+     type: filesystem_unified
++    identifier_type: legacy
+ 
+     # The path where items should be mounted (comparable to mount points in
+     # Unix-like systems). This is “/” by default, meaning that items will have
+```
+
+- And add a couple of fixes to the code
+
+```diff
+site/lib/basic_translation.rb
+@@ -4,7 +4,7 @@
+ 
+ def language_code_of(item)
+   # "/en/foo/" becomes "en"
+-  (item.identifier.match(/^\/([a-z]{2})\//) || [])[1]
++  (item.identifier.to_s.match(/^\/([a-z]{2})\//) || [])[1]
+ end
+ 
+ def translations_of(item)
+@@ -55,7 +55,7 @@ end
+ def localized_layout(ident, lang)
+   # First, we look for the localized layout
+   name = File.join('/', lang, ident, '/')
+-  if @site.layouts.find {|l| l.identifier == name}
++  if @layouts.find {|l| l.identifier == name}
+     return name
+   else
+     # No point in checking if the non-localized exists.
+```
+
+After that, running `bundle exec nanoc builds` works again.
+
+### Adding pry to Gemfile
+
+In order to debug the issues, I added `pry` to the Gemfile, in a special group.
+
+To use it, you have to first run `bundle install --with-debug`
+
+And add `require 'pry'` to any file where you want to use `binding pry`
+

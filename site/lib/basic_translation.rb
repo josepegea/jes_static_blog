@@ -4,7 +4,7 @@
 
 def language_code_of(item)
   # "/en/foo/" becomes "en"
-  (item.identifier.match(/^\/([a-z]{2})\//) || [])[1]
+  (item.identifier.to_s.match(/^\/([a-z]{2})\//) || [])[1]
 end
 
 def translations_of(item)
@@ -55,7 +55,7 @@ end
 def localized_layout(ident, lang)
   # First, we look for the localized layout
   name = File.join('/', lang, ident, '/')
-  if @site.layouts.find {|l| l.identifier == name}
+  if @layouts.find {|l| l.identifier == name}
     return name
   else
     # No point in checking if the non-localized exists.
