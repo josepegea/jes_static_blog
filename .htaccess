@@ -1,0 +1,8 @@
+# Force access with the www prefix
+#RewriteCond %{HTTP_HOST} !^www.
+#RewriteRule ^/(.*)$ http://www.%{HTTP_HOST}/$1 [R=301]
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^josepegea.com$
+RewriteRule ^(.*)$ http://www.josepegea.com/$1 [R=301,L]
+Options -Indexes

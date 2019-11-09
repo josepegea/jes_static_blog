@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="http://www.josepegea.com/">
+  <id>http://www.josepegea.com/</id>
+  <title>Josep Egea's Blog (English Feed)</title>
+  <updated>2015-06-11T22:00:00Z</updated>
+  <link rel="alternate" href="http://www.josepegea.com/" type="text/html"/>
+  <link rel="self" href="http://www.josepegea.com/en/feed.xml" type="application/atom+xml"/>
+  <author>
+    <name>Josep Egea</name>
+    <uri>http://www.josepegea.com</uri>
+  </author>
+  <entry>
+    <id>tag:www.josepegea.com,2015-06-11:/en/blog/20150612-new-life-new-site/</id>
+    <title type="html">New Life, New Site!</title>
+    <published>2015-06-11T22:00:00Z</published>
+    <updated>2015-06-11T22:00:00Z</updated>
+    <link rel="alternate" href="http://www.josepegea.com/en/blog/20150612-new-life-new-site/" type="text/html"/>
+    <content type="html">&lt;h1 id="new-life-new-site"&gt;New Life, New Site!&lt;/h1&gt;
+
+&lt;div class="abstract"&gt;
+
+  &lt;p&gt;Last week I closed an important period in my life. Important enough to convince me to, finally, get my act together, and launch the personal website I’ve been meaning to start since forever.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="a-door-closes-"&gt;A door closes …&lt;/h2&gt;
+
+&lt;p&gt;Last week I ended my involvement with &lt;a href="http://www.evadium.com"&gt;Evadium&lt;/a&gt;, the online travel agency that I started up, back in 2005, together with my partner David Cano.&lt;/p&gt;
+
+&lt;p&gt;During all these years, David and I have worked very hard to grow the company from zero to its current state.&lt;/p&gt;
+
+&lt;p&gt;Nowadays, Evadium provides getaways and short trips for thousands of travellers every year, and has managed to build a very attractive catalogue of destinations and activities all around Spain. If you enjoy getting yourself lost in beautiful places, love the taste of great cuisine or would like to discover some of the greatest wineries around Spain, you definitely should &lt;a href="http://www.evadium.com"&gt;book your next short holidays with Evadium&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;While there, I got to work in lots of different and challenging tasks and projects. From building and running the company’s website and booking systems, to juggling my time between marketing, management, customer relationship, logistics and the myriad of other things that need to be done in a growing company.&lt;/p&gt;
+
+&lt;p&gt;But, above all, I got to &lt;strong&gt;learn&lt;/strong&gt; tons of useful stuff.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Evadium I got involved in &lt;a href="/en/about/tech_bio/"&gt;Ruby on Rails development&lt;/a&gt;, just when the framework was getting traction. And, also because of Evadium, I developed my passion for photography into a useful professional skill. The list goes on and on, as the number of practical, real-life lessons that I got from my experience there are countless. No master’s degree or business school education can approach the depth and breadth of knowledge that the real thing provides.&lt;/p&gt;
+
+&lt;p&gt;But all things must come to an end, and, after 10 years, I felt the need for a change. So, after giving it some serious thought with my family, and going through a non-trivial negotiation with David, we finally reached an agreement for me to sell all my interests in Evadium, and let him take over the whole company from now on.&lt;/p&gt;
+
+&lt;p&gt;So, as of June 2015, Evadium is no longer part of my day-to-day life. It has become part of my history, and a source of fond memories and invaluable experiences. So long, and thanks for it all!&lt;/p&gt;
+
+&lt;h2 id="and-many-others-open"&gt;And many others open&lt;/h2&gt;
+
+&lt;p&gt;For the future, I have some projects in mind.&lt;/p&gt;
+
+&lt;p&gt;One of them is centered around &lt;strong&gt;education&lt;/strong&gt; and the use of IT in helping young students.&lt;/p&gt;
+
+&lt;p&gt;Having two daughters going through school right now, I can’t help but notice the opportunities for using software and the Net to improve their experience. And being a believer in the principle of “&lt;em&gt;scratch your own itch&lt;/em&gt;”, I think that it would be a good business opportunity.&lt;/p&gt;
+
+&lt;p&gt;I realize that there’s a growing number of educational tools, apps and sites, some of them of exceptional quality. But I find that most of them center around the educational content, forgetting about other factors, like &lt;strong&gt;motivation&lt;/strong&gt; and &lt;strong&gt;study methodology&lt;/strong&gt;. I feel that I could bring something of value in this area. Of course, I’ll be more than glad to &lt;a href="/en/about/contact/"&gt;hear your comments and suggestions&lt;/a&gt; with regard to this!&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, launching a new company is a long term project, that will need lots of time, help and thought. So, in the meantime, I will be glad to go back to my IT roots and &lt;a href="/en/about/tech_bio/"&gt;accept contract jobs&lt;/a&gt;, specially in the areas where I gained more experience during my time in Evadium, like &lt;strong&gt;Ruby on Rails&lt;/strong&gt;. If you’re interested, you can read more in my &lt;a href="/en/about/tech_bio/"&gt;technical background page&lt;/a&gt; and &lt;a href="/en/about/contact/"&gt;get in touch&lt;/a&gt; with me.&lt;/p&gt;
+
+&lt;p&gt;And if you need a &lt;strong&gt;photographer&lt;/strong&gt;, let me know, too. I have a long experience leading photography workshops around Spain and some other countries. If you have something in mind, we can &lt;a href="/en/about/contact/"&gt;talk about it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="the-joy-of-growth"&gt;The joy of growth&lt;/h2&gt;
+
+&lt;p&gt;Chance had it that, on the same day that I signed my departure from Evadium, I happened to read an interesting &lt;a href="http://www.gq.com/style/celebrities/201506/giorgio-armani-interview"&gt;interview with Giorgio Armani&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In it, he explains how he built his fashion empire, starting when he already was in his forties, an age that most would consider too late to become an entrepreneur.&lt;/p&gt;
+
+&lt;p&gt;For me, the golden quote was this one:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Your forties are the moment when you start to become aware. It’s just the beginning. I’ve always believed that to confirm your way of thinking takes time. It takes experimenting. You have to confront different chapters of your life.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Being in my mid-forties myself, I couldn’t help but relate to this thought. And, of course, I wouldn’t mind achieving even a fraction of his success!&lt;/p&gt;
+
+&lt;p&gt;Anyhow, every trip must start with a first step, and launching this site has been mine.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+
+</content>
+    <summary type="html">Last week I closed an important period in my life. Important enough to convince me to, finally, get my act together, and launch the personal website I've been meaning to start since forever.</summary>
+  </entry>
+</feed>

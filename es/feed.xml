@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="http://www.josepegea.com/">
+  <id>http://www.josepegea.com/</id>
+  <title>El Blog de Josep Egea (Feed en Español)</title>
+  <updated>2015-06-11T22:00:00Z</updated>
+  <link rel="alternate" href="http://www.josepegea.com/" type="text/html"/>
+  <link rel="self" href="http://www.josepegea.com/es/feed.xml" type="application/atom+xml"/>
+  <author>
+    <name>Josep Egea</name>
+    <uri>http://www.josepegea.com</uri>
+  </author>
+  <entry>
+    <id>tag:www.josepegea.com,2015-06-11:/es/blog/20150612-nueva-vida-nueva-web/</id>
+    <title type="html">Nueva Vida, Nueva Web</title>
+    <published>2015-06-11T22:00:00Z</published>
+    <updated>2015-06-11T22:00:00Z</updated>
+    <link rel="alternate" href="http://www.josepegea.com/es/blog/20150612-nueva-vida-nueva-web/" type="text/html"/>
+    <content type="html">&lt;h1 id="nueva-vida-nueva-web"&gt;Nueva Vida, Nueva Web&lt;/h1&gt;
+
+&lt;div class="abstract"&gt;
+
+  &lt;p&gt;La semana pasada se cerró un importante período de mi vida. Suficientemente importante, de hecho, para convencerme, al fin, de poner en marcha mi web personal, algo que llevo años dejando para mañana.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="una-puerta-se-cierra-"&gt;Una puerta se cierra …&lt;/h2&gt;
+
+&lt;p&gt;La semana pasada dejé de formar parte de &lt;a href="http://www.evadium.com"&gt;Evadium&lt;/a&gt;, la agencia de viajes online que fundamos, allá en 2005, mi socio David Cano y yo mismo.&lt;/p&gt;
+
+&lt;p&gt;Durante estos años, David y yo hemos trabajado mucho para hacer crecer la compañía, desde cero hasta lo que es hoy en día.&lt;/p&gt;
+
+&lt;p&gt;A fecha de hoy, Evadium gestiona escapadas y viajes para miles de viajeros cada año, y cuenta con un catálogo muy atractivo de destinos y actividades temáticas por toda España. Si te gusta perderte en lugares mágicos, disfrutas de la buena gastronomía o quieres descubrir el Enoturismo visitando algunas de las bodegas más importantes de España, no lo dudes: &lt;a href="http://www.evadium.com"&gt;reserva tu próxima escapada en Evadium&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Estando allí, he tenido la oportunidad de abordar multitud de proyectos y desafíos. Desde desarrollar y poner en funcionamiento la web de la empresa y sus sistemas de reservas online, hasta diseñar campañas de marketing, gestionar la atención al cliente, planificar la logística … La lista de tareas y cosas por hacer que compiten por tu tiempo es interminable.&lt;/p&gt;
+
+&lt;p&gt;Pero, sobre todo, he tenido la oportunidad de &lt;strong&gt;aprender&lt;/strong&gt; mucho. De aprender cosas útiles.&lt;/p&gt;
+
+&lt;p&gt;Gracias a Evadium, empecé a &lt;a href="/es/about/tech_bio/"&gt;desarrollar con Ruby on Rails&lt;/a&gt;, justo cuando este entorno estaba empezando a popularizarse. Y, también gracias a Evadium, convertí mi pasión por la fotografía en una interesante alternativa profesional. Y la lista sigue, ya que el número de lecciones prácticas que me ha proporcionado mi experiencia en la empresa es interminable. Ningún master en ninguna escuela de negocios pueden ofrecer una formación tan extensa y en detalle como la que otorga vivir el negocio en primera persona.&lt;/p&gt;
+
+&lt;p&gt;Pero todo en la vida se acaba y, después de 10 años, sentía la necesidad de un cambio. Así que, tras reflexionarlo con mi familia, y negociarlo con David, he decidido venderle mi parte en Evadium y dejar que él tome las riendas de la empresa a partir de ahora.&lt;/p&gt;
+
+&lt;p&gt;Así que, a partir de junio de 2015, Evadium ha dejado de ser parte de mi día a día, y se ha convertido en parte de mi historia, así como una fuente de gratos recuerdos y valiosas experiencias. ¡Hasta siempre, y gracias por todo!&lt;/p&gt;
+
+&lt;h2 id="y-otras-muchas-se-abren"&gt;Y otras muchas se abren&lt;/h2&gt;
+
+&lt;p&gt;De cara al futuro, tengo varios proyectos en mente.&lt;/p&gt;
+
+&lt;p&gt;Uno de ellos se centra en la &lt;strong&gt;educación&lt;/strong&gt; y en el uso de la informática como herramienta para el estudio.&lt;/p&gt;
+
+&lt;p&gt;Como padre de dos niñas en edad escolar, constantemente se me ocurren oportunidades para sacar partido de las nuevas tecnologías e Internet en sus estudios. Y como creo en el principio de “&lt;em&gt;solucionar problemas que te afectan directamente&lt;/em&gt;”, estoy convencido de que puede ser una buena opción de negocio.&lt;/p&gt;
+
+&lt;p&gt;Es cierto que hay ya multitud de aplicaciones, webs y otras herramientas orientadas a la educación, y que algunas de ellas son excepcionalmente buenas. Pero me da la sensación de que la mayoría se centran en los propios contenidos, dejando de lado otros factores, como la motivación y la metodología de estudio. y creo sinceramente que puedo aportar ideas nuevas en este ámbito. Por supuesto, si tienes alguna idea al respecto, ¡estaré encantado de &lt;a href="/es/about/contact/"&gt;escucharte&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;De cualquier forma, lanzar una nueva empresa es un proyecto a largo plazo, en el que voy a necesitar tiempo, análisis y ayuda de otros. Así que, mientras toma forma, voy a volver a mis orígenes como informático, trabajando como &lt;a href="/es/about/tech_bio/"&gt;desarrollador freelance&lt;/a&gt;, centrado en las tecnologías que he estado usando durante mi experiencia en Evadium, como &lt;strong&gt;Ruby on Rails&lt;/strong&gt;. Si te interesa contratarme, puedes ver más detalles en mi página de &lt;a href="/es/about/tech_bio/"&gt;experiencia técnica&lt;/a&gt;, y contactar conmigo &lt;a href="/es/about/contact/"&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Y si necesitas un &lt;strong&gt;fotógrafo&lt;/strong&gt;, también podemos hablar. Tengo experiencia dirigiendo talleres fotográficos en España y otros destinos. &lt;a href="/es/about/contact/"&gt;Cuéntame tu idea&lt;/a&gt; y seguro que podemos sacarla adelante.&lt;/p&gt;
+
+&lt;h2 id="el-placer-de-crecer"&gt;El placer de crecer&lt;/h2&gt;
+
+&lt;p&gt;Dio la casualidad de que, justo el día en que firmé mi salida de Evadium, leí una interesante &lt;a href="http://www.gq.com/style/celebrities/201506/giorgio-armani-interview"&gt;entrevista a Giorgio Armani&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En ella, cuenta como ha hecho crecer su empresa, y cómo la fundó cuando ya había pasado la barrera de los cuarenta, una edad que muchos consideran demasiado avanzada como para empezar un nuevo negocio.&lt;/p&gt;
+
+&lt;p&gt;Hay una parte de lo que dice que me llegó al alma:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Los cuarenta son el momento en que empiezas a darte cuenta de las cosas. Es sólo el comienzo. Siempre he creído que consolidar tu forma de pensar lleva su tiempo. Tienes que experimentar. Tienes que enfrentarte con diferentes etapas de tu vida.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Estando en esta misma edad, no pude evitar conectar con esta línea de pensamiento. Y, desde luego, no me importaría llegar a tener el mismo éxito que él (o al menos una parte).&lt;/p&gt;
+
+&lt;p&gt;En cualquier caso, todo viaje necesita de un primer paso, y lanzar esta web ha sido el mío.&lt;/p&gt;
+
+&lt;p&gt;¡Gracias por leerlo!&lt;/p&gt;
+
+</content>
+    <summary type="html">La semana pasada se cerró un importante período de mi vida. Suficientemente importante, de hecho, para convencerme, al fin, de poner en marcha mi web personal, algo que llevo años dejando para mañana.</summary>
+  </entry>
+</feed>
