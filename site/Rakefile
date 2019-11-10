@@ -11,8 +11,8 @@ task view: %w(build) do
 end
 
 # Monitors and rebuilds the site
-task :guard do
-  sh "bundle exec guard"
+task :live do
+  sh "bundle exec nanoc live"
 end
 
 # Deploys the site to GH pages

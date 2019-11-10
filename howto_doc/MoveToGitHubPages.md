@@ -441,7 +441,7 @@ tasks.
 - `rake deploy` -> Build the site for deploy and push it to GitHub
   pages
 - `rake view` -> Launch a local server to browse the site locally
-- `rake guard` -> Launch a `guard` process to monitor and rebuild the
+- `rake live` -> Launch a `guard` process to monitor and rebuild the
   site upon changes (failing right, maybe because the upgrade to Nanoc
   v4)
 - `rake clean` -> Delete the contents of the `output` dir

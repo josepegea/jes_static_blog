@@ -3,15 +3,13 @@
 
 source 'https://rubygems.org'
 
-gem 'nanoc', '~> 4.0'
+gem 'nanoc', '4.11.12'
 gem 'adsf'
 
 # SASS & cool stuff
 gem 'compass'
 gem 'bootstrap-sass'
 
-# Guard
-gem 'guard-nanoc'
 gem 'rb-readline'
 
 # Markdown support
@@ -24,6 +22,11 @@ gem "builder"
 gem "activesupport"
 
 gem 'rake'
+
+# Guard
+group :nanoc do
+  gem 'guard-nanoc'
+end
 
 group :debug, optional: true do
   gem 'pry'
