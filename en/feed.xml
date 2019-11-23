@@ -2,13 +2,188 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="http://www.josepegea.com/">
   <id>http://www.josepegea.com/</id>
   <title>Josep Egea's Blog (English Feed)</title>
-  <updated>2015-06-11T22:00:00Z</updated>
+  <updated>2019-11-22T23:00:00Z</updated>
   <link rel="alternate" href="http://www.josepegea.com/" type="text/html"/>
   <link rel="self" href="http://www.josepegea.com/en/feed.xml" type="application/atom+xml"/>
   <author>
     <name>Josep Egea</name>
     <uri>http://www.josepegea.com</uri>
   </author>
+  <entry>
+    <id>tag:www.josepegea.com,2019-11-22:/en/blog/20191123-ruby-and-rails-market-2019/</id>
+    <title type="html">Ruby and Rails in 2019. Beyond Cool</title>
+    <published>2019-11-22T23:00:00Z</published>
+    <updated>2019-11-22T23:00:00Z</updated>
+    <link rel="alternate" href="http://www.josepegea.com/en/blog/20191123-ruby-and-rails-market-2019/" type="text/html"/>
+    <content type="html">&lt;h1 id="ruby-and-rails-in-2019-beyond-cool"&gt;Ruby and Rails in 2019. Beyond Cool&lt;/h1&gt;
+
+&lt;div class="abstract"&gt;
+
+  &lt;p&gt;Is it a smart move to be a Ruby developer in 2019?
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id="the-hunt-for-cool"&gt;The hunt for Cool&lt;/h2&gt;
+
+&lt;p&gt;These days it’s not unusual to hear that Ruby and Ruby on Rails &lt;em&gt;“are
+not cool anymore”&lt;/em&gt;. Is this true?&lt;/p&gt;
+
+&lt;p&gt;And, more importantly, &lt;strong&gt;should one use “coolness” as a factor when
+deciding whether to use Rails on your next project or to become a Ruby
+developer?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m sure that you already guess my answers to these questions. But let
+me elaborate a bit…&lt;/p&gt;
+
+&lt;h2 id="a-little-story"&gt;A little story&lt;/h2&gt;
+
+&lt;p&gt;I started programming in Ruby in 2006, just after &lt;a href="https://weblog.rubyonrails.org/2005/12/13/rails-1-0-party-like-its-one-oh-oh/"&gt;Ruby on Rails v1.0
+was
+launched&lt;/a&gt;. That
+launch managed to make some noise in the world of web development (you
+have to give credit to DHH’s superb marketing) but one could hardly
+say that Ruby was cool, then.&lt;/p&gt;
+
+&lt;p&gt;At that moment I was starting &lt;strong&gt;Evadium&lt;/strong&gt;, after 5 years away from
+development, working as a consultant. So, yes, my programming skills
+were a little rusty, and my perception of the development tools market
+was what you would expect from a consultant: lots of acronyms, feature
+matrices and SWOT diagrams, combined with zero actual lines of code
+written in recent years.&lt;/p&gt;
+
+&lt;p&gt;I still remember asking for the advice of my friend &lt;a href="https://www.linkedin.com/in/david-clavera-gispert-918626"&gt;David
+Clavera&lt;/a&gt;,
+who was and is a brilliant web applications architect, and the big
+dismay I felt when he said &lt;strong&gt;&lt;em&gt;“Easy!”&lt;/em&gt;&lt;/strong&gt;, as he handed me a book about
+&lt;a href="https://struts.apache.org/"&gt;Struts&lt;/a&gt; that couldn’t be shorter than 500
+pages! Up to that point, I had managed to avoid Java and XML in all
+their verbosity, so I wasn’t exactly excited to make a start. That
+day I silently decided I would use PHP. It was ugly but it got the job
+done.&lt;/p&gt;
+
+&lt;p&gt;It was in that compromising mood that I watched &lt;a href="https://www.youtube.com/watch?v=Gzj723LkRJY"&gt;DHH’s video building a
+blog site with Ruby on Rails&lt;/a&gt;. Those 15 minutes felt like a breeze of
+fresh air!! &lt;strong&gt;Productive&lt;/strong&gt;, &lt;strong&gt;no nonsense&lt;/strong&gt;, &lt;strong&gt;beautiful&lt;/strong&gt;… RoR had
+it all!&lt;/p&gt;
+
+&lt;p&gt;Well, it didn’t have it all. It was a 1.0 version and it
+showed. Plenty of rough edges (specially for deployment) and, what was
+worse for my consultant mind: not much of a proven track record.&lt;/p&gt;
+
+&lt;p&gt;Ruby on Rails was a wild bet. For all I knew, it could be dead within
+a couple of years. But boy, was it productive! I decided to take the
+risk and &lt;strong&gt;started writing code&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It turned up I was lucky. Ruby on Rails took the web development world
+by storm and, in a couple of years, it was &lt;strong&gt;&lt;em&gt;king-of-cool&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Projects and products using RoR mushroomed everywhere. Books were
+published, blogs created, new Gems published, covering almost anything
+you might need.&lt;/p&gt;
+
+&lt;p&gt;And the development community fell in love with Rails, too: developers
+old and young jumped into the framework. Bootcamps and online schools
+turned into churches disseminating the Rails gospel. The coolest
+startups literally fought to get the best Ruby on Rails talent.&lt;/p&gt;
+
+&lt;p&gt;One could say we reached &lt;strong&gt;&lt;em&gt;“Peak Rails”&lt;/em&gt;&lt;/strong&gt; at around 2011, or version 3.x.&lt;/p&gt;
+
+&lt;p&gt;But the software development Hall of Fame is a hot spot, and the
+candidates for &lt;em&gt;new-cool-kid-in-town&lt;/em&gt; were hard at work. JavaScript
+wanted to have its own framework in the client: &lt;strong&gt;Backbone&lt;/strong&gt;,
+&lt;strong&gt;Ember&lt;/strong&gt; and specially &lt;strong&gt;Angular&lt;/strong&gt; and &lt;strong&gt;React&lt;/strong&gt; started to move the
+spotlight to the browser. And thanks to &lt;strong&gt;Node.js&lt;/strong&gt;, JavaScript
+started to carve its place in the server, too.&lt;/p&gt;
+
+&lt;p&gt;New languages gained traction, too, like &lt;strong&gt;Elixir&lt;/strong&gt;, &lt;strong&gt;Go&lt;/strong&gt; and
+&lt;strong&gt;TypeScript&lt;/strong&gt;, promising higher performance and stronger type
+systems. Even old contenders, like &lt;strong&gt;Python&lt;/strong&gt;, saw a renaissance
+thanks to the raise of data science and machine learning.&lt;/p&gt;
+
+&lt;p&gt;Nowadays (end of 2019), Ruby and Rails are hardly cool anymore.&lt;/p&gt;
+
+&lt;h2 id="how-cool-is-cool"&gt;How Cool is Cool?&lt;/h2&gt;
+
+&lt;p&gt;Is that the end of the story? What does it mean to be cool in software
+development?&lt;/p&gt;
+
+&lt;p&gt;Cool is new. Cool is unexplored territory. Cool is new infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Creating a new language is cool. Building a new framework is
+cool. Creating basic libraries and package managers is cool.&lt;/p&gt;
+
+&lt;p&gt;Building real world applications? That’s not so cool!&lt;/p&gt;
+
+&lt;p&gt;One could compare the search for cool to a &lt;strong&gt;Gold Rush&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Historical wisdom (and &lt;a href="https://en.wikipedia.org/wiki/Jack_London#Gold_rush_and_first_success"&gt;Jack
+London&lt;/a&gt;)
+teach that, in a Gold Rush, the only sure winners are the suppliers
+of mining equipment. Nobody knows for sure if there’s real gold, but,
+hey, all these miners will sure need picks and shovels!&lt;/p&gt;
+
+&lt;p&gt;So, yes, tool builders love gold rushes!&lt;/p&gt;
+
+&lt;p&gt;But, &lt;strong&gt;how cool is it for miners?&lt;/strong&gt; During the Rush, tools are few and
+fragile, work is inefficient and productivity low, even for a rich
+mine. Most of miners’ efforts go into setting up the actual mine, not
+in getting the gold. And every time the tooling improves, they need to
+reinvest and retool, in order to stay competitive with other sites,
+detracting from actual gold production.&lt;/p&gt;
+
+&lt;p&gt;Likewise, in a software &lt;strong&gt;“Cool Rush”&lt;/strong&gt; there’s plenty of value to be made
+building the new infrastructure, the new tools, the new marketplaces.&lt;/p&gt;
+
+&lt;p&gt;While this happens, early adopters are busy building their
+businesses. But new tools are immature and need constant
+upgrading. And these upgrades, as with the miners, detract from
+productivity.&lt;/p&gt;
+
+&lt;p&gt;Most mining sites in a Gold Rush fail. They don’t reach the minimum
+scale needed to create a healthy ecosystem around them, and collapse. When
+this happens, miners leave for a new Eldorado. And tool makers follow
+them.&lt;/p&gt;
+
+&lt;p&gt;Is this what happened to Ruby on Rails?&lt;/p&gt;
+
+&lt;h2 id="too-busy-for-cool"&gt;Too Busy for Cool!&lt;/h2&gt;
+
+&lt;p&gt;Ruby and Ruby on Rails don’t look like failed mining sites. They
+stroke gold, Big Gold! (or rubies, if you like the pun).&lt;/p&gt;
+
+&lt;p&gt;They built enough following to create a &lt;strong&gt;huge ecosystem&lt;/strong&gt; around them.&lt;/p&gt;
+
+&lt;p&gt;Ruby on Rails is not anymore a small mining settlement in the far
+territories. It is a &lt;strong&gt;big and mature industry&lt;/strong&gt; producing tonnes of gold
+24x7.&lt;/p&gt;
+
+&lt;p&gt;The tooling is mature, the productivity huge. What might seem a
+shortage of technical news and announcements is more a sign of a healthy
+environment where application builders are extracting maximum value
+with just modest efforts needed to keep the infrastructure in place.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It was not easy to get there&lt;/strong&gt;, though. Those who lived through the big
+migrations of the first 4 versions of Rails know how much effort and
+rewriting it took to reach this level of maturity.&lt;/p&gt;
+
+&lt;p&gt;But it was worth it. Nowadays, businesses and developers using Ruby on
+Rails are so busy writing useful software that they hardly have time
+to think about cool!&lt;/p&gt;
+
+&lt;p&gt;So, yes, I do think that it makes all the sense in the world to use
+Ruby on Rails to start a project in 2020. Both as an entrepreneur and
+as a developer.&lt;/p&gt;
+
+&lt;p&gt;The productivity has never been better, and he market for Ruby
+developers is hot. Just add Ruby on Rails to your LinkedIn profile and
+&lt;strong&gt;wait for recruiters to start nagging you&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, don’t be blinded by the cool factor.&lt;/p&gt;
+
+&lt;p&gt;And may 2020 bring you some joyful &lt;strong&gt;Ruby mining&lt;/strong&gt;!&lt;/p&gt;
+</content>
+    <summary type="html">Is it a smart move to be a Ruby developer in 2019?</summary>
+  </entry>
   <entry>
     <id>tag:www.josepegea.com,2015-06-11:/en/blog/20150612-new-life-new-site/</id>
     <title type="html">New Life, New Site!</title>
