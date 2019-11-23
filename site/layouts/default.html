@@ -18,10 +18,12 @@
 			<%= yield %>
 			
 		</div>
-		
-		<div id="subcription-form">
-			<%= render 'partials/subscribe_snippet' %>
-		</div>
+
+    <% if SiteConfig.deploy 'show_subscribe_form'  %>
+      <div id="subcription-form">
+        <%= render 'partials/subscribe_snippet' %>
+      </div>
+    <% end %>
 
 		<% if @item[:has_comments] %>			
 			<div id="comments-block">

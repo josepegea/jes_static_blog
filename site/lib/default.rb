@@ -26,7 +26,7 @@ def get_last_news(options = {})
       articles.concat(items)
     end
   end
-  articles.sort! {|a, b| a.created_at <=> b.created_at}
+  articles.sort! {|a, b| b.attributes[:created_at] <=> a.attributes[:created_at]}
   return articles[0, count]
 end
 

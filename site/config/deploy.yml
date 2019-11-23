@@ -1,2 +1,3 @@
 track_stats: false
 piwik_site: '2'
+show_subscribe_form: false
