@@ -8,22 +8,27 @@ language: es
 
 <div class="abstract">
 	<p>
-		Emprendedor, informático y fotógrafo, en el orden en que prefieras.
+		Emprendedor, desarrollador de software y fotógrafo, en el orden en que prefieras.
 	</p>
 </div>
 
-<p>Aquí encontrarás escritos, fotos y noticias sobre mis proyectos.</p>
-
-<div class="notice">
-	<h2>Proyectos en Ruby on Rails</h2>
-	<p>
-	En la actualidad soy programador web <strong>freelance</strong> con experiencia en <strong>Ruby on Rails</strong>. 
-	</p>
-	<p>Si necesitas ayuda en algún proyecto, <%= l_link_to "contacta conmigo", '/about/contact' %>. Puedes ver más detalles <%= l_link_to "aquí", "/about/tech_bio" %>.
-	</p>
-</div>
-
-<p>Si quieres más detalles sobre mí, consulta la página <%= l_link_to("Acerca de Josep", '/about/') %></p>
+<ul>
+  <li>
+    Soy <%= l_link_to "desarrollador de software freelance", "/about/tech_bio" %>, especializado en <b>Ruby on Rails</b>
+  </li>
+  <li>
+    Y un a <%= link_to "fotógrafo irredento!", "https://www.flickr.com/photos/evadium/" %> Aquí tienes algunas de <%= link_to "mis fotos", "https://www.flickr.com/photos/evadium/" %>
+  </li>
+  <li>
+    También escribo un <%= l_link_to "Blog", "/blog/" %>
+  </li>
+  <li>
+    Más datos <%= l_link_to "sobre mí", "/about/" %>
+  </li>
+  <li>
+    <%= l_link_to "Contacto", "/about/contact" %>
+  </li>
+</ul>
 
 <% if (news = get_last_news) && news.size > 0 %>
 

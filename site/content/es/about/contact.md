@@ -10,7 +10,7 @@ language: es
 
 ## Email
 
-La mejor manera de contactar conmigo es a través del email. Escríbeme a la dirección 'jes', arroba,  seguido de este mismo dominio. 
+La mejor manera de contactar conmigo es a través del email. Escríbeme a la dirección **jes**, arroba,  seguido de este mismo dominio. 
 
 ## Redes Sociales
 
@@ -18,9 +18,8 @@ La verdad es que no uso mucho las redes sociales. Si quieres contactar conmigo, 
 
 Aun así, estoy en algunas de ellas:
 
+*	**GitHub** -- [josepegea](https://github.com/josepegea)
 *	**Twitter** -- [@josep_egea](http://www.twitter.com/josep_egea)
-*	**Google+** -- [Josep Egea](https://www.google.com/+JosepEgea)
-*	**GitHub** -- [josep-egea](https://github.com/josep-egea)
 *	**LinkedIn** -- [Josep Egea](https://es.linkedin.com/in/jegea)
 
 ## En carne y hueso

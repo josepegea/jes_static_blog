@@ -8,22 +8,27 @@ language: en
 
 <div class="abstract">
 	<p>
-		Entrepreneur, IT guy, and photographer in no particular order.
-	</p>
-</div>
-	
-<p>Here you'll find my writings, pictures and news about my projects.</p>
-
-<div class="notice">
-	<h2>Ruby on Rails Contractor</h2>
-	<p>
-	I have a long experience as a <strong>Ruby on Rails</strong> developer and at this moment I can accept new projects as a <strong>freelancer</strong>.
-	</p>
-	<p>If you'd like to hire me, please <%= l_link_to "get in touch", '/about/contact' %>. More details <%= l_link_to "here", "/about/tech_bio" %>.
+		Entrepreneur, software developer, and photographer in no particular order.
 	</p>
 </div>
 
-<p>If you want to learn more about me, check my <%= l_link_to("About page", '/about/') %></p>
+<ul>
+  <li>
+    I'm a <%= l_link_to "freelance web software developer", "/about/tech_bio" %>, specializing in <b>Ruby on Rails</b>
+  </li>
+  <li>
+    And also a <%= link_to "passionate photographer!", "https://www.flickr.com/photos/evadium/" %> Take a look at <%= link_to "my photos", "https://www.flickr.com/photos/evadium/" %>
+  </li>
+  <li>
+    I have a <%= l_link_to "Blog", "/blog/" %> too!
+  </li>
+  <li>
+    More <%= l_link_to "about me", "/about/" %>
+  </li>
+  <li>
+    <%= l_link_to "Contact info", "/about/contact" %>
+  </li>
+</ul>
 
 <% if (news = get_last_news) && news.size > 0 %>
 
