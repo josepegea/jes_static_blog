@@ -96,3 +96,6 @@ def md_enclose_block(text, container_type = 'div', options = {})
   return res
 end
 
+def hang_left_icon(code)
+  "<div class=\"relative\"><div class=\"#{code}\"></div></div>"
+end

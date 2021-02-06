@@ -30,6 +30,12 @@ $button_bg_color				:#3F8DD2;
 $button_txt_color				:#fff;
 $button_bg_color_hv				:#2E6DB5;
 
+$hanging-color :#888;
+
+$time-line-color :$notice_h2_color;
+$time-slice-color :$notice_text_color;
+$time-slice-background-color :$notice_background_color;
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -215,7 +221,54 @@ label {
 			margin: 4px 0 20px;
 		}
 	}
-	
+
+  .columns {
+    column-count: 2;
+    column-gap: 2em;
+    padding: 16px 10px 16px 32px;
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+
+  table.timeline {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    color: $time-line-color;
+    td,th {
+      padding: 6px 4px;
+    }
+    th {
+      text-align: left;
+      border-bottom: solid 1px;
+      padding-top: 0px;
+      &.timeline-tick {
+        border-left: solid 2px;
+      }
+    }
+    td {
+      padding: 0px;
+      vertical-align: top;
+      &.timeline-tick {
+        border-right: solid 2px;
+      }
+    }
+    td .time-slice {
+      font-size: 13px;
+      color: $time-slice-color;
+      background-color: $time-slice-background-color;
+      margin: 4px 4px 4px 0px;
+      padding: 4px;
+      min-height: 3em;
+      a {
+        color: $time-slice-color;
+      }
+    }
+  }
+
 	.notice {
 		font-family: Helvetica, sans-serif;
 		color:$notice_text_color;
@@ -385,11 +438,11 @@ label {
       text-align:right;
       font-weight:normal;
       font-style:normal;
-      color:#888;
+      color:$hanging-color;
     }
     b, strong {
       font-size:16px;
-      color:#888;
+      color:$hanging-color;
       padding-left:1em;
       display:block;
     }
@@ -401,7 +454,36 @@ label {
   }
 }
 
-@media (max-width: $max_phone_width)
+.relative {
+  position: relative;
+}
+
+.icon-hang-left:before, .github:before, .website:before, .video:before {
+  position: absolute;
+  display:block;
+  width:24px;
+  left:-48px;
+  top: 0px;
+  color: $hanging-color;
+  svg {
+    fill: currentColor;
+  }
+}
+
+.github:before {
+  content: url(/images/github_icon.svg);
+}
+
+.website:before {
+  content: url(/images/www_icon.svg);
+  top: 4px;
+}
+
+.video:before {
+  content: url(/images/video_icon.svg);
+}
+
+@media screen and (max-width: $max_phone_width)
 {
 	@mixin horiz-list {
 		ul {
@@ -534,7 +616,7 @@ label {
       }
       b, strong {
         font-size:16px;
-        color:#888;
+       $hanging-colorr:#888;
         padding-left:1em;
         display:inline;
       }
@@ -543,7 +625,7 @@ label {
 }
 
 
-@media (max-width: $small_phone_width)
+@media screen and (max-width: $small_phone_width)
 // This includes the phone CSS. Only additional adjustments need to be applied here.
 {
 	#main-options {
@@ -553,10 +635,10 @@ label {
 	}
 }
 
-@media (max-width: $tablet_width) and (min-width: $max-phone_width + 1)
+@media screen and (max-width: $tablet_width) and (min-width: $max-phone_width + 1)
 {
 	#main {
-		padding-left: 180px;
+		$hanging-color-left: 180px;
 		padding-right: 10px;
 	
 		min-height: 450px;
@@ -594,3 +676,33 @@ label {
 	}
 	
 }
+
+// Print using wide layout
+@media print {
+  #translate, #main-options {
+    display: none;
+  }
+
+  #main p {
+    font-size: 16px;
+  }
+
+  #container {
+    width: 1024px;
+    max-width: 1024px;
+    margin: 0px;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .columns {
+    margin-bottom: 20px;
+  }
+
+  .page-break {
+    break-before: always;
+  }
+}
+

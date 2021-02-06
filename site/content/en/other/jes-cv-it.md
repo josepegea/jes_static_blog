@@ -10,18 +10,18 @@ language: en
 
 # Josep Egea - CV
 
-<%= md_begin_block('div', :class => 'abstract') %>
+<%= md_begin_block('div', :class => 'abstract columns') %>
 
-* Freelance **Full-Stack Web Developer** and **Team Lead**.
-* Deep experience with **Ruby on Rails** and other Web technologies.
-* **B.S. in Computer Science**, Universitat Politècnica de Catalunya (UPC)
-  1994 (Barcelona).
+* Freelance **Full-Stack Web Developer** and **Team Lead**
+* Proficient in **Ruby**, **Rails** and more
+* **BS in CS**, 1994 UPC (Barcelona)
 * Fluent in **English**, **Spanish** and **Catalan**
-* Based in Madrid, Spain, available for **remote work worldwide**.
+* Based in Madrid, Spain, available for **remote work worldwide**
 * Contact me at <%= l_link_to("https://josepegea.com/contact", "/about/contact")%>
 
 <%= md_end_block %>
 
+<%= md_begin_block('div', :class => 'no-print') %>
 
 Quick jump to ...
 
@@ -33,25 +33,66 @@ Quick jump to ...
 * [Other](#other)
 
 <%= md_end_block %>
+<%= md_end_block %>
 
 ## Professional Experience
 
-The very short story:
+<table class="timeline">
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th class="timeline-tick">2000</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th class="timeline-tick">2005</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th class="timeline-tick">2010</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th class="timeline-tick">2015</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th class="timeline-tick">2020</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" class="timeline-tick">
+<div class="time-slice"><a href="#other">Software developer & technical writer</a></div>
+</td>
+<td colspan="7" class="timeline-tick">
+<div class="time-slice"><a href="#penteo-ict-analyst-2000-2007-it-analyst-consultant-and-manager">IT Consultant</a></div>
+</td>
+<td colspan="8" class="timeline-tick">
+<div class="time-slice"><a href="#evadiumcom-2005---2015-co-founder-and-technical-lead">Co-founder and Technical Lead in a Start up</a></div>
+</td>
+<td colspan="7">
+<div class="time-slice"><a href="#platform-161-br2019---present-day-software-development-team-lead">Freelance Web Software Developer and Team Lead</a></div>
+</td>
+</tr>
+</tbody>
+</table>
 
-* [2015-Present day](#platform-161-br2019---present-day-software-development-team-lead): Freelance Web Software Developer and Team Lead
-* [2005-2015](#evadiumcom-2005---2015-co-founder-and-technical-lead): Co-founder and technical lead of an online travel agency
-* [2000-2005](#penteo-ict-analyst-2000-2007-it-analyst-consultant-and-manager): IT Consultant
-* [Before 2000](#other): Software developer and technical writer
 
-If you want more details...
-
-### *Platform 161 <br/>**2019 - Present day*** Software Development Team Lead
-Leading a team of **10-15 developers and devops** distributed in **5 regions**
-and **3 timezones** accross the world.
-
-The team spans **6 nationalities** and includes **internal** company
-employees, **freelance** contractors and employees of third party
-**services providers**.
+### ***Platform 161 <br/>2019 - Present day*** Software Development Team Lead
+Leading a team of **10-15 developers and devops** across **5 regions**
+and **3 timezones**, spanning **6 nationalities**, including
+**internal** employees, **freelance** contractors and **3rd party
+providers**.
 
 Using **Agile practices** combined with **selected KPI's** to manage
 both the **productivity** and the **quality** of results, including
@@ -61,76 +102,102 @@ With the recent acquisition of Platform 161 as a member of the **Verve
 Group**, we're expanding our development process to other frontend
 projects of the group.
 
-<https://www.platform161.com><br/>
-<https://verve.com/>
+### ***2015 - 2019*** Senior Full-Stack Software Developer
 
-### *Platform 161 <br/>**2015 - 2019*** Senior Full-Stack Software Developer
+**Ruby on Rails** multitenant application with a **REST API's** and a
+**Angular SPA** that deals with **hundreds of TBs** using tools like
+**Percona MySQL**, **Google Big Query**, **ClickHouse** and more.
 
-Evolving a big **Ruby on Rails** application that includes a
-**multitenant** server-side web app, **2 full-fledged API's** and a
-newly built **Angular SPA** that connects to the API's. Working with
-an international team of around 15 developers, and using tools like
-**Percona MySQL**, **Google Big Query** and others, the system deals
-with **hundreds of TBs** of information serving hundreds of companies
-around the world.
-
-<https://www.platform161.com>
+<%= hang_left_icon('website') %>
+<https://www.platform161.com> --- 
+<https://verve.com>
 
 ### *Human Benefits<br/>**2015-2016*** Senior Full-Stack Software Developer
 
-Joined the project after some months of work to **evolve and grow** a
-newly designed HR and employee benefits application. Using **Ruby on
-Rails**, **PostgreSQL** and external tools like **HelloSign** (for
-document signing), and together with a UI/UX designer, we built a
-proof of concept app required for the first funding stages of the
-startup.
+**Evolve and grow** a newly designed HR and employee benefits
+application to reach a MVP. Using **Ruby on Rails**, **PostgreSQL**
+and external tools like **HelloSign**.
 
+<%= hang_left_icon('website') %>
 <http://www.humanbenefits.com>
 
 ### *Kolau<br/>**2015*** Ruby on Rails consultant 
-Providing advise about general application **architecture** during the
-building of the first version of the app, including **DB design**,
-**code organization** and application building blocks.
+Advisor about general application **architecture** while building MVP
+using Ruby on Rails.
 
+<%= hang_left_icon('website') %>
 <https://www.kolau.com>
 
 ### *Evadium.com **2005 - 2015*** Co-Founder and Technical Lead
 
 **Bootstrapped** the company, along with my co-founder, **growing** it to
-become a boutique online travel agency, specialized in short trips and
-getaways around Spain.
+become an online travel agency still operating today.
 
-Besides co-leading the business, I took upon the task of **building and
-running** all its IT infrastructure, including its public facing **web
-site**, the **booking engine**, several **internal admin apps** and an
-**extranet** to connect to external partners.
+Besides co-direction, **building and running** public **web site**,
+**booking engine**, several **internal admin apps** and an
+**extranet** to connect to external partners, using Ruby on Rails and
+PostgreSQL, among others.
 
-**Relevant technologies**: Ruby 1.8.7, Rails 1.1.6, PostgreSQL 9.1,
-PrototypeJS, LeafletJS and OpenLayers (Maps integration), Prawn (PDF
-generation in Ruby), Bluff (JS Graphs), OAT (JS Pivot Tables), Git and
-Subversion.
-
-Deployment to the Joyent Public Cloud using CloudFlare. Integration
-with Mandrill (email sending) and several payment processors.
-
+<%= hang_left_icon('website') %>
 <http://www.evadium.com>
 
 ### *Penteo ICT Analyst **2000-2007*** IT Analyst, Consultant and Manager
-
-Penteo is an Independent IT Analyst that helps CIOs and IT departments
-of medium and large companies to better integrate IT in their business
-processes. Its services include market research, benchmarking,
-specific training for IT staff and custom consulting and analysis.
-
-After some months collaborating with them as an external consultant
-specialized in software development and IT market trends, I joined the
-company in 2000, to manage the custom analysis area.
 
 During 7 years, I held different positions in analysis, consulting,
 research and business development, working in several IT areas, like
 Outsourcing management, ERP software deployment, IT department
 reorganization or optimization of development teams, to name a few.
 
+{:.page-break}
+## Open Source
+
+Creator and contributor or Open Source projects.
+
+<%= hang_left_icon('github') %>
+<https://github.com/josepegea>
+
+### ***2020 - Present day*** Organizer of the Madrid Ruby Users Group (Madrid.rb)
+
+After more than 10 years attending the group meetings and activities,
+in 2019 I became the organizer of the group.
+
+<%= hang_left_icon('website') %>
+<https://www.madridrb.com/>
+
+**Relevant activities** We organize monthly meetups to present and
+discuss relevant news and knowldege around Ruby
+
+### ***2020 - 2021*** Creator of TkComponent, TkInspect and TkInspectRails
+
+Ruby gems designed to help the creation of **Desktop GUI's in Ruby** using
+Tk.
+
+**TkComponent** provides a more modern and component-oriented layer to
+create GUI's on top of regular Ruby Tk.
+
+**TkInspect** builds on top of TkComponent to provide a visual
+environment for Ruby code, similar to what Smalltalk provides.
+
+**TkInspectRails** adds helpers to use TkInspect with Ruby on Rails
+apps.
+<%= hang_left_icon('github') %>
+<https://github.com/josepegea/tk_component>
+<br/>
+<https://github.com/josepegea/tk_inspect>
+<br/>
+<https://github.com/josepegea/tk_inspect_rails>
+
+<%= hang_left_icon('video') %>
+**Talk about TkComponent**: <https://vimeo.com/506750901>
+
+### ***2019*** Creator of TermuxRubyApi
+
+A Ruby Gem for interacting with Android API from within Termux.
+<%= hang_left_icon('github') %>
+<https://github.com/josepegea/termux_ruby_api>
+
+<%= hang_left_icon('video') %>
+**Talk about TermuxRubyApi**: <https://vimeo.com/482309000>
 
 ## Technical Skills
 
@@ -182,47 +249,6 @@ Frontend
 * **UNIX** programming environment and tools, including **Lex**, **Yacc** and derivatives.
 * **Emacs** user.
 * Basic knowledge of the **Semantic Web** technologies and tools: RDF, OWL, SPARQL and others.
-
-## Open Source
-
-GitHub: <https://github.com/josepegea>
-
-### Organizer of the Madrid Ruby Users Group (Madrid.rb)
-
-<https://www.madridrb.com/>
-
-After more than 10 years attending the group meetings and activities,
-in 2019 I became the organizer of the group.
-
-**Relevant activities** We organize monthly meetups to present and
-discuss relevant news and knowldege around Ruby
-
-### Creator of TkComponent, TkInspect and TkInspectRails
-
-* <https://github.com/josepegea/tk_component>
-* <https://github.com/josepegea/tk_inspect>
-* <https://github.com/josepegea/tk_inspect_rails>
-
-Ruby gems designed to help the creation of **Desktop GUI's in Ruby** using
-Tk.
-
-- **TkComponent** provides a more modern and component-oriented layer to
-  create GUI's on top of regular Ruby Tk.
-- **TkInspect** builds on top of TkComponent to provide a visual
-  environment for Ruby code, similar to what Smalltalk provides.
-- **TkInspectRails** adds helpers to use TkInspect with Ruby on Rails
-  apps.
-
-**Talk about TkComponent**: <https://vimeo.com/506750901>
-
-### Creator of TermuxRubyApi
-
-<https://github.com/josepegea/termux_ruby_api>
-
-A Ruby Gem for interacting with Android API from within Termux.
-
-**Talk about TermuxRubyApi**: <https://vimeo.com/482309000>
-
 
 ## Other
 
@@ -280,3 +306,5 @@ development, new tools, etc.
 My articles appeared in the Spanish editions of several magazines,
 like **Byte**, **Datamation**, **PCPlus** and others. I also wrote IT
 articles for the generic newspaper **El Periódico de Catalunya**.
+
+<%= md_end_block %>
