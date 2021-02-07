@@ -1,9 +1,9 @@
 <div class="article-item-header">
 	<%= l_link_to(@article[:title], @article[:canonical_identifier])%>
-	<div class="article-item-date">
-		<%= print_date(@article[:created_at]) %>
-	</div>
 </div>
 <div class="article-item-abstract">
 	<%= @article[:abstract] %>
+</div>
+<div class="article-item-date">
+	<%= print_date(@article[:created_at]) %>
 </div>

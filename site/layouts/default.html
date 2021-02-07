@@ -13,10 +13,16 @@
 	</head>
 	<body>
 	<div id="container">
+    <div id="topbar">
+      <ul id="translate">
+        <%= language_links(@item) %>
+      </ul>
+    </div>
+
 		<div id="main">
-			
+
 			<%= yield %>
-			
+
 		</div>
 
     <% if SiteConfig.deploy 'show_subscribe_form'  %>
@@ -39,12 +45,13 @@
 					</a>
 				</li>
 				<li><%= t "layout.built_with"%> <a href="http://nanoc.ws/">Nanoc</a></li>
-				<li><small><%= t "layout.logo_credits"%></small></li>
+				<li><%= t "layout.logo_credits"%></li>
 			</ul>
 			<div id="footer-credits">
-				<%= t "layout.footer.credits"%>
+				<%= t "layout.footer.credits" %> &nbsp;&nbsp;&nbsp; 2016 &ndash; <%= Date.today.year %>
 			</div>
 		</footer>
+
 		<div id="sidebar">
 			<nav>
 				<div id="logo-container">
@@ -59,11 +66,6 @@
 						</span>
 					</div>
 				</div>
-				<ul id="translate">
-					<%= links_to_alternate_homes %>
-					<%= links_to_translated_pages(@item) %>
-				</ul>
-				<hr/>
 				<ul id="main-options">
 					<li>
 						<%= l_link_to(t("layout.options.home"), "/")%>
@@ -77,17 +79,6 @@
 					<li>
 						<%= l_link_to(t("layout.options.contact"), "/about/contact")%>
 					</li>
-				</ul>
-				<hr/>
-				<ul id="credits-sidebar">
-					<li>
-						<a href="/<%= @item[:language] %>/feed.xml" type="application/atom+xml">
-							<%= t "layout.rss_feed" %>
-						</a>
-					</li>
-					<p></p>
-					<li><%= t "layout.built_with"%> <a href="http://nanoc.ws/">Nanoc</a></li>
-					<li><small><%= t "layout.logo_credits"%></small></li>
 				</ul>
 			</nav>
 		</div>

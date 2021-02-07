@@ -70,25 +70,25 @@ Quick jump to ...
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="time-slice">
 <td colspan="5" class="timeline-tick">
-<div class="time-slice"><a href="#other">Software developer & technical writer</a></div>
+<a href="#other">Software developer & technical writer</a>
 </td>
 <td colspan="7" class="timeline-tick">
-<div class="time-slice"><a href="#penteo-ict-analyst-2000-2007-it-analyst-consultant-and-manager">IT Consultant</a></div>
+<a href="#penteo-ict-analyst-2000-2007-it-analyst-consultant-and-manager">IT Consultant</a>
 </td>
 <td colspan="8" class="timeline-tick">
-<div class="time-slice"><a href="#evadiumcom-2005---2015-co-founder-and-technical-lead">Co-founder and Technical Lead in a Start up</a></div>
+<a href="#evadiumcom-2005---2015-co-founder-and-technical-lead">Co-founder and Technical Lead in a Start up</a>
 </td>
 <td colspan="7">
-<div class="time-slice"><a href="#platform-161-br2019---present-day-software-development-team-lead">Freelance Web Software Developer and Team Lead</a></div>
+<a href="#platform-161-br2019---present-day-software-development-team-lead">Freelance Web Software Developer and Team Lead</a>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-### ***Platform 161 <br/>2019 - Present day*** Software Development Team Lead
+### *Platform 161 <br/>**2019 - Present day*** Software Development Team Lead
 Leading a team of **10-15 developers and devops** across **5 regions**
 and **3 timezones**, spanning **6 nationalities**, including
 **internal** employees, **freelance** contractors and **3rd party
@@ -102,7 +102,7 @@ With the recent acquisition of Platform 161 as a member of the **Verve
 Group**, we're expanding our development process to other frontend
 projects of the group.
 
-### ***2015 - 2019*** Senior Full-Stack Software Developer
+### _**2015 - 2019**_ Senior Full-Stack Software Developer
 
 **Ruby on Rails** multitenant application with a **REST API's** and a
 **Angular SPA** that deals with **hundreds of TBs** using tools like
@@ -156,7 +156,7 @@ Creator and contributor or Open Source projects.
 <%= hang_left_icon('github') %>
 <https://github.com/josepegea>
 
-### ***2020 - Present day*** Organizer of the Madrid Ruby Users Group (Madrid.rb)
+### _Madrid.rb**2020 - Present day**_ Organizer of the Madrid Ruby Users Group (Madrid.rb)
 
 After more than 10 years attending the group meetings and activities,
 in 2019 I became the organizer of the group.
@@ -167,7 +167,7 @@ in 2019 I became the organizer of the group.
 **Relevant activities** We organize monthly meetups to present and
 discuss relevant news and knowldege around Ruby
 
-### ***2020 - 2021*** Creator of TkComponent, TkInspect and TkInspectRails
+### _TkComponent TkInspect**2020 - 2021**_ Creator of TkComponent, TkInspect and TkInspectRails
 
 Ruby gems designed to help the creation of **Desktop GUI's in Ruby** using
 Tk.
@@ -190,7 +190,7 @@ apps.
 <%= hang_left_icon('video') %>
 **Talk about TkComponent**: <https://vimeo.com/506750901>
 
-### ***2019*** Creator of TermuxRubyApi
+### _TermuxRubyApi**2019**_ Creator of TermuxRubyApi
 
 A Ruby Gem for interacting with Android API from within Termux.
 <%= hang_left_icon('github') %>
@@ -201,54 +201,54 @@ A Ruby Gem for interacting with Android API from within Termux.
 
 ## Technical Skills
 
-* **Full-stack** web development
-* **Effective Leading** of Software Development Teams
+A selection of technical skills.
 
-### Web Applications Developer
+<%= md_begin_block('div', :class => 'skills-box') %>
 
-Backend
+### Backend
 
-* **Ruby** and **Ruby on Rails**
-* **SQL Databases**: **PostgreSQL** and **MySQL** including **Percona**
-* **Columnar Databases**: **Google Big Query** and **ClickHouse**
-* **Redis**, **Sidekiq**
-* **Cloud Services**: AWS, GCP, Digital Ocean and others.
-* **RAML** for API documentation.
+* PostgreSQL, MySQL
+* Google Big Query, ClickHouse
+* Redis, Sidekiq
+* GCP, AWS
+* Apache, Linux, UNIX
+* Vagrant, Docker
 
-Frontend
+<%= md_end_block %>
 
-* **HTML5**, **CSS**, **SASS**, **Twitter Bootstrap**.
-* **Javascript**, **TypeScript** and **CoffeScript**
-* **Angular**
-* **jQuery** and smaller libraries, like **LeafletJS**, **OpenLayers** and others.
-* Standalone web sites using **Nanoc**.
+<%= md_begin_block('div', :class => 'skills-box') %>
 
-### Development Tools and Processes
+### Frontend
 
-* Source Control Management with **Git** and **Subversion**, using **GitHub**, **BitBucket** and **GitLab**.
-* **Agile Methodologies**: **Scrum**, **Kanban** using **Jira**, **Trello**, **Asana** among other tools.
-* **Test Driven Development (TDD)**.
-* Highly experienced worling with geographically distributed teams,
-  using **Slack**, **Meet**, **Skype**, **Zoom**, **Email** and other
-  communication tools.
+* HTML5, CSS, SASS
+* Javascript, TypeScript, CoffeScript
+* Angular, React & VueJS
 
-###  Deployment and Server Administration
+<%= md_end_block %>
 
-* **Apache**, **Phusion Passenger**, etc.
-* **Linux** (Ubuntu, Debian) and **OpenSolaris**.
-* UNIX server software like **Postfix** (SMTP), **Dovecot** (IMAP) and others.
-* Deployment to public cloud services: **AWS**, **GCP**, **Digital Ocean** and to private virtual servers.
-* Virtualizaion and containers: **Vagrant**, **Docker** and others.
-* Basic knowledge of infrastructure orchestration tools: **Ansible** and others.
+<%= md_begin_block('div', :class => 'skills-box') %>
 
-### Other skills
+### Languages, Frameworks and Tools
 
-* Long experience with **C**, **Objective-C** and **C++**.
-* Involved in **Object Oriented** Software **Design** and **Programming** since the early 90s.
-* Past experience with **Cocoa** frameworks and their ancestors (**OpenStep** and **NeXTstep**).
-* **UNIX** programming environment and tools, including **Lex**, **Yacc** and derivatives.
-* **Emacs** user.
-* Basic knowledge of the **Semantic Web** technologies and tools: RDF, OWL, SPARQL and others.
+* Ruby & Ruby on Rails
+* Objective-C and Cocoa
+* Git, SVN, GitHub, BitBucket, GitLab
+* UNIX dev env: C, Lexx, Yacc and more
+* GNU Emacs
+
+<%= md_end_block %>
+
+<%= md_begin_block('div', :class => 'skills-box') %>
+
+### Software Development
+
+* OOP & OOD
+* TDD
+* Agile, Scrum, Kanban
+* Jira, Trello, Wrike.
+* Slack, Meet, Skype, Zoom*, Email
+
+<%= md_end_block %>
 
 ## Other
 

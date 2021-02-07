@@ -70,6 +70,24 @@ def layout_for_item(item)
   return localized_layout(layout_name, item_lang)
 end
 
+def language_links(item, options = {}, link_options = {})
+  strs = []
+  force_home = options[:force_home] || false
+  if (versions = translations_of(item)).size > 1
+    versions.each do |v|
+    	if v[:language] != item[:language]
+    		strs << l_link_to(language_name_for_code(v[:language]),
+    										  item[:canonical_identifier], 
+    										  v[:language],
+                          link_options)
+      else
+        strs << language_name_for_code(v[:language])
+      end
+    end
+  end
+  return strs.join("\n | \n");
+end
+
 def links_to_translated_pages(item, options = {}, link_options = {})
   str = ""
   force_home = options[:force_home] || false

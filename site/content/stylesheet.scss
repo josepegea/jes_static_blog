@@ -1,40 +1,46 @@
-$link_color 	:#487fff;
-$body_color 	:#fff;
-$page_color 	:#fff;
+$body-font: "Lucida Sans", "Lucida", sans-serif;
+$titles-font: Georgia, Palatino, serif;
 
-$blockquote_border_color 		:#ddd;
-$blockquote_background_color 	:#fff;
-$blockquote_text_color 			:#777;
-$blockquote_first_text_color 	:#ccc;
+$link-color 	:#487fff;
+$body-color 	:#fff;
+$page-color 	:#fff;
 
-$abstract_background_color 		:#F5F9FD;
-$abstract_text_color 			:#777;
+$blockquote-border-color 		:#ddd;
+$blockquote-background-color 	:#fff;
+$blockquote-text-color 			:#777;
+$blockquote-first-text-color 	:#ccc;
 
-$notice_background_color		:#FDF9F2;
-$notice_text_color				:#441805;
-$notice_h2_color				:#5a1e07;
-$notice_border_color			:#a8958d;
+$abstract-background-color 		:#F5F9FD;
+$abstract-text-color 			:#777;
 
-$separators_color 				:#ccc;
- 
-$small_phone_width 				:320px;
-$phone_width 					:360px;
-$max_phone_width 				:720px;
-$tablet_width					:850px;
-$desktop_width					:1280px;
+$notice-background-color		:#FDF9F2;
+$notice-text-color				:#441805;
+$notice-h2-color				:#5a1e07;
+$notice-border-color			:#a8958d;
 
-$max_page_width					:990px;
-$narrow_page_width				:500px;
+$separators-color 				:#ccc;
 
-$button_bg_color				:#3F8DD2;
-$button_txt_color				:#fff;
-$button_bg_color_hv				:#2E6DB5;
+$small-phone-width 				:320px;
+$phone-width 					:360px;
+$max-phone-width 				:720px;
+$tablet-width					:850px;
+$desktop-width					:1280px;
+
+$max-page-width					:990px;
+$narrow-page-width				:500px;
+
+$button-bg-color				:#3F8DD2;
+$button-txt-color				:#fff;
+$button-bg-color-hv				:#2E6DB5;
 
 $hanging-color :#888;
+$hanging-strong-color: #666;
 
-$time-line-color :$notice_h2_color;
-$time-slice-color :$notice_text_color;
-$time-slice-background-color :$notice_background_color;
+$time-line-color :$notice-h2-color;
+$time-slice-color :$notice-text-color;
+$time-slice-background-color :$notice-background-color;
+
+
 
 * {
 	margin: 0px;
@@ -42,19 +48,22 @@ $time-slice-background-color :$notice_background_color;
 }
 
 @mixin rounded-corners($radius) {
-     -moz-border-radius: $radius;
-    -webkit-border-radius: $radius;
-    -khtml-border-radius: $radius;
-    border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -khtml-border-radius: $radius;
+  border-radius: $radius;
 }
 
 body {
-	background: $body_color;
-	font-family: Georgia, Palatino, serif;
+	background: $body-color;
+	font-family: $body-font;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-@mixin basic_container {
-	background: $page_color;
+@mixin basic-container {
+	background: $page-color;
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -65,14 +74,33 @@ body {
 	margin-right:auto;
 }
 
-#container {
-	@include basic_container;
-	max-width: $max_page_width;
+@mixin horiz-list {
+	ul {
+		text-align:center;
+		margin: 10px 0;
+	}
+	li {
+		display:inline-block;
+		text-align:center;
+		padding:0 12px 0 8px;
+		border-right: solid 2px $separators-color;
+	}
+	li:last-child {
+		border:none;
+	}
+	hr {
+		display:none;
+	}
 }
 
-#narrow_container {
-	@include basic_container;
-	max-width: $narrow_page_width;	
+#container {
+	@include basic-container;
+	max-width: $max-page-width;
+}
+
+#narrow-container {
+	@include basic-container;
+	max-width: $narrow-page-width;
 }
 
 p {
@@ -85,14 +113,14 @@ a {
 
 a:link,
 a:visited {
-	color: $link_color;
+	color: $link-color;
 }
 
 a:hover {
 	text-decoration:underline;
 }
 
-.lang_link {
+.lang-link {
 	font-size:24px;
 }
 
@@ -109,7 +137,7 @@ option {
 	font-family: Helvetica, sans-serif;
 }
 
-select { 
+select {
 	padding: 8px 30px 8px 8px;
 	height:48px;
 	/* -webkit-appearance: menulist-button; */
@@ -124,20 +152,20 @@ button, .button {
 	-webkit-appearance: none;
 	@include rounded-corners(8px);
 	padding:0px 8px;
-	background-color:$button_bg_color;
-	color:$button_txt_color;
-	border:1px solid $button_bg_color;
+	background-color:$button-bg-color;
+	color:$button-txt-color;
+	border:1px solid $button-bg-color;
 }
 
 button:hover, .button:hover {
-	background-color:$button_bg_color_hv;
+	background-color:$button-bg-color-hv;
 }
 
 label {
 	display:block;
 	font-weight: bold;
 	font-size:14px;
-	font-family: Helvetica, sans-serif;	
+	font-family: Helvetica, sans-serif;
 }
 
 #main {
@@ -145,9 +173,13 @@ label {
 	padding-left: 280px;
 	padding-right: 20px;
 	padding-bottom: 20px;
-	
+
 	min-height: 450px;
-	
+
+  h1, h2, h3 {
+    font-family: $titles-font;
+  }
+
 	h1 {
 		font-size: 40px;
 		font-weight: normal;
@@ -163,59 +195,55 @@ label {
   h4 {
     font-size:20px;
   }
-	
+
 	p {
 		margin: 20px 0;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.4em;
 	}
 
   h4 + p {
     margin-top: 10px;
   }
-	
+
 	ul, ol {
 		margin: 20px;
 	}
-	
+
 	li {
 		font-size: 15px;
     padding-bottom:8px;
 	}
-	
+
 	ul li {
 		list-style-type: disc;
 	}
-	
+
 	blockquote {
-		/* box-sizing: border-box; */
-		border-left: 16px solid $blockquote_border_color;
+    font-family: $titles-font;
+		border-left: 16px solid $blockquote-border-color;
 		padding-left: 10px;
 		font-style: italic;
-		font-size: 24px;
-		line-height: 1em;
-		background-color:$blockquote_background_color;
-		color:$blockquote_text_color;
-	
+		background-color:$blockquote-background-color;
+		color:$blockquote-text-color;
 		p {
-			font-size: 24px ;
-			line-height: 1em;
+		  font-size: 24px;
+			line-height: 1.8em;
 		}
-		
+
 		p:first-letter {
 			font-size:32px;
-			color:$blockquote_first_text_color;
+			color:$blockquote-first-text-color;
 		}
 	}
-	
+
 	.abstract {
-		font-style: italic;
-		font-size: 18px;
-		color:$abstract_text_color;
+    font-family: $titles-font;
+		color:$abstract-text-color;
 		line-height: 1.2em;
-		background:$abstract_background_color;
+		background:$abstract-background-color;
 		p {
-			font-size: 18px ;
+		  font-size: 16px;
 			line-height: 1.2em;
 			padding:10px 4px 12px 12px;
 			margin: 4px 0 20px;
@@ -238,12 +266,13 @@ label {
     border-collapse: collapse;
     font-size: 12px;
     color: $time-line-color;
+    margin: 15px 0px 38px;
     td,th {
       padding: 6px 4px;
+      border-bottom: solid 1px;
     }
     th {
       text-align: left;
-      border-bottom: solid 1px;
       padding-top: 0px;
       &.timeline-tick {
         border-left: solid 2px;
@@ -256,25 +285,25 @@ label {
         border-right: solid 2px;
       }
     }
-    td .time-slice {
+    tr.time-slice {
       font-size: 13px;
       color: $time-slice-color;
       background-color: $time-slice-background-color;
-      margin: 4px 4px 4px 0px;
-      padding: 4px;
-      min-height: 3em;
-      a {
-        color: $time-slice-color;
+      td {
+        padding: 4px;
+        a {
+          color: $time-slice-color;
+        }
       }
     }
   }
 
 	.notice {
 		font-family: Helvetica, sans-serif;
-		color:$notice_text_color;
+		color:$notice-text-color;
 		line-height: 1.2em;
-		background:$notice_background_color;
-		border-left:solid 16px $notice_border_color;
+		background:$notice-background-color;
+		border-left:solid 16px $notice-border-color;
 		padding:12px 8px 2px 12px;
 		p {
 			font-size: 14px;
@@ -284,11 +313,55 @@ label {
 		}
 		h2 {
 			font-size: 16px;
-			color: $notice_h2_color;
+			color: $notice-h2-color;
 			border-bottom: solid 1px;
 			margin-bottom:10px;
 		}
-	}	
+	}
+
+  ul.article-list {
+    margin-left: 0px;
+    li.article-item {
+      list-style-type: none;
+      padding-bottom: 24px;
+      position: relative;
+    }
+  }
+
+  .article-item-header {
+    font-family: $titles-font;
+	  font-size:24px;
+  }
+
+  .article-item-date {
+    font-family: $titles-font;
+	  font-size: 14px;
+    color: $hanging-color;
+  }
+
+  .article-item-abstract {
+	  font-size:14px;
+  }
+
+  ul.article-list.hanging {
+    .article-item-date {
+      position: absolute;
+      width: 190px;
+      left: -200px;
+      text-align: right;
+      top: 6px;
+    }
+  }
+}
+
+#topbar {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0px;
+  text-align: right;
+  font-size: 12px;
+  padding: 8px 20px 8px 0px;
 }
 
 #sidebar {
@@ -297,31 +370,30 @@ label {
 	left: 20px;
 	width: 200px;
 	padding: 20px 20px 0 0;
-	border-right: 1px solid $separators_color;
 	text-align: right;
-	
+
 	h2 {
 		font-size: 20px;
 		font-family:Courier, monospace;
 		color: #333;
 		line-height: 1em;
 	}
-	
-	ul, #credits-main ul {
+
+	ul {
 		list-style-type: none;
 		margin: 20px 0;
 		font-size: 14px;
 	}
-	
-	li, #credits-main li {
+
+	li {
 		line-height: 20px;
 	}
-	
+
 	hr {
 		border: none;
-		border-top: 1px solid $separators_color;
-		color: $separators_color;
-		background-color: $separators_color;
+		border-top: 1px solid $separators-color;
+		color: $separators-color;
+		background-color: $separators-color;
 	}
 }
 
@@ -329,16 +401,22 @@ label {
 }
 
 #credits-main {
-	display:none;	
+	display:block;
+	text-align:center;
+	border-top: solid 1px $separators-color;
+	padding-top:10px;
+	padding-bottom:10px;
+  font-size: 10px;
+	@include horiz-list;
 }
 
-#logo-box {
+#logo-boxtop {
 	a {
 		color:#444;
 	}
 	a:hover {
 		text-decoration:none;
-	}	
+	}
 }
 
 #logo {
@@ -352,7 +430,7 @@ label {
 	padding-top:106px;
 	font-size: 24px;
 	font-family:Courier, monospace;
-	
+
 	a:hover {
 		text-decoration:none;
 	}
@@ -366,12 +444,12 @@ label {
 	padding-left: 280px;
 	padding-right:40px;
 	padding-bottom:40px;
-	background-image: url(/images/mail_envel-120.png);
+	background-image: url(/images/mail-envel-120.png);
 	background-position: 140px 0px;
 	background-repeat:no-repeat;
 	.form-container {
 		font-family: Helvetica, sans-serif;
-		background:$abstract_background_color;
+		background:$abstract-background-color;
 		color:#4f65a5;
 		padding:10px 12px 10px 12px;
 		margin: 4px 0 0px;
@@ -401,22 +479,8 @@ label {
 	padding-bottom:20px;
 }
 
-.article-item-header {
-	font-size:24px;
-}
-
-.article-item-date {
-	display:inline;
-	font-size:18px;
-	font-weight:bold;
-}
-
-.article-item-abstract {
-	font-size:18px;
-}
-
 #footer-credits {
-	font-size: 12px;
+	font-size: 10px;
 	text-align:center;
 	padding-top:10px;
 	padding-bottom:40px;
@@ -424,7 +488,7 @@ label {
 
 .cv {
   h2 {
-    padding-bottom:8px;    
+    padding-bottom:8px;
   }
   h3 {
     padding-top:8px;
@@ -433,18 +497,19 @@ label {
     i, em {
       position:absolute;
       display:block;
-      left:-170px;
-      width:150px;
+      left:-200px;
+      width:170px;
       text-align:right;
-      font-weight:normal;
+      font-weight:bold;
       font-style:normal;
-      color:$hanging-color;
+      color:$hanging-strong-color;
     }
     b, strong {
       font-size:16px;
       color:$hanging-color;
       padding-left:1em;
       display:block;
+      font-weight: normal;
     }
   }
   .abstract {
@@ -483,27 +548,32 @@ label {
   content: url(/images/video_icon.svg);
 }
 
-@media screen and (max-width: $max_phone_width)
+.skills-box {
+  display: inline-block;
+  width: 47%;
+  padding: 4px;
+  margin-bottom: 6px;
+  min-height: 220px;
+  vertical-align: top;
+  color: $notice-text-color;
+  background-color: $notice-background-color;
+  h3 {
+    font-size: 16px;
+    color: $notice-h2-color;
+  }
+  ul {
+    margin: 0px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: $max-phone-width)
 {
-	@mixin horiz-list {
-		ul {
-			text-align:center;
-			margin: 10px 0;
-		}
-		li {
-			display:inline-block;
-			text-align:center;
-			padding:0 12px 0 8px;
-			border-right: solid 2px $separators_color;
-		}
-		li:last-child {
-			border:none;
-		}
-		hr {
-			display:none;
-		}
-	}
-		
+  #topbar {
+    font-size: 10px;
+    padding: 20px 8px 8px 0px;
+  }
+
 	#sidebar {
 		position: absolute;
 		top: 0px;
@@ -515,12 +585,12 @@ label {
 		text-align: center;
 		@include horiz-list;
 	}
-	
+
 	#main {
 		width: auto;
-		padding-top: 160px;
+		padding-top: 130px;
 		padding-left: 16px;
-		padding-right: 4px;
+		padding-right: 16px;
 		padding-bottom: 20px;
 		min-height: 0px;
 		h1 {
@@ -528,9 +598,18 @@ label {
 			line-height: 32px;
 			letter-spacing: -1px;
 		}
+    ul.article-list.hanging {
+      .article-item-date {
+        position: relative;
+        width: auto;
+        left: auto;
+        text-align: left;
+        top: auto;
+      }
+    }
 	}
 
-	#narrow_container {
+	#narrow-container {
 		#main {
 			padding-top: 60px;
 			text-align:center;
@@ -540,13 +619,13 @@ label {
 	#logo-container {
 		text-align:center;
 	}
-	
+
 	#logo-box {
-		width:auto;
-		display:inline-block;
+		display:block;
 		position:relative;
+    padding: 4px;
 	}
-	
+
 	#logo {
 		height:40px;
 		width:200px;
@@ -562,7 +641,7 @@ label {
 		font-family:Courier, monospace;
 		text-align:left;
 	}
-	
+
 	#motto {
 		position:absolute;
 		top:32px;
@@ -571,40 +650,31 @@ label {
 		padding:0;
 		font-size:12px;
 	}
-	
+
 	#main-options {
 		display:inline-block;
-		border-top: solid 1px $separators_color;
-		border-bottom: solid 1px $separators_color;
+		border-top: solid 1px $separators-color;
+		border-bottom: solid 1px $separators-color;
 		padding:8px 10px;
-		
+
 		li {
 			font-size:16px;
 		}
 	}
-	
+
 	#credits-sidebar {
 		display:none;
 	}
-	
-	#credits-main {
-		display:block;
-		text-align:center;
-		border-top: solid 1px $separators_color;
-		padding-top:10px;
-		padding-bottom:10px;
-		@include horiz-list;
-	}
-	
+
 	#subcription-form {
 		padding-left: 16px;
 		background-image: none;
 	}
-	
+
 	#comments-block {
 		padding-left: 16px;
 	}
-  
+
   .cv {
     h3 {
       i, em {
@@ -616,16 +686,16 @@ label {
       }
       b, strong {
         font-size:16px;
-       $hanging-colorr:#888;
-        padding-left:1em;
-        display:inline;
+        $hanging-colorr:#888;
+        padding-left:0px;
+        display:block;
       }
     }
-  }   
+  }
 }
 
 
-@media screen and (max-width: $small_phone_width)
+@media screen and (max-width: $small-phone-width)
 // This includes the phone CSS. Only additional adjustments need to be applied here.
 {
 	#main-options {
@@ -635,18 +705,22 @@ label {
 	}
 }
 
-@media screen and (max-width: $tablet_width) and (min-width: $max-phone_width + 1)
+@media screen and (max-width: $tablet-width) and (min-width: $max-phone-width + 1)
 {
 	#main {
 		$hanging-color-left: 180px;
 		padding-right: 10px;
-	
+	  padding-left: 174px;
 		min-height: 450px;
-	
+
 		h1 {
 			font-size: 36px;
-		}	
+		}
 	}
+
+  #topbar {
+    padding: 8px 10px 8px 0px;
+  }
 
 	#sidebar {
 		left: 10px;
@@ -658,7 +732,7 @@ label {
 		width: 140px;
 		background-size:140px;
 		padding-top:80px;
-		font-size: 18px;	
+		font-size: 18px;
 	}
 
 	#motto {
@@ -674,7 +748,19 @@ label {
 		padding-left: 180px;
 		padding-right: 10px;
 	}
-	
+
+  .cv {
+    h3 {
+      i, em {
+        left:-170px;
+        width:150px;
+        font-size:14px;
+      }
+      b, strong {
+        font-size:14px;
+      }
+    }
+  }
 }
 
 // Print using wide layout
@@ -684,7 +770,7 @@ label {
   }
 
   #main p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #container {
@@ -705,4 +791,3 @@ label {
     break-before: always;
   }
 }
-
