@@ -4,7 +4,10 @@
 
 body {
   background: #fff;
-  font-family: Georgia, Palatino, serif; }
+  font-family: "Lucida Sans", "Lucida", sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 #container {
   background: #fff;
@@ -18,7 +21,7 @@ body {
   margin-right: auto;
   max-width: 990px; }
 
-#narrow_container {
+#narrow-container {
   background: #fff;
   position: relative;
   margin: 0;
@@ -43,7 +46,7 @@ a:visited {
 a:hover {
   text-decoration: underline; }
 
-.lang_link {
+.lang-link {
   font-size: 24px; }
 
 input, select, button, .button {
@@ -99,6 +102,8 @@ label {
   padding-right: 20px;
   padding-bottom: 20px;
   min-height: 450px; }
+  #main h1, #main h2, #main h3 {
+    font-family: Georgia, Palatino, serif; }
   #main h1 {
     font-size: 40px;
     font-weight: normal;
@@ -111,7 +116,7 @@ label {
     font-size: 20px; }
   #main p {
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4em; }
   #main h4 + p {
     margin-top: 10px; }
@@ -123,31 +128,63 @@ label {
   #main ul li {
     list-style-type: disc; }
   #main blockquote {
-    /* box-sizing: border-box; */
+    font-family: Georgia, Palatino, serif;
     border-left: 16px solid #ddd;
     padding-left: 10px;
     font-style: italic;
-    font-size: 24px;
-    line-height: 1em;
     background-color: #fff;
     color: #777; }
     #main blockquote p {
       font-size: 24px;
-      line-height: 1em; }
+      line-height: 1.8em; }
     #main blockquote p:first-letter {
       font-size: 32px;
       color: #ccc; }
   #main .abstract {
-    font-style: italic;
-    font-size: 18px;
+    font-family: Georgia, Palatino, serif;
     color: #777;
     line-height: 1.2em;
     background: #F5F9FD; }
     #main .abstract p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.2em;
       padding: 10px 4px 12px 12px;
       margin: 4px 0 20px; }
+  #main .columns {
+    column-count: 2;
+    column-gap: 2em;
+    padding: 16px 10px 16px 32px; }
+    #main .columns ul {
+      margin: 0px;
+      padding: 0px; }
+  #main table.timeline {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    color: #5a1e07;
+    margin: 15px 0px 38px; }
+    #main table.timeline td, #main table.timeline th {
+      padding: 6px 4px;
+      border-bottom: solid 1px; }
+    #main table.timeline th {
+      text-align: left;
+      padding-top: 0px; }
+      #main table.timeline th.timeline-tick {
+        border-left: solid 2px; }
+    #main table.timeline td {
+      padding: 0px;
+      vertical-align: top; }
+      #main table.timeline td.timeline-tick {
+        border-right: solid 2px; }
+    #main table.timeline tr.time-slice {
+      font-size: 13px;
+      color: #441805;
+      background-color: #FDF9F2; }
+      #main table.timeline tr.time-slice td {
+        padding: 4px; }
+        #main table.timeline tr.time-slice td a {
+          color: #441805; }
   #main .notice {
     font-family: Helvetica, sans-serif;
     color: #441805;
@@ -165,6 +202,36 @@ label {
       color: #5a1e07;
       border-bottom: solid 1px;
       margin-bottom: 10px; }
+  #main ul.article-list {
+    margin-left: 0px; }
+    #main ul.article-list li.article-item {
+      list-style-type: none;
+      padding-bottom: 24px;
+      position: relative; }
+  #main .article-item-header {
+    font-family: Georgia, Palatino, serif;
+    font-size: 24px; }
+  #main .article-item-date {
+    font-family: Georgia, Palatino, serif;
+    font-size: 14px;
+    color: #888; }
+  #main .article-item-abstract {
+    font-size: 14px; }
+  #main ul.article-list.hanging .article-item-date {
+    position: absolute;
+    width: 190px;
+    left: -200px;
+    text-align: right;
+    top: 6px; }
+
+#topbar {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0px;
+  text-align: right;
+  font-size: 12px;
+  padding: 8px 20px 8px 0px; }
 
 #sidebar {
   position: absolute;
@@ -172,18 +239,17 @@ label {
   left: 20px;
   width: 200px;
   padding: 20px 20px 0 0;
-  border-right: 1px solid #ccc;
   text-align: right; }
   #sidebar h2 {
     font-size: 20px;
     font-family: Courier, monospace;
     color: #333;
     line-height: 1em; }
-  #sidebar ul, #sidebar #credits-main ul {
+  #sidebar ul {
     list-style-type: none;
     margin: 20px 0;
     font-size: 14px; }
-  #sidebar li, #sidebar #credits-main li {
+  #sidebar li {
     line-height: 20px; }
   #sidebar hr {
     border: none;
@@ -192,11 +258,28 @@ label {
     background-color: #ccc; }
 
 #credits-main {
-  display: none; }
+  display: block;
+  text-align: center;
+  border-top: solid 1px #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px; }
+  #credits-main ul {
+    text-align: center;
+    margin: 10px 0; }
+  #credits-main li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 12px 0 8px;
+    border-right: solid 2px #ccc; }
+  #credits-main li:last-child {
+    border: none; }
+  #credits-main hr {
+    display: none; }
 
-#logo-box a {
+#logo-boxtop a {
   color: #444; }
-#logo-box a:hover {
+#logo-boxtop a:hover {
   text-decoration: none; }
 
 #logo {
@@ -220,7 +303,7 @@ label {
   padding-left: 280px;
   padding-right: 40px;
   padding-bottom: 40px;
-  background-image: url(/images/mail_envel-120.png);
+  background-image: url(/images/mail-envel-120.png);
   background-position: 140px 0px;
   background-repeat: no-repeat; }
   #subcription-form .form-container {
@@ -249,19 +332,8 @@ label {
   padding-right: 40px;
   padding-bottom: 20px; }
 
-.article-item-header {
-  font-size: 24px; }
-
-.article-item-date {
-  display: inline;
-  font-size: 18px;
-  font-weight: bold; }
-
-.article-item-abstract {
-  font-size: 18px; }
-
 #footer-credits {
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 40px; }
@@ -275,21 +347,65 @@ label {
   .cv h3 i, .cv h3 em {
     position: absolute;
     display: block;
-    left: -170px;
-    width: 150px;
+    left: -200px;
+    width: 170px;
     text-align: right;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
-    color: #888; }
+    color: #666; }
   .cv h3 b, .cv h3 strong {
     font-size: 16px;
     color: #888;
     padding-left: 1em;
-    display: block; }
+    display: block;
+    font-weight: normal; }
 .cv .abstract ul {
   padding: 8px; }
 
-@media (max-width: 720px) {
+.relative {
+  position: relative; }
+
+.icon-hang-left:before, .github:before, .website:before, .video:before {
+  position: absolute;
+  display: block;
+  width: 24px;
+  left: -48px;
+  top: 0px;
+  color: #888; }
+  .icon-hang-left:before svg, .github:before svg, .website:before svg, .video:before svg {
+    fill: currentColor; }
+
+.github:before {
+  content: url(/images/github_icon.svg); }
+
+.website:before {
+  content: url(/images/www_icon.svg);
+  top: 4px; }
+
+.video:before {
+  content: url(/images/video_icon.svg); }
+
+.skills-box {
+  display: inline-block;
+  width: 47%;
+  padding: 4px;
+  margin-bottom: 6px;
+  min-height: 220px;
+  vertical-align: top;
+  color: #441805;
+  background-color: #FDF9F2; }
+  .skills-box h3 {
+    font-size: 16px;
+    color: #5a1e07; }
+  .skills-box ul {
+    margin: 0px;
+    font-size: 12px; }
+
+@media screen and (max-width: 720px) {
+  #topbar {
+    font-size: 10px;
+    padding: 20px 8px 8px 0px; }
+
   #sidebar {
     position: absolute;
     top: 0px;
@@ -314,17 +430,23 @@ label {
 
   #main {
     width: auto;
-    padding-top: 160px;
+    padding-top: 130px;
     padding-left: 16px;
-    padding-right: 4px;
+    padding-right: 16px;
     padding-bottom: 20px;
     min-height: 0px; }
     #main h1 {
       font-size: 32px;
       line-height: 32px;
       letter-spacing: -1px; }
+    #main ul.article-list.hanging .article-item-date {
+      position: relative;
+      width: auto;
+      left: auto;
+      text-align: left;
+      top: auto; }
 
-  #narrow_container #main {
+  #narrow-container #main {
     padding-top: 60px;
     text-align: center; }
 
@@ -332,9 +454,9 @@ label {
     text-align: center; }
 
   #logo-box {
-    width: auto;
-    display: inline-block;
-    position: relative; }
+    display: block;
+    position: relative;
+    padding: 4px; }
 
   #logo {
     height: 40px;
@@ -370,25 +492,6 @@ label {
   #credits-sidebar {
     display: none; }
 
-  #credits-main {
-    display: block;
-    text-align: center;
-    border-top: solid 1px #ccc;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-    #credits-main ul {
-      text-align: center;
-      margin: 10px 0; }
-    #credits-main li {
-      display: inline-block;
-      text-align: center;
-      padding: 0 12px 0 8px;
-      border-right: solid 2px #ccc; }
-    #credits-main li:last-child {
-      border: none; }
-    #credits-main hr {
-      display: none; }
-
   #subcription-form {
     padding-left: 16px;
     background-image: none; }
@@ -404,19 +507,21 @@ label {
     text-align: left; }
   .cv h3 b, .cv h3 strong {
     font-size: 16px;
-    color: #888;
-    padding-left: 1em;
-    display: inline; } }
-@media (max-width: 320px) {
+    padding-left: 0px;
+    display: block; } }
+@media screen and (max-width: 320px) {
   #main-options li {
     font-size: 14px; } }
-@media (max-width: 850px) and (min-width: 721px) {
+@media screen and (max-width: 850px) and (min-width: 721px) {
   #main {
-    padding-left: 180px;
     padding-right: 10px;
+    padding-left: 174px;
     min-height: 450px; }
     #main h1 {
       font-size: 36px; }
+
+  #topbar {
+    padding: 8px 10px 8px 0px; }
 
   #sidebar {
     left: 10px;
@@ -439,4 +544,31 @@ label {
 
   #comments-block {
     padding-left: 180px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  .cv h3 i, .cv h3 em {
+    left: -170px;
+    width: 150px;
+    font-size: 14px; }
+  .cv h3 b, .cv h3 strong {
+    font-size: 14px; } }
+@media print {
+  #translate, #main-options {
+    display: none; }
+
+  #main p {
+    font-size: 14px; }
+
+  #container {
+    width: 1024px;
+    max-width: 1024px;
+    margin: 0px; }
+
+  .no-print {
+    display: none; }
+
+  .columns {
+    margin-bottom: 20px; }
+
+  .page-break {
+    break-before: always; } }
