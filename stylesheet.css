@@ -223,9 +223,28 @@ label {
     left: -200px;
     text-align: right;
     top: 6px; }
+  #main .skills-box {
+    display: inline-block;
+    width: 47%;
+    padding: 4px;
+    margin-bottom: 6px;
+    min-height: 15em;
+    vertical-align: top;
+    color: #441805;
+    background-color: #FDF9F2; }
+    #main .skills-box h3 {
+      font-family: "Lucida Sans", "Lucida", sans-serif !important;
+      font-size: 16px;
+      color: #5a1e07;
+      padding-left: 0px;
+      padding-bottom: 6px;
+      margin-left: 8px; }
+    #main .skills-box ul li {
+      font-size: 12px; }
 
 #topbar {
   position: absolute;
+  z-index: 10;
   box-sizing: border-box;
   width: 100%;
   top: 0px;
@@ -385,22 +404,6 @@ label {
 .video:before {
   content: url(/images/video_icon.svg); }
 
-.skills-box {
-  display: inline-block;
-  width: 47%;
-  padding: 4px;
-  margin-bottom: 6px;
-  min-height: 220px;
-  vertical-align: top;
-  color: #441805;
-  background-color: #FDF9F2; }
-  .skills-box h3 {
-    font-size: 16px;
-    color: #5a1e07; }
-  .skills-box ul {
-    margin: 0px;
-    font-size: 12px; }
-
 @media screen and (max-width: 720px) {
   #topbar {
     font-size: 10px;
@@ -445,6 +448,8 @@ label {
       left: auto;
       text-align: left;
       top: auto; }
+    #main .skills-box {
+      font-size: 10px; }
 
   #narrow-container #main {
     padding-top: 60px;
@@ -476,7 +481,7 @@ label {
   #motto {
     position: absolute;
     top: 32px;
-    left: 100px;
+    left: 105px;
     height: 32px;
     padding: 0;
     font-size: 12px; }
