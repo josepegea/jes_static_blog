@@ -12,12 +12,12 @@ language: en
 
 <%= md_begin_block('div', :class => 'abstract columns') %>
 
-* Freelance **Full-Stack Web Developer** and **Team Lead**
+* **Software Developer** and **Team Lead**
 * Proficient in **Ruby**, **Rails** and more
 * **BS in CS**, 1994 UPC (Barcelona)
 * Fluent in **English**, **Spanish** and **Catalan**
 * Based in Madrid, Spain, available for **remote work worldwide**
-* Contact me at <%= l_link_to("https://josepegea.com/contact", "/about/contact")%>
+* <%= l_link_to("https://josepegea.com/contact", "/about/contact")%>
 
 <%= md_end_block %>
 
@@ -28,8 +28,8 @@ Quick jump to ...
 <%= md_begin_block('div', :class => 'main_options') %>
 
 * [Professional Experience](#professional-experience)
-* [Technical Skills](#technical-skills)
 * [Open Source](#open-source)
+* [Technical Skills](#technical-skills)
 * [Other](#other)
 
 <%= md_end_block %>
@@ -205,6 +205,31 @@ A selection of technical skills.
 
 <%= md_begin_block('div', :class => 'skills-box') %>
 
+### Languages and Tools
+
+* Ruby
+* Javascript and Node
+* Objective-C and Cocoa
+- C and UNIX tools: Lexx, Yacc ...
+* Git, SVN, GitHub, GitLab, BitBucket
+* GNU Emacs
+
+<%= md_end_block %>
+
+<%= md_begin_block('div', :class => 'skills-box') %>
+
+### Software Development
+
+* OOP & OOD
+* TDD
+* Agile, Scrum, Kanban
+* Jira and pther project tools
+* Remote communication tools
+
+<%= md_end_block %>
+
+<%= md_begin_block('div', :class => 'skills-box') %>
+
 ### Backend
 
 * PostgreSQL, MySQL
@@ -218,90 +243,63 @@ A selection of technical skills.
 
 <%= md_begin_block('div', :class => 'skills-box') %>
 
-### Frontend
+### Web Development
 
 * HTML5, CSS, SASS
+* Ruby on Rails
 * Javascript, TypeScript, CoffeScript
 * Angular, React & VueJS
 
 <%= md_end_block %>
 
-<%= md_begin_block('div', :class => 'skills-box') %>
-
-### Languages, Frameworks and Tools
-
-* Ruby & Ruby on Rails
-* Objective-C and Cocoa
-* Git, SVN, GitHub, BitBucket, GitLab
-* UNIX dev env: C, Lexx, Yacc and more
-* GNU Emacs
-
-<%= md_end_block %>
-
-<%= md_begin_block('div', :class => 'skills-box') %>
-
-### Software Development
-
-* OOP & OOD
-* TDD
-* Agile, Scrum, Kanban
-* Jira, Trello, Wrike.
-* Slack, Meet, Skype, Zoom*, Email
-
-<%= md_end_block %>
-
+{:.page-break}
 ## Other
+
+### _2006 - 2016_ Organizer and Instructor in Photography Workshops
+
+As part of the "themed trips" in Evadium, I took the lead in
+organizing Photography Workshops in selected, picture-worthy locations
+around Spain and abroad, including destinations such as **Iceland**
+and **Morocco**.
+
+With hired photography professionals or as an instructor myself, the
+workshops lasted from 1 day to a whole week, and offered an immmersive
+experience for photography lovers, where they could learn more about
+the craft, practice their skills in scenic locations and meet with
+other enthusiasts.
+
+<%= hang_left_icon('website') %>
+<https://www.flickr.com/photos/evadium/albums>
+
+<%= hang_left_icon('video') %>
+<https://www.youtube.com/watch?v=UVSq6nz674w>
+
 
 ### *Nexus Servicios de Información **1993-2000*** Software Developer, Project Manager and Technical Lead
 
-At the time, Nexus was an ISP that also developed custom business
-applications for companies in the industrial sector, using NeXTstep
-software. Having completed a certified NeXT developer camp in 1992, I
-joined Nexus to be part of the small team of developers. After a few
-months, I became project manager and eventually took the technical
-lead of the company.
-
-While at Nexus, my team developed business applications using NeXTstep
-/ OpenStep (first) and MacOS X (later), supporting the complete
-business processes for two companies: a ceramic tile manufacturer and
-a paint and coat producer. Covering areas from production to sales
-(domestic and foreign), those applications were written in
-Objective-C, using the NeXT/Apple frameworks (DBKit, Enterprise
-Objects Framework, Cocoa) and SQL database servers from Sybase and
-Oracle.
-
-At Nexus we also developed websites and ecommerce applications using a
-proprietary stack that we built around NeXT technology. It included a
-custom scripting language, designed and implemented by ourselves, that
-could be embedded in HTML pages, just like PHP or ERB templates, and
-integrated with ad hoc server applications that managed database
-connectivity, session state, etc. Using those tools we built several
-websites, including DiscoWeb.com, one of the first online music stores
-in Spain, and the corporate site for Smint.
+Developing business applications and websites using **NeXTstep** /
+**OpenStep** (first) and **MacOS X** (later) with **Objective-C**,
+using the NeXT/Apple frameworks (DBKit, Enterprise Objects Framework,
+**Cocoa**) and SQL database servers from Sybase and Oracle.
 
 **Relevant technologies**: NeXTstep, OpenStep, Mac OS X, Cocoa,
 Objective-C, UNIX stack, Lexx & Yacc, Sybase SQL Server, Oracle, CVS,
 UML.
 
+
 ### *Disseny i Gestió Informàtica, s.l. **1990-1993*** Co-founder and Software Developer
 
 While at college, and together with two other students there, we
 founded Disseny i Gestió Informàtica, s.l., a custom software
-development company for Small & Medium Business.
-
-We built accounting, sales and production management applications
-using DOS and Turbo Pascal 5.5, along with supporting software, like
-Btrieve, later evolving to C/C++, Delphi and Windows.
+development company for SMB's that built accounting, sales and
+production management applications using DOS and Turbo Pascal
+5.5. Later evolving to C/C++, Delphi and Windows.
 
 ### ***1990-2000*** Freelance writer and translator for IT magazines
 
 For several years, I worked with various technical magazines and
-publications translating content written in English by the American
-headquarters and adapting it for the Spanish market.
-
-With the time, I also wrote original content for those publishers,
-centered around operating systems (and Linux in particular), software
-development, new tools, etc.
+publications writing original content and translating pieces from the
+American headquarters, adapting it for the Spanish market.
 
 My articles appeared in the Spanish editions of several magazines,
 like **Byte**, **Datamation**, **PCPlus** and others. I also wrote IT

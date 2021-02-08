@@ -352,10 +352,34 @@ label {
       top: 6px;
     }
   }
+  .skills-box {
+    display: inline-block;
+    width: 47%;
+    padding: 4px;
+    margin-bottom: 6px;
+    min-height: 15em;
+    vertical-align: top;
+    color: $notice-text-color;
+    background-color: $notice-background-color;
+    h3 {
+      font-family: $body-font !important;
+      font-size: 16px;
+      color: $notice-h2-color;
+      padding-left: 0px;
+      padding-bottom: 6px;
+      margin-left: 8px;
+    }
+    ul {
+      li {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 #topbar {
   position: absolute;
+  z-index: 10;
   box-sizing: border-box;
   width: 100%;
   top: 0px;
@@ -548,24 +572,7 @@ label {
   content: url(/images/video_icon.svg);
 }
 
-.skills-box {
-  display: inline-block;
-  width: 47%;
-  padding: 4px;
-  margin-bottom: 6px;
-  min-height: 220px;
-  vertical-align: top;
-  color: $notice-text-color;
-  background-color: $notice-background-color;
-  h3 {
-    font-size: 16px;
-    color: $notice-h2-color;
-  }
-  ul {
-    margin: 0px;
-    font-size: 12px;
-  }
-}
+
 
 @media screen and (max-width: $max-phone-width)
 {
@@ -607,6 +614,11 @@ label {
         top: auto;
       }
     }
+    .skills-box {
+      // width: 100%;
+      // min-height: auto;
+      font-size: 10px;
+    }
 	}
 
 	#narrow-container {
@@ -645,7 +657,7 @@ label {
 	#motto {
 		position:absolute;
 		top:32px;
-		left:100px;
+		left:105px;
 		height:32px;
 		padding:0;
 		font-size:12px;
