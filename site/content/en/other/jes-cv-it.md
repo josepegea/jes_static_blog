@@ -3,12 +3,13 @@ title: 'Josep Egea - CV'
 has_comments: false
 created_at: '2015-09-19'
 canonical_identifier: '/other/jes-cv-it'
+use_alternate_logo: true
 language: en
 ---
 
 <%= md_begin_block('div', :class => 'cv') %>
 
-# Josep Egea - CV
+# Josep Egea _CV_
 
 <%= md_begin_block('div', :class => 'abstract columns') %>
 

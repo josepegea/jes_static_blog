@@ -21,7 +21,7 @@ $notice-border-color			:#a8958d;
 $separators-color 				:#ccc;
 
 $small-phone-width 				:320px;
-$phone-width 					:360px;
+$phone-width 					:480px;
 $max-phone-width 				:720px;
 $tablet-width					:850px;
 $desktop-width					:1280px;
@@ -177,6 +177,7 @@ label {
 	min-height: 450px;
 
   h1, h2, h3 {
+    position: relative;
     font-family: $titles-font;
   }
 
@@ -186,6 +187,13 @@ label {
 		line-height: 40px;
 		letter-spacing: -1px;
 		margin-bottom:0.5em;
+    position: relative;
+    em, i {
+      font-style: normal;
+      font-size: 32px;
+      color: $hanging-color;
+      margin-left: 4px;
+    }
 	}
 
   h3 + h4 {
@@ -354,7 +362,7 @@ label {
   }
   .skills-box {
     display: inline-block;
-    width: 47%;
+    width: 45%;
     padding: 4px;
     margin-bottom: 6px;
     min-height: 15em;
@@ -464,6 +472,19 @@ label {
 	font-size:12px;
 }
 
+#alternate-logo {
+	display:block;
+	width:150px;
+  height: 150px;
+  padding: 0px;
+	margin: 0px 0px 0px 50px;
+	background-image:url(/images/jes_profile.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+  background-size: 150px;
+  border-radius: 150px;
+}
+
 #subcription-form {
 	padding-left: 280px;
 	padding-right:40px;
@@ -511,6 +532,7 @@ label {
 }
 
 .cv {
+  position: relative;
   h2 {
     padding-bottom:8px;
   }
@@ -604,6 +626,9 @@ label {
 			font-size: 32px;
 			line-height: 32px;
 			letter-spacing: -1px;
+      em, i {
+        font-size: 24px;
+      }
 		}
     ul.article-list.hanging {
       .article-item-date {
@@ -663,6 +688,14 @@ label {
 		font-size:12px;
 	}
 
+	#alternate-logo {
+		height:50px;
+		width:50px;
+    margin: 0px 0px 0px 10px;
+    background-size: 50px;
+    border-radius: 50px;
+	}
+
 	#main-options {
 		display:inline-block;
 		border-top: solid 1px $separators-color;
@@ -706,6 +739,18 @@ label {
   }
 }
 
+@media screen and (max-width: $phone-width)
+// This includes the phone CSS. Only additional adjustments need to be applied here.
+{
+  #topbar {
+    padding: 10px 8px 8px 0px;
+  }
+	#main-options {
+		li {
+			font-size:14px;
+		}
+	}
+}
 
 @media screen and (max-width: $small-phone-width)
 // This includes the phone CSS. Only additional adjustments need to be applied here.
@@ -727,6 +772,9 @@ label {
 
 		h1 {
 			font-size: 36px;
+      em, i {
+        font-size: 24px;
+      }
 		}
 	}
 
@@ -749,6 +797,14 @@ label {
 
 	#motto {
 		font-size:12px;
+	}
+
+	#alternate-logo {
+		height:100px;
+		width:100px;
+    margin: 0px 0px 0px 40px;
+    background-size: 100px;
+    border-radius: 100px;
 	}
 
 	#subcription-form {
@@ -800,6 +856,7 @@ label {
   }
 
   .page-break {
+    page-break-before: always;
     break-before: always;
   }
 }
