@@ -103,13 +103,20 @@ label {
   padding-bottom: 20px;
   min-height: 450px; }
   #main h1, #main h2, #main h3 {
+    position: relative;
     font-family: Georgia, Palatino, serif; }
   #main h1 {
     font-size: 40px;
     font-weight: normal;
     line-height: 40px;
     letter-spacing: -1px;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    position: relative; }
+    #main h1 em, #main h1 i {
+      font-style: normal;
+      font-size: 32px;
+      color: #888;
+      margin-left: 4px; }
   #main h3 + h4 {
     margin-top: 20px; }
   #main h4 {
@@ -225,7 +232,7 @@ label {
     top: 6px; }
   #main .skills-box {
     display: inline-block;
-    width: 47%;
+    width: 45%;
     padding: 4px;
     margin-bottom: 6px;
     min-height: 15em;
@@ -318,6 +325,18 @@ label {
 #motto {
   font-size: 12px; }
 
+#alternate-logo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+  margin: 0px 0px 0px 50px;
+  background-image: url(/images/jes_profile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  border-radius: 150px; }
+
 #subcription-form {
   padding-left: 280px;
   padding-right: 40px;
@@ -357,29 +376,31 @@ label {
   padding-top: 10px;
   padding-bottom: 40px; }
 
-.cv h2 {
-  padding-bottom: 8px; }
-.cv h3 {
-  padding-top: 8px;
-  border-bottom: solid 1px;
+.cv {
   position: relative; }
-  .cv h3 i, .cv h3 em {
-    position: absolute;
-    display: block;
-    left: -200px;
-    width: 170px;
-    text-align: right;
-    font-weight: bold;
-    font-style: normal;
-    color: #666; }
-  .cv h3 b, .cv h3 strong {
-    font-size: 16px;
-    color: #888;
-    padding-left: 1em;
-    display: block;
-    font-weight: normal; }
-.cv .abstract ul {
-  padding: 8px; }
+  .cv h2 {
+    padding-bottom: 8px; }
+  .cv h3 {
+    padding-top: 8px;
+    border-bottom: solid 1px;
+    position: relative; }
+    .cv h3 i, .cv h3 em {
+      position: absolute;
+      display: block;
+      left: -200px;
+      width: 170px;
+      text-align: right;
+      font-weight: bold;
+      font-style: normal;
+      color: #666; }
+    .cv h3 b, .cv h3 strong {
+      font-size: 16px;
+      color: #888;
+      padding-left: 1em;
+      display: block;
+      font-weight: normal; }
+  .cv .abstract ul {
+    padding: 8px; }
 
 .relative {
   position: relative; }
@@ -442,6 +463,8 @@ label {
       font-size: 32px;
       line-height: 32px;
       letter-spacing: -1px; }
+      #main h1 em, #main h1 i {
+        font-size: 24px; }
     #main ul.article-list.hanging .article-item-date {
       position: relative;
       width: auto;
@@ -486,6 +509,13 @@ label {
     padding: 0;
     font-size: 12px; }
 
+  #alternate-logo {
+    height: 50px;
+    width: 50px;
+    margin: 0px 0px 0px 10px;
+    background-size: 50px;
+    border-radius: 50px; }
+
   #main-options {
     display: inline-block;
     border-top: solid 1px #ccc;
@@ -514,6 +544,12 @@ label {
     font-size: 16px;
     padding-left: 0px;
     display: block; } }
+@media screen and (max-width: 480px) {
+  #topbar {
+    padding: 10px 8px 8px 0px; }
+
+  #main-options li {
+    font-size: 14px; } }
 @media screen and (max-width: 320px) {
   #main-options li {
     font-size: 14px; } }
@@ -524,6 +560,8 @@ label {
     min-height: 450px; }
     #main h1 {
       font-size: 36px; }
+      #main h1 em, #main h1 i {
+        font-size: 24px; }
 
   #topbar {
     padding: 8px 10px 8px 0px; }
@@ -541,6 +579,13 @@ label {
 
   #motto {
     font-size: 12px; }
+
+  #alternate-logo {
+    height: 100px;
+    width: 100px;
+    margin: 0px 0px 0px 40px;
+    background-size: 100px;
+    border-radius: 100px; }
 
   #subcription-form {
     padding-left: 180px;
@@ -576,4 +621,5 @@ label {
     margin-bottom: 20px; }
 
   .page-break {
+    page-break-before: always;
     break-before: always; } }
