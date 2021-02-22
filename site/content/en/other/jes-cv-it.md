@@ -224,7 +224,7 @@ A selection of technical skills.
 * OOP & OOD
 * TDD
 * Agile, Scrum, Kanban
-* Jira and pther project tools
+* Jira and other project tools
 * Remote communication tools
 
 <%= md_end_block %>
