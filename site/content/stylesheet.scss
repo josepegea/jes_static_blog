@@ -196,6 +196,10 @@ label {
     }
 	}
 
+  h2 {
+    margin-top: 40px;
+  }
+
   h3 + h4 {
     margin-top:20px;
   }
@@ -205,7 +209,7 @@ label {
   }
 
 	p {
-		margin: 20px 0;
+		margin: 15px 0;
 		font-size: 16px;
 		line-height: 1.4em;
 	}
@@ -472,17 +476,25 @@ label {
 	font-size:12px;
 }
 
-#alternate-logo {
-	display:block;
-	width:150px;
-  height: 150px;
-  padding: 0px;
-	margin: 0px 0px 0px 50px;
-	background-image:url(/images/jes_profile.jpg);
-	background-position:center;
-	background-repeat:no-repeat;
-  background-size: 150px;
-  border-radius: 150px;
+#alt-logo-container {
+  #alternate-logo {
+	  display:block;
+	  width:150px;
+    height: 150px;
+    padding: 0px;
+	  margin: 0px 0px 0px 50px;
+	  background-image:url(/images/jes_profile.jpg);
+	  background-position:center;
+	  background-repeat:no-repeat;
+    background-size: 150px;
+    border-radius: 150px;
+  }
+  a {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 12px;
+  }
 }
 
 #subcription-form {
@@ -688,13 +700,20 @@ label {
 		font-size:12px;
 	}
 
-	#alternate-logo {
-		height:50px;
-		width:50px;
-    margin: 0px 0px 0px 10px;
-    background-size: 50px;
-    border-radius: 50px;
-	}
+  #alt-logo-container {
+	  #alternate-logo {
+		  height:50px;
+		  width:50px;
+      margin: 0px 0px 0px 10px;
+      background-size: 50px;
+      border-radius: 50px;
+	  }
+    a {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  }
 
 	#main-options {
 		display:inline-block;
@@ -799,13 +818,18 @@ label {
 		font-size:12px;
 	}
 
-	#alternate-logo {
-		height:100px;
-		width:100px;
-    margin: 0px 0px 0px 40px;
-    background-size: 100px;
-    border-radius: 100px;
-	}
+  #alt-logo-container {
+	  #alternate-logo {
+		  height:100px;
+		  width:100px;
+      margin: 0px 0px 0px 40px;
+      background-size: 100px;
+      border-radius: 100px;
+	  }
+    a {
+      font-size: 9px;
+    }
+  }
 
 	#subcription-form {
 		padding-left: 180px;

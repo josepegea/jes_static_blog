@@ -59,8 +59,11 @@
 				<div id="logo-container">
 					<div id="logo-box">
             <% if @item[:use_alternate_logo] %>
-              <span id="alternate-logo"></span>
-            <% else %>
+              <div id="alt-logo-container">
+                <span id="alternate-logo"></span>
+                <%= l_link_to("https://josepegea.com/contact", "/about/contact") %>
+              </div>
+              <% else %>
               <a href="<%= l_url_for('/') %>">
                 <span id="logo">
                   JosepEgea.com
@@ -69,12 +72,15 @@
   					  <span id="motto">
 							  <%= t "layout.motto"%>
 						  </span>
-	          <% end %>
+	            <% end %>
 					</div>
 				</div>
 				<ul id="main-options">
 					<li>
 						<%= l_link_to(t("layout.options.home"), "/")%>
+					</li>
+					<li>
+						<%= l_link_to("Open Source", "/open_source")%>
 					</li>
 					<li>
 						<%= l_link_to(t("layout.options.articles"), "/blog/")%>

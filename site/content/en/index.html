@@ -20,6 +20,9 @@ language: en
     Need my <a href="/cv">CV</a>?
   </li>
   <li>
+    I write <%= l_link_to("Open Source", "/open_source") %> and have done some <%= l_link_to("Presentations", "/about/presentations") %>!
+  </li>
+  <li>
     And also a <%= link_to "passionate photographer!", "https://www.flickr.com/photos/evadium/" %> Take a look at <%= link_to "my photos", "https://www.flickr.com/photos/evadium/" %>
   </li>
   <li>
@@ -37,11 +40,11 @@ language: en
 
 <h2>Latest Blog Entries</h2>
 
-	<ul class="article-list hanging">
-		
+<ul class="article-list hanging">
+
 	<% news.each do |art| %>
-		<li class="article-item">
-			<%= render 'partials/article_item', :article => art %>
+	<li class="article-item">
+		<%= render 'partials/article_item', :article => art %>
 		</li>
 	<% end %>
 	
