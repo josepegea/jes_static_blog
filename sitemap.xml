@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>http://www.josepegea.com/en/</loc>
-    <lastmod>2021-02-10</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>http://www.josepegea.com/en/about/</loc>
@@ -25,8 +25,12 @@
     <lastmod>2019-11-24</lastmod>
   </url>
   <url>
+    <loc>http://www.josepegea.com/en/about/presentations/</loc>
+    <lastmod>2021-06-10</lastmod>
+  </url>
+  <url>
     <loc>http://www.josepegea.com/en/about/tech_bio/</loc>
-    <lastmod>2019-11-24</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>http://www.josepegea.com/en/blog/</loc>
@@ -41,12 +45,16 @@
     <lastmod>2019-11-23</lastmod>
   </url>
   <url>
+    <loc>http://www.josepegea.com/en/open_source/</loc>
+    <lastmod>2021-06-09</lastmod>
+  </url>
+  <url>
     <loc>http://www.josepegea.com/en/other/jes-cv-it/</loc>
-    <lastmod>2021-02-22</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>http://www.josepegea.com/es/</loc>
-    <lastmod>2021-02-10</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>http://www.josepegea.com/es/about/</loc>
@@ -58,7 +66,7 @@
   </url>
   <url>
     <loc>http://www.josepegea.com/es/about/tech_bio/</loc>
-    <lastmod>2019-11-24</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>http://www.josepegea.com/es/blog/</loc>
@@ -75,6 +83,10 @@
   <url>
     <loc>http://www.josepegea.com/.htaccess</loc>
     <lastmod>2015-06-24</lastmod>
+  </url>
+  <url>
+    <loc>http://www.josepegea.com/open_source/</loc>
+    <lastmod>2021-06-09</lastmod>
   </url>
 </urlset>
 

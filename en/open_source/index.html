@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel=”canonical” href=”/en/open_source/” />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Open source by Josep Egea</title>
+		<link rel="stylesheet" href="/stylesheet.css" />
+		<meta name="generator" content="nanoc 4.11.12">
+		<link rel="alternate" type="application/atom+xml" href="/en/feed.xml" title="Josep Egea's Blog (English Feed)" />
+
+	</head>
+	<body>
+	<div id="container">
+    <div id="topbar">
+      <ul id="translate">
+        
+      </ul>
+    </div>
+
+		<div id="main">
+
+			<h1 id="open-source">Open Source</h1>
+
+<p>I love to create and contribute to Open Source projects.</p>
+
+<p>These are some of them.</p>
+
+<ul>
+  <li><a href="#tk_component">TkComponent</a></li>
+  <li><a href="#termux_ruby_api">TermuxRubyApi</a></li>
+  <li><a href="#scenic">Patch for Scenic MySQL adapter</a></li>
+  <li><a href="#duration">Patch for ActiveSupport::Duration</a></li>
+</ul>
+
+<p>In addition, you can find all my open source code in GitHub</p>
+
+<div class="relative"><div class="github"></div></div>
+<p><a href="https://github.com/josepegea">https://github.com/josepegea</a></p>
+
+<p><a name="tk_component"></a></p>
+
+<h2 id="tkcomponent">TkComponent</h2>
+
+<p>Ruby gems designed to help the creation of <strong>Desktop GUI’s in Ruby</strong> using
+Tk.</p>
+
+<p><img src="https://i.ibb.co/bNmLGbc/tk-inspect-teaser.gif" alt="GIF demo" /></p>
+
+<p><strong>TkComponent</strong> provides a more modern and component-oriented layer to
+create GUI’s on top of regular Ruby Tk.</p>
+
+<p><strong>TkInspect</strong> builds on top of TkComponent to provide a visual
+environment for Ruby code, similar to what Smalltalk provides.</p>
+
+<p><strong>TkInspectRails</strong> adds helpers to use TkInspect with Ruby on Rails
+apps.</p>
+<div class="relative"><div class="github"></div></div>
+<p><a href="https://github.com/josepegea/tk_component">https://github.com/josepegea/tk_component</a>
+<br />
+<a href="https://github.com/josepegea/tk_inspect">https://github.com/josepegea/tk_inspect</a>
+<br />
+<a href="https://github.com/josepegea/tk_inspect_rails">https://github.com/josepegea/tk_inspect_rails</a></p>
+
+<div class="relative"><div class="video"></div></div>
+<p><strong>Talk about TkComponent</strong>: <a href="https://vimeo.com/506750901">https://vimeo.com/506750901</a></p>
+
+<p><a name="termux_ruby_api"></a></p>
+
+<h2 id="termuxrubyapi">TermuxRubyApi</h2>
+
+<p>A Ruby Gem for interacting with Android API from within Termux.</p>
+<div class="relative"><div class="github"></div></div>
+<p><a href="https://github.com/josepegea/termux_ruby_api">https://github.com/josepegea/termux_ruby_api</a></p>
+
+<div class="relative"><div class="video"></div></div>
+<p><strong>Talk about TermuxRubyApi</strong>: <a href="https://vimeo.com/482309000">https://vimeo.com/482309000</a></p>
+
+<p><a name="scenic"></a></p>
+
+<h2 id="patch-for-scenic-mysql">Patch for Scenic MySql</h2>
+
+<p><code>scenic</code> and <code>scenic-mysql_adapter</code> are gems that make it easier to
+support SQL views with <code>ActiveRecord</code>.</p>
+
+<p>With versions of Rails &lt; 5.0, there was an error when generating an
+<code>schema.rb</code> that caused views to be duplicated.</p>
+
+<p>I created a patch and submitted a PR to fix the issue that was merged
+into master.</p>
+
+<div class="relative"><div class="github"></div></div>
+<p><strong>PR</strong>: <a href="https://github.com/EmpaticoOrg/scenic-mysql_adapter/pull/5">https://github.com/EmpaticoOrg/scenic-mysql_adapter/pull/5</a></p>
+
+<p><a name="duration"></a></p>
+
+<h2 id="patch-for-activesupportduration">Patch for ActiveSupport::Duration</h2>
+
+<p>When pretty-printing <code>ActiveSupport::Duration</code> objects out of
+additions, the results are not normalized (i.e. “3 minutes and 70
+seconds”).</p>
+
+<p>I created a patch to add a <code>normalize</code> method and submitted a PR to
+the Rails repo, but it wasn’t merged.</p>
+
+<div class="relative"><div class="github"></div></div>
+<p><strong>PR</strong>: <a href="https://github.com/rails/rails/pull/35197">https://github.com/rails/rails/pull/35197</a></p>
+
+
+		</div>
+
+    
+
+		
+
+    
+      <footer>
+        <ul id="credits-main">
+          <li>
+            <a href="/en/feed.xml" type="application/atom+xml">
+              RSS Feed
+            </a>
+          </li>
+          <li>Built with <a href="http://nanoc.ws/">Nanoc</a></li>
+          <li>Logo by Eva Egea</li>
+        </ul>
+        <div id="footer-credits">
+          Built and Written by Josep Egea &nbsp;&nbsp;&nbsp; 2016 &ndash; 2021
+        </div>
+      </footer>
+    
+
+		<div id="sidebar">
+			<nav>
+				<div id="logo-container">
+					<div id="logo-box">
+            
+              <a href="/en/">
+                <span id="logo">
+                  JosepEgea.com
+                </span>
+              </a>
+  					  <span id="motto">
+							  Writings and Ideas by Josep Egea
+						  </span>
+	            
+					</div>
+				</div>
+				<ul id="main-options">
+					<li>
+						<a href="/en/">Home</a>
+					</li>
+					<li>
+						Open Source
+					</li>
+					<li>
+						<a href="/en/blog/">Blog</a>
+					</li>
+					<li>
+						<a href="/en/about/">About</a>
+					</li>
+					<li>
+						<a href="/en/about/contact/">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.josepegea.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.josepegea.com/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+	</body>
+</html>
