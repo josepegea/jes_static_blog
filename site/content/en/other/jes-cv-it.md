@@ -156,7 +156,7 @@ Creator and contributor of Open Source projects.
 <%= hang_left_icon('github') %>
 <https://github.com/josepegea>
 
-<%= l_link_to("https://josepegea.com/open_source", "/open_source") %>
+<%= l_link_to("https://www.josepegea.com/open_source", "/open_source") %>
 
 ### _Madrid.rb**2020 - Present day**_ Organizer of the Madrid Ruby Users Group (Madrid.rb)
 
