@@ -1,5 +1,5 @@
 ---
-title: Presentations by Josep Egea'
+title: Presentations by Josep Egea
 kind: general_info
 canonical_identifier: '/about/presentations'
 language: en

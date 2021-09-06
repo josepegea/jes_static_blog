@@ -87,8 +87,15 @@ Quick jump to ...
 </tbody>
 </table>
 
+### *Lingokids<br/>**2021-Present day*** Senior Backend Engineer
 
-### *Platform 161 <br/>Verve Group**2019 - Present day*** Software Development Team Lead / Head of Frontend
+Helping with the **Ruby on Rails** backend and API for Lingokids
+Educational app.
+
+<%= hang_left_icon('website') %>
+<https://www.lingokids.com>
+
+### *Platform 161 <br/>Verve Group**2019 - 2021*** Software Development Team Lead / Head of Frontend
 Leading a team of **10-15 developers and devops** across **5 regions**
 and **3 timezones**, spanning **6 nationalities**, including
 **internal** employees, **freelance** contractors and **3rd party
