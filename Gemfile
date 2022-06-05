@@ -3,7 +3,7 @@
 
 source 'https://rubygems.org'
 
-gem 'nanoc', '4.11.12'
+gem 'nanoc', '4.12.6'
 gem 'adsf'
 
 # SASS & cool stuff
@@ -22,6 +22,7 @@ gem "builder"
 gem "activesupport"
 
 gem 'rake'
+gem 'webrick'
 
 # Guard
 group :nanoc do

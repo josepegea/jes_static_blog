@@ -54,46 +54,7 @@
       </footer>
     <% end %>
 
-		<div id="sidebar">
-			<nav>
-				<div id="logo-container">
-					<div id="logo-box">
-            <% if @item[:use_alternate_logo] %>
-              <div id="alt-logo-container">
-                <span id="alternate-logo"></span>
-                <%= l_link_to("https://josepegea.com/contact", "/about/contact") %>
-              </div>
-              <% else %>
-              <a href="<%= l_url_for('/') %>">
-                <span id="logo">
-                  JosepEgea.com
-                </span>
-              </a>
-  					  <span id="motto">
-							  <%= t "layout.motto"%>
-						  </span>
-	            <% end %>
-					</div>
-				</div>
-				<ul id="main-options">
-					<li>
-						<%= l_link_to(t("layout.options.home"), "/")%>
-					</li>
-					<li>
-						<%= l_link_to("Open Source", "/open_source")%>
-					</li>
-					<li>
-						<%= l_link_to(t("layout.options.articles"), "/blog/")%>
-					</li>
-					<li>
-						<%= l_link_to(t("layout.options.about"), "/about/")%>
-					</li>
-					<li>
-						<%= l_link_to(t("layout.options.contact"), "/about/contact")%>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<%= render 'partials/logo' %>
 	</div>
 	<%= render 'partials/piwik_track' %>
 	</body>

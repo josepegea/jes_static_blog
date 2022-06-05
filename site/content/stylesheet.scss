@@ -198,6 +198,8 @@ label {
 
   h2 {
     margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 36px;
   }
 
   h3 + h4 {
@@ -326,7 +328,7 @@ label {
 		h2 {
 			font-size: 16px;
 			color: $notice-h2-color;
-			border-bottom: solid 1px;
+			border-bottom: solid 2px;
 			margin-bottom:10px;
 		}
 	}
@@ -561,6 +563,11 @@ label {
       font-weight:bold;
       font-style:normal;
       color:$hanging-strong-color;
+      a {
+        font-size: 11px;
+        font-family: $body-font;
+        font-weight: normal;
+      }
     }
     b, strong {
       font-size:16px;
@@ -606,7 +613,17 @@ label {
   content: url(/images/video_icon.svg);
 }
 
+img.section-hero {
+  width: 100%;
+  opacity: 20%;
+  margin-bottom: 0px;
+}
 
+img.section-hero2 {
+  width: 100%;
+  opacity: 30%;
+  margin-bottom: -97px;
+}
 
 @media screen and (max-width: $max-phone-width)
 {

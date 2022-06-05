@@ -28,6 +28,7 @@ Quick jump to ...
 <%= md_begin_block('div', :class => 'main_options') %>
 
 * [Professional Experience](#professional-experience)
+* [Public Speeches and Presentations](#public-speeches-and-presentations)
 * [Open Source](#open-source)
 * [Technical Skills](#technical-skills)
 * [Other](#other)
@@ -87,15 +88,21 @@ Quick jump to ...
 </tbody>
 </table>
 
-### *Lingokids<br/>**2021-Present day*** Senior Backend Engineer
+### *Marketer.tech<br/><https://www.marketer.tech><br/>**January 2022-Present day*** Full Stack Engineer
 
-Helping with the **Ruby on Rails** backend and API for Lingokids
-Educational app.
+Joined as a **Backend developer** to support several Ruby on Rails
+backends, also participating in the development of a new **React
+frontend**, together with a team of around **15-20 developers** from **8
+nationalities**, for their suit of real estate solutions for the
+**Norwegian and global markets**.
 
-<%= hang_left_icon('website') %>
-<https://www.lingokids.com>
+### *Lingokids<br/><https://www.lingokids.com><br/>**2021-2022*** Senior Backend Engineer
 
-### *Platform 161 <br/>Verve Group**2019 - 2021*** Software Development Team Lead / Head of Frontend
+Part the development team to support and grow the **Ruby on Rails** backend and API for Lingokids
+**Educational** app, together with a team of **15-20 developers** from
+**7 nationalities**.
+
+### *Platform 161<br/>Verve Group<br/><https://www.platform161.com><br/><https://verve.com>**2019 - 2021*** Software Development Team Lead / Head of Frontend
 Leading a team of **10-15 developers and devops** across **5 regions**
 and **3 timezones**, spanning **6 nationalities**, including
 **internal** employees, **freelance** contractors and **3rd party
@@ -109,33 +116,27 @@ With the recent acquisition of Platform 161 as a member of the **Verve
 Group**, we're expanding our development process to other frontend
 projects of the group.
 
+
 ### _**2015 - 2019**_ Senior Full-Stack Software Developer
 
 **Ruby on Rails** multitenant application with a **REST API's** and a
 **Angular SPA** that deals with **hundreds of TBs** using tools like
 **Percona MySQL**, **Google Big Query**, **ClickHouse** and more.
 
-<%= hang_left_icon('website') %>
-<https://www.platform161.com> ---
-<https://verve.com>
 
-### *Human Benefits<br/>**2015-2016*** Senior Full-Stack Software Developer
+### *Human Benefits<br/><http://www.humanbenefits.com><br/>**2015-2016*** Senior Full-Stack Software Developer
 
 **Evolve and grow** a newly designed HR and employee benefits
 application to reach a MVP. Using **Ruby on Rails**, **PostgreSQL**
 and external tools like **HelloSign**.
 
-<%= hang_left_icon('website') %>
-<http://www.humanbenefits.com>
 
-### *Kolau<br/>**2015*** Ruby on Rails consultant
+### *Kolau<br/><https://www.kolau.com><br/>**2015*** Ruby on Rails consultant
 Advisor about general application **architecture** while building MVP
 using Ruby on Rails.
 
-<%= hang_left_icon('website') %>
-<https://www.kolau.com>
 
-### *Evadium.com **2005 - 2015*** Co-Founder and Technical Lead
+### *Evadium.com<br/><http://www.evadium.com><br/> **2005 - 2015*** Co-Founder and Technical Lead
 
 **Bootstrapped** the company, along with my co-founder, **growing** it to
 become an online travel agency still operating today.
@@ -145,10 +146,8 @@ Besides co-direction, **building and running** public **web site**,
 **extranet** to connect to external partners, using Ruby on Rails and
 PostgreSQL, among others.
 
-<%= hang_left_icon('website') %>
-<http://www.evadium.com>
 
-### *Penteo ICT Analyst **2000-2007*** IT Analyst, Consultant and Manager
+### *Penteo ICT Analyst<br/><https://www.penteo.com><br/>**2000-2007*** IT Analyst, Consultant and Manager
 
 During 7 years, I held different positions in analysis, consulting,
 research and business development, working in several IT areas, like
@@ -156,25 +155,67 @@ Outsourcing management, ERP software deployment, IT department
 reorganization or optimization of development teams, to name a few.
 
 {:.page-break}
+
+<img src="/images/cv/josep_presentation.png" class="section-hero">
+
+## Public Speeches and Presentations
+
+### _Madrid.rb<br/><https://www.madridrb.com/><br/>**2020 - Present day**_ Organizer of the Madrid Ruby Users Group (Madrid.rb)
+
+After more than 10 years attending the group meetings and activities,
+in 2019 I became the organizer of the group.
+
+In addition to hosting monthly sessions with different speakers, I've
+given several presentations during last years.
+
+
+### _**2022**_ Happiness, Lies and Rubocop - (About linters and their usage)
+
+Presentation on Madrid.rb about the benefits of linting and the risks
+of getting to far with it.
+
+- **Video**: <https://vimeo.com/685590793>
+- **Slides**: <https://speakerdeck.com/josep_egea/happiness-lies-and-rubocop>
+
+### _**2021**_ Ruby 3 Concurrency
+
+Presentation on Madrid.rb about the different concurrency options
+available in Ruby 3, including Threads, the Fiber Scheduler and
+Ractors, with example code and graphical results.
+
+- **Video**: <https://vimeo.com/556879297>
+- **Code**: <https://github.com/josepegea/async_test>
+- **Slides**: <https://speakerdeck.com/josep_egea/concurrencyinruby3-josepegea>
+
+### _**2021**_ Ruby GUI Apps
+
+Presentation on Madrid.rb about writing GUI desktop app with Ruby and
+Tk, including a new component based gem and an Smalltalk-like live
+code evaluation environment.
+
+- **Video**: <https://vimeo.com/506750901>
+- **Slides**: <https://speakerdeck.com/josep_egea/ruby-gui-apps-beautiful-inside-and-outside>
+
+### _**2019**_ Fun with Ruby, Android and Termux
+
+Presentation on Madrid.rb about controling Android phones with Ruby
+thanks to Termux and a custom developed gem.
+
+- **Video**: <https://vimeo.com/482309000/1534e97efd>
+
+{:.page-break}
+
+<img src="/images/cv/josep_ghprofile.png" class="section-hero2">
+
 ## Open Source
 
-Creator and contributor of Open Source projects.
+I'm the creator of several Open Source projects and have contributed
+to many others.
 
 <%= hang_left_icon('github') %>
 <https://github.com/josepegea>
 
 <%= l_link_to("https://www.josepegea.com/open_source", "/open_source") %>
-
-### _Madrid.rb**2020 - Present day**_ Organizer of the Madrid Ruby Users Group (Madrid.rb)
-
-After more than 10 years attending the group meetings and activities,
-in 2019 I became the organizer of the group.
-
-<%= hang_left_icon('website') %>
-<https://www.madridrb.com/>
-
-**Relevant activities** We organize monthly meetups to present and
-discuss relevant news and knowldege around Ruby
 
 ### _TkComponent TkInspect**2020 - 2021**_ Creator of TkComponent, TkInspect and TkInspectRails
 
@@ -196,37 +237,25 @@ apps.
 <br/>
 <https://github.com/josepegea/tk_inspect_rails>
 
-<%= hang_left_icon('video') %>
-**Talk about TkComponent**: <https://vimeo.com/506750901>
-
 ### _TermuxRubyApi**2019**_ Creator of TermuxRubyApi
 
 A Ruby Gem for interacting with Android API from within Termux.
 <%= hang_left_icon('github') %>
 <https://github.com/josepegea/termux_ruby_api>
 
-<%= hang_left_icon('video') %>
-**Talk about TermuxRubyApi**: <https://vimeo.com/482309000>
+### _OnRuby**2020-Present day**_ Contributor to OnRuby
 
-### _Ruby 3 Concurrency**2021**_ Presentation and scripts about Ruby 3 Concurrency
-
-Presentation on Madrid.rb about the different concurrency options
-available in Ruby 3, including Threads, the Fiber Scheduler and
-Ractors, with example code and graphical results.
+OnRuby is a web app and platform for organizing and hosting Ruby user
+groups. We use it for Madrid.rb and I have contributed several
+improvements to the codebase.
 
 <%= hang_left_icon('github') %>
-**Code**: <https://github.com/josepegea/async_test>
-
-<%= hang_left_icon('video') %>
-**Video**: <https://vimeo.com/556879297>
-
-<%= hang_left_icon('website') %>
-**Slides**: <https://speakerdeck.com/josep_egea/concurrencyinruby3-josepegea>
+<https://github.com/phoet/on_ruby>
 
 ### _Scenic MySql Adapter**2018**_ Patch to Fix schema.rb generation on Rails 4.x
 
-`scenic` and `scenic-mysql_adapter` are gems that make it easier to
-support SQL views with `ActiveRecord`.
+**Scenic** and **ScenicMysqlAdapter** are gems that make it easier to
+support SQL views with **ActiveRecord**.
 
 With versions of Rails < 5.0, there was an error when generating an
 `schema.rb` that caused views to be duplicated.
@@ -259,7 +288,7 @@ A selection of technical skills.
 ### Languages and Tools
 
 * Ruby
-* Javascript and Node
+* Javascript and TypeScript
 * Objective-C and Cocoa
 - C and UNIX tools: Lexx, Yacc ...
 * Git, SVN, GitHub, GitLab, BitBucket
@@ -296,7 +325,7 @@ A selection of technical skills.
 
 ### Web Development
 
-* HTML5, CSS, SASS
+* HTML5, CSS, SCSS
 * Ruby on Rails
 * Javascript, TypeScript, CoffeScript
 * Angular, React & VueJS
