@@ -8,9 +8,36 @@ language: en
 
 Here's some presentations I have given during the past years.
 
+- [Happiness, Lies and Rubocop](#rubocop)
 - [Concurrency in Ruby 3](#concurrency)
 - [Ruby GUI Apps: Beautiful inside AND outside](#gui)
 - [Fun with Ruby, Android and Termux](#termux)
+
+<a name="rubocop"></a>
+
+## Happiness, Lies and Rubocop (About linters and their usage)
+
+**Presented on March, 2022, in [Madrid.rb](https://www.madridrb.com/topics/happiness-lies-and-rubocop-948)**
+
+Ruby is optimized for happiness, but, are we all happy with the shared
+style guides and linting rules?
+
+Finding the right balance between common conventions and individual
+coding style can be a delicate subject, specially for bigger teams.
+In this talk we'll explore these limits and try to find a recipe for
+making sure that Rubocop makes us all happier developers
+
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/685590793?h=3a079d91c3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Happiness, Lies and Rubocop"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+Resources:
+
+<%= hang_left_icon('video') %>
+**Video**: <https://vimeo.com/556879297>
+
+<%= hang_left_icon('website') %>
+**Slides**: <https://speakerdeck.com/josep_egea/concurrencyinruby3-josepegea>
 
 <a name="concurrency"></a>
 

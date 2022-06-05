@@ -187,7 +187,7 @@ Ractors, with example code and graphical results.
 - **Code**: <https://github.com/josepegea/async_test>
 - **Slides**: <https://speakerdeck.com/josep_egea/concurrencyinruby3-josepegea>
 
-### _**2021**_ Ruby GUI Apps
+### _**2021**_ Ruby GUI Apps: Beautiful inside AND outside
 
 Presentation on Madrid.rb about writing GUI desktop app with Ruby and
 Tk, including a new component based gem and an Smalltalk-like live
