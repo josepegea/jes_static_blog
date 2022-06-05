@@ -118,7 +118,9 @@ label {
       color: #888;
       margin-left: 4px; }
   #main h2 {
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 36px; }
   #main h3 + h4 {
     margin-top: 20px; }
   #main h4 {
@@ -209,7 +211,7 @@ label {
     #main .notice h2 {
       font-size: 16px;
       color: #5a1e07;
-      border-bottom: solid 1px;
+      border-bottom: solid 2px;
       margin-bottom: 10px; }
   #main ul.article-list {
     margin-left: 0px; }
@@ -400,6 +402,10 @@ label {
       font-weight: bold;
       font-style: normal;
       color: #666; }
+      .cv h3 i a, .cv h3 em a {
+        font-size: 11px;
+        font-family: "Lucida Sans", "Lucida", sans-serif;
+        font-weight: normal; }
     .cv h3 b, .cv h3 strong {
       font-size: 16px;
       color: #888;
@@ -431,6 +437,16 @@ label {
 
 .video:before {
   content: url(/images/video_icon.svg); }
+
+img.section-hero {
+  width: 100%;
+  opacity: 20%;
+  margin-bottom: 0px; }
+
+img.section-hero2 {
+  width: 100%;
+  opacity: 30%;
+  margin-bottom: -97px; }
 
 @media screen and (max-width: 720px) {
   #topbar {
