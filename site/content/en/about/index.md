@@ -15,7 +15,9 @@ Entrepreneur, parent, software guy, husband, photographer... Wearing many hats a
 
 Born in Barcelona, living in Madrid, thinking beyond geography. 
 
-For the last years I've been a <%= l_link_to("freelance software developer", "/about/tech_bio")%>, with experience in **Ruby on Rails** and the full web stack. Currently I'm working [Platform 161](https://platform161.com) as a senior software developer and also as a team lead.
+For the last years I've been a <%= l_link_to("freelance software
+developer", "/about/tech_bio")%>, with experience in **Ruby on Rails**
+and the full web stack. Currently I'm working with [Marketer.tech](https://marketer.tech) as a senior software developer and also as a team lead.
 
 Until June 2015, I spent my days growing and running [Evadium](http://www.evadium.com), an online travel agency that I started back in 2005, together with my co-founding partner, David Cano.
 

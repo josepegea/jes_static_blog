@@ -15,7 +15,7 @@ Empresario, padre, informático, marido, fotógrafo ... Me gusta tocar muchos pa
 
 Nacido en Barcelona, viviendo en Madrid y tratando de mirar más allá de las circunstancias geográficas.
 
-Durante los últimos años he estado trabajando como <%= l_link_to("programador web freelance", "/about/tech_bio")%>, con experiencia en Ruby on Rails. En mi proyecto actual trabajo con [Platform 161](https://platform161.com) como desarrollador de software senir y también como team lead.
+Durante los últimos años he estado trabajando como <%= l_link_to("programador web freelance", "/about/tech_bio")%>, con experiencia en Ruby on Rails. En mi proyecto actual trabajo con [Marketer.tech](https://marketer.tech) como desarrollador de software senir y también como team lead.
 
 Hasta junio de 2015 estuve dedicando mis esfuerzos a lanzar y dirigir [Evadium](http://www.evadium.com), una agencia de viajes online que fundé, junto con mi socio, David Cano, en 2005.
 

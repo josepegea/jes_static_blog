@@ -88,7 +88,7 @@ Quick jump to ...
 </tbody>
 </table>
 
-### *Marketer.tech<br/><https://www.marketer.tech><br/>**January 2022-Present day*** Full Stack Engineer
+### *Marketer.tech<br/><https://www.marketer.tech><br/>**January 2022-Present day*** Full Stack Engineer and Team lead
 
 Joined as a **Backend developer** to support several Ruby on Rails
 backends, also participating in the development of a new **React

@@ -19,9 +19,10 @@ toys will come in the future.
 Since mid 2015 I've been busy working in several web projects, both
 startups and stablished businessess, like [Human
 Benefits](https://www.humanbenefits.com/),
-[Kolau](https://www.kolau.com/) and [Platform
-161](https://platform161.com/). You can see a <%= l_link_to("more
-detailed CV here", "/other/jes-cv-it")%>.
+[Kolau](https://www.kolau.com/), [Platform
+161](https://platform161.com/), [Lingokids](https://lingokids.com/)
+and [Marketer.tech](https://marketer.tech/). You can see a <%=
+l_link_to("more detailed CV here", "/other/jes-cv-it")%>.
 
 I have centered my work on the ecosystem around **Ruby on Rails**,
 including **PostgreSQL**, **MySQL**, Sidekiq, Redis and related

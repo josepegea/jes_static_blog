@@ -18,9 +18,10 @@ hubo muchas otras antes y estoy seguro de que habrá más en el futuro.
 Desde mediados de 2015, he estado ocupado trabajando en varios
 proyectos web, tanto en startups como en negocios establecidos, como
 [Human Benefits](https://www.humanbenefits.com/),
-[Kolau](https://www.kolau.com /) y [Platform
-161](https://platform161.com/). Tienes un <%= l_link_to("CV más
-detallado aquí", "/other/jes-cv-it") %>.
+[Kolau](https://www.kolau.com /), [Platform
+161](https://platform161.com/), [Lingokids](https://lingokids.com/) y
+[Marketer.tech](https://marketer.tech/) Tienes un <%= l_link_to("CV
+más detallado aquí", "/other/jes-cv-it") %>.
 
 Últimamente me he centrado en el ecosistema en torno a **Ruby on
 Rails**, incluyendo **PostgreSQL**, **MySQL**, Sidekiq, Redis y otras
