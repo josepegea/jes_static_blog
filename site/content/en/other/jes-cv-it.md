@@ -14,8 +14,8 @@ language: en
 <%= md_begin_block('div', :class => 'abstract columns') %>
 
 * **Software Developer** and **Team Lead**
-* Proficient in **Ruby**, **Rails** and more
-* **BS in CS**, 1994 UPC (Barcelona)
+* **Ruby**, **Rails**, **React** and more.
+* **BS in CS** from UPC (Barcelona)
 * Fluent in **English**, **Spanish** and **Catalan**
 * Based in Madrid, Spain, available for **remote work worldwide**
 
@@ -90,11 +90,14 @@ Quick jump to ...
 
 ### *Marketer.tech<br/><https://www.marketer.tech><br/>**January 2022-Present day*** Full Stack Engineer and Team lead
 
-Joined as a **Backend developer** to support several Ruby on Rails
-backends, also participating in the development of a new **React
-frontend**, together with a team of around **15-20 developers** from **8
-nationalities**, for their suit of real estate solutions for the
-**Norwegian and global markets**.
+Full-stack developer and team lead, building suit of **real estate
+solutions** for the Norwegian and global markets, using **Ruby 3**,
+**Rails 7**, **React (hooks)**, **GraphQL** and **REST** APIs,
+**PostgreSQL**, **Storybook**, among other tools, running in
+**Heroku** and **AWS**.
+
+Part or a team of **8-16 developers** from **8 nationalities** working
+in a fully remote fashion.
 
 ### *Lingokids<br/><https://www.lingokids.com><br/>**2021-2022*** Senior Backend Engineer
 
@@ -156,23 +159,27 @@ reorganization or optimization of development teams, to name a few.
 
 {:.page-break}
 
-<img src="/images/cv/josep_presentation.png" class="section-hero">
+<img src="/images/cv/josep_presentation_new.png" class="section-hero">
 
 ## Public Speeches and Presentations
 
 ### _Madrid.rb<br/><https://www.madridrb.com/><br/>**2020 - Present day**_ Organizer of the Madrid Ruby Users Group (Madrid.rb)
 
-After more than 10 years attending the group meetings and activities,
-in 2019 I became the organizer of the group.
+After more than 10 years as a group member, in 2019 I became the
+organizer.
 
-In addition to hosting monthly sessions with different speakers, I've
-given several presentations during last years.
 
+### _**2022**_ Playing with Music: Ruby and Sonic Pi
+
+Presentation on Madrid.rb creating live music with Ruby and Sonic Pi.
+
+- **Video**: <https://vimeo.com/770226468>
+- **Slides**: <https://speakerdeck.com/josep_egea/playing-with-music-ruby-and-sonic-pi>
 
 ### _**2022**_ Happiness, Lies and Rubocop - (About linters and their usage)
 
 Presentation on Madrid.rb about the benefits of linting and the risks
-of getting to far with it.
+of getting too far with it.
 
 - **Video**: <https://vimeo.com/685590793>
 - **Slides**: <https://speakerdeck.com/josep_egea/happiness-lies-and-rubocop>
@@ -325,10 +332,10 @@ A selection of technical skills.
 
 ### Web Development
 
-* HTML5, CSS, SCSS
-* Ruby on Rails
-* Javascript, TypeScript, CoffeScript
-* Angular, React & VueJS
+* Plain HTML5, CSS, SCSS
+* Ruby on Rails (including HotWire)
+* React (hooks), Angular, Stimulus.js, Vanilla JS
+* Storybook
 
 <%= md_end_block %>
 
