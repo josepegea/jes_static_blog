@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.3)
+    activesupport (7.0.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -32,7 +32,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.2)
     cri (2.15.11)
     ddmetrics (1.0.1)
     ddplugin (1.0.3)
@@ -57,7 +57,7 @@ GEM
       nanoc-core (~> 4.11, >= 4.11.14)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
-    i18n (1.10.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     json_schema (0.21.0)
     kramdown (2.4.0)
@@ -68,7 +68,7 @@ GEM
     lumberjack (1.2.8)
     memo_wise (1.7.0)
     method_source (1.0.0)
-    minitest (5.15.0)
+    minitest (5.18.0)
     multi_json (1.15.0)
     nanoc (4.12.6)
       addressable (~> 2.5)
@@ -134,13 +134,14 @@ GEM
       pastel (~> 0.8)
     tty-platform (0.3.0)
     tty-which (0.5.0)
-    tzinfo (2.0.4)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     webrick (1.7.0)
     zeitwerk (2.5.4)
 
 PLATFORMS
   arm64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   activesupport
